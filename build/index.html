@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ВТБ</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script src="assets/js/foundation.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+    <script src="https://unpkg.com/simplebar@2.1.0/dist/simplebar.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--для показа/выключения надо присвоить/убарть класс active для search-top-->
+      <search-top class="search-top"> 
+        <div class="search-top__white">
+          <div class="container">
+            <form class="search-top__white-wrap">
+              <div class="search-top__left">
+                <input type="text" placeholder="Введите вопрос">
+              </div>
+              <div class="search-top__right"> 
+                <button class="btn">найти</button>
+                <button class="btn__close" id="search-close"></button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="search-top__black"> </div>
+      </search-top>
+      <header class="header"> 
+        <div class="header__content">
+          <div class="header__menu">
+            <nav class="nav-menu">
+              <ul class="nav-menu__list">
+                <li class="nav-menu__elem"><a class="nav-menu__link" href="#">Наша команда</a></li>
+                <li class="nav-menu__elem"><a class="nav-menu__link" href="#">Процессы </a></li>
+                <li class="nav-menu__elem"><a class="nav-menu__link" href="#">Сотруднику </a></li>
+                <li class="nav-menu__elem"><a class="nav-menu__link" href="#">Сообщество </a></li>
+                <li class="nav-menu__elem"><a class="nav-menu__link" href="#">Сервисы </a></li>
+                <li class="nav-menu__elem"><a class="nav-menu__link" href="#">Техподдержка </a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__search"> <a class="header__search-link" id="seach-open" href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+          <div class="header__login">
+            <div class="header__login-wrap">
+              <div class="header__login-photo"> <img class="header__login-photo-img" src="assets/img/photo.jpg" alt=""></div>
+              <div class="header__login-name"> <span>Анна <br></span><span>Власова-Петррова-Подиагонали</span></div><a class="header__login-link" href="#"> <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            </div>
+            <div class="header__login-drop-down">
+              <div class="header__login-drop-down-wrap">
+                <ul class="header__login-drop-down-list">
+                  <li class="header__login-drop-down-elem"><a class="header__login-drop-down-link" href="#">Помощь сотруднику</a></li>
+                  <li class="header__login-drop-down-elem"><a class="header__login-drop-down-link" href="#">Моя страница</a></li>
+                  <li class="header__login-drop-down-elem"><a class="header__login-drop-down-link" href="#">Выход</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="section">
+        <div class="slider">
+          <div class="slider__wrap">
+            <ul class="slider__list">
+              <li class="slider__elem active"></li>
+              <li class="slider__elem"></li>
+              <li class="slider__elem"></li>
+            </ul>
+            <div class="container"><a class="slider__nav slider__nav-left" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a><a class="slider__nav slider__nav-right" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+              <div class="slider__text-wrap">
+                <ul class="slider__text-list">
+                  <li class="slider__text-elem active">
+                    <h2 class="slider__text-title">Корпоративная библиотека</h2>
+                    <div class="slider__text">Читайте бесплатно все книги на телефоне<br> в любое удобное вам время:<br> в метро, в очереди, в обеденный перерыв</div>
+                  </li>
+                  <li class="slider__text-elem">
+                    <h2 class="slider__text-title">Корпоративная библиотека</h2>
+                    <div class="slider__text">Читайте бесплатно все книги на телефоне<br> в любое удобное вам время:<br> в метро, в очереди, в обеденный перерыв</div>
+                  </li>
+                  <li class="slider__text-elem">
+                    <h2 class="slider__text-title">Корпоративная библиотека</h2>
+                    <div class="slider__text">Читайте бесплатно все книги на телефоне<br> в любое удобное вам время:<br> в метро, в очереди, в обеденный перерыв								</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__wrap-logo">
+          <div class="slider__logo"></div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section_news">
+            <div class="news">
+              <h1 class="title">Новости и публикации</h1>
+              <!-- a(href="#").title-link Все новости-->
+              <div class="news__block"><a class="news__block-column" href="#">
+                  <div class="news__block-photo"><img class="news__block-photo-img" src="assets/img/news1.jpg" alt="news">
+                    <div class="news__block-date"> <span class="news__block-day">07</span><span class="news__block-month">декабря</span></div>
+                  </div>
+                  <div class="news__block-text">Состоялся розыгрыш путевок в Чехию среди региональных менеджеров по кредитам</div></a><a class="news__block-column" href="#">
+                  <div class="news__block-photo"><img class="news__block-photo-img" src="assets/img/news2.jpg" alt="news">
+                    <div class="news__block-date"> <span class="news__block-day">06</span><span class="news__block-month">декабря</span></div>
+                  </div>
+                  <div class="news__block-text">Открыта запись на бесплатные обучающие курсы «Вежливый сотрудник»</div></a><a class="news__block-column" href="#">
+                  <div class="news__block-photo"><img class="news__block-photo-img" src="assets/img/news3.jpg" alt="news">
+                    <div class="news__block-date"> <span class="news__block-day">01</span><span class="news__block-month">декабря</span></div>
+                  </div>
+                  <div class="news__block-text">С 1 декабря повышены премии за подключене к пакету «Привилегия»</div></a></div>
+            </div>
+            <div class="photoreports">
+              <h1 class="title">Фоторепортажи</h1>
+              <!-- a(href="#").title-link Все фоторепортажи-->
+              <div class="photoreports__block">
+                <ul class="photoreports__list">
+                  <li class="photoreports__elem active">
+                    <div class="photoreports__photo"><img class="photoreports__photo-img" src="assets/img/photoreports.jpg" alt="photoreports"></div>
+                    <div class="photoreports__description">
+                      <div class="photoreports__description-title">
+                        <div class="photoreports__description-photo-img"></div>
+                        <div class="photoreports__description-photo-signature"><span class="photoreports__description-photo-signature-number">34</span> фото</div>
+                      </div>
+                      <div class="photoreports__description-text">В Москве прошло мероприятие для новых сотрудников Московской сети «День новичка ВТБ 24» </div>
+                      <div class="photoreports__description-date">25 февраля 2017</div>
+                    </div>
+                  </li>
+                  <li class="photoreports__elem">
+                    <div class="photoreports__photo"><img class="photoreports__photo-img" src="assets/img/photoreports.jpg" alt="photoreports"></div>
+                    <div class="photoreports__description">
+                      <div class="photoreports__description-title">
+                        <div class="photoreports__description-photo-img"></div>
+                        <div class="photoreports__description-photo-signature"><span class="photoreports__description-photo-signature-number">34</span> фото</div>
+                      </div>
+                      <div class="photoreports__description-text">В Москве прошло мероприятие для новых сотрудников Московской сети «День новичка ВТБ 24» </div>
+                      <div class="photoreports__description-date">25 февраля 2017</div>
+                    </div>
+                  </li>
+                  <li class="photoreports__elem">
+                    <div class="photoreports__photo"><img class="photoreports__photo-img" src="assets/img/photoreports.jpg" alt="photoreports"></div>
+                    <div class="photoreports__description">
+                      <div class="photoreports__description-title">
+                        <div class="photoreports__description-photo-img"></div>
+                        <div class="photoreports__description-photo-signature"><span class="photoreports__description-photo-signature-number">34</span> фото</div>
+                      </div>
+                      <div class="photoreports__description-text">В Москве прошло мероприятие для новых сотрудников Московской сети «День новичка ВТБ 24» </div>
+                      <div class="photoreports__description-date">25 февраля 2017</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="photoreports__description-nav"> <a class="photoreports__description-nav-btn photoreports__description-nav-left" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a><a class="photoreports__description-nav-btn photoreports__description-nav-right" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section bg-light-blue">
+        <div class="container">
+          <div class="section_info">
+            <div class="section_info__blocks">
+              <div class="section_info__block">
+                <h2 class="title-small">Поиск сотрудников</h2>
+                <div class="section_info__block-wrap">
+                  <div class="search">
+                    <div class="search__input-wrap"><i class="fa fa-search" aria-hidden="true"></i>
+                      <input class="search__input" type="text" placeholder="Введите ФИО сотрудника">
+                    </div>
+                    <button class="search__button"><span class="search__button-inside-left">А <i class="fa fa-angle-right" aria-hidden="true"></i> я </span><span class="search__button-inside-right">Алфавитный справочник </span></button>
+                    <div class="name-day">
+                      <div class="name-day__left"></div>
+                      <div class="name-day__right">
+                        <div class="name-day__number">13</div>
+                        <div class="name-day__text">
+                          <div class="name-day__date">сегодня, <span>10 февраля</span></div>
+                          <div class="name-day__signature">именинников</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="birsdays" id="birsdays" data-simplebar>
+                      <div class="birsdays__wrap">
+                        <ul class="birsdays__list">
+                          <li class="birsdays__elem"><a class="birsdays__link" href="#">
+                              <div class="birsdays__photo"><img class="birsdays__elem-img" src="assets/img/birsday/photo1.jpg" alt="photo1" title="photo1"></div>
+                              <div class="birsdays__text">
+                                <div class="birsdays__name">Николай Дубов</div>
+                                <div class="birsdays__position">Старший менеджер</div>
+                              </div></a></li>
+                          <li class="birsdays__elem"><a class="birsdays__link" href="#">
+                              <div class="birsdays__photo"><img class="birsdays__elem-img" src="assets/img/birsday/photo2.jpg" alt="photo1" title="photo1"></div>
+                              <div class="birsdays__text">
+                                <div class="birsdays__name">Владимирова Марина</div>
+                                <div class="birsdays__position">Ведущий аналитик отдела развития</div>
+                              </div></a></li>
+                          <li class="birsdays__elem"><a class="birsdays__link" href="#">
+                              <div class="birsdays__photo"><img class="birsdays__elem-img" src="assets/img/birsday/photo3.jpg" alt="photo1" title="photo1"></div>
+                              <div class="birsdays__text">
+                                <div class="birsdays__name">Обухов Владимир</div>
+                                <div class="birsdays__position">Заместитель главного бухгалтера</div>
+                              </div></a></li>
+                          <li class="birsdays__elem"><a class="birsdays__link" href="#">
+                              <div class="birsdays__photo"><img class="birsdays__elem-img" src="assets/img/birsday/photo1.jpg" alt="photo1" title="photo1"></div>
+                              <div class="birsdays__text">
+                                <div class="birsdays__name">Николай Дубов</div>
+                                <div class="birsdays__position">Старший менеджер</div>
+                              </div></a></li>
+                          <li class="birsdays__elem"><a class="birsdays__link" href="#">
+                              <div class="birsdays__photo"><img class="birsdays__elem-img" src="assets/img/birsday/photo2.jpg" alt="photo1" title="photo1"></div>
+                              <div class="birsdays__text">
+                                <div class="birsdays__name">Владимирова Марина</div>
+                                <div class="birsdays__position">Ведущий аналитик отдела развития Ведущий аналитик отдела развития Ведущий аналитик отдела развития</div>
+                              </div></a></li>
+                          <li class="birsdays__elem"><a class="birsdays__link" href="#">
+                              <div class="birsdays__photo"><img class="birsdays__elem-img" src="assets/img/birsday/photo3.jpg" alt="photo1" title="photo1"></div>
+                              <div class="birsdays__text">
+                                <div class="birsdays__name">Обухов Владимир</div>
+                                <div class="birsdays__position">Заместитель главного бухгалтера</div>
+                              </div></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section_info__block">
+                <h2 class="title-small border-bottom">Полезные ссылки</h2>
+                <div class="section_info__block-wrap">
+                  <div class="useful-links">
+                    <div class="useful-links__wrap">
+                      <ul class="useful-links__list">
+                        <li class="useful-links__elem"><a class="useful-links__link" href="#">
+                            <div class="useful-links__icon"><img class="useful-links__elem-img" src="assets/img/icons/phone.png" alt="phone" title="phone"></div>
+                            <div class="useful-links__text">
+                              <div class="useful-links__title">Линия психологической поддержки</div>
+                              <div class="useful-links__description">Мы всегда выслушаем вас</div>
+                            </div></a></li>
+                        <li class="useful-links__elem"><a class="useful-links__link" href="#">
+                            <div class="useful-links__icon"><img class="useful-links__elem-img" src="assets/img/icons/question.png" alt="question" title="question"></div>
+                            <div class="useful-links__text">
+                              <div class="useful-links__title">Служба поддержки пользователей</div>
+                              <div class="useful-links__description">Для вопросов по работе с порталом</div>
+                            </div></a></li>
+                        <li class="useful-links__elem"><a class="useful-links__link" href="#">
+                            <div class="useful-links__icon"><img class="useful-links__elem-img" src="assets/img/icons/fly.png" alt="fly" title="fly"></div>
+                            <div class="useful-links__text">
+                              <div class="useful-links__title">В помощь командируемому</div>
+                              <div class="useful-links__description">Образцы всех справок и заявлений</div>
+                            </div></a></li>
+                        <li class="useful-links__elem"><a class="useful-links__link" href="#">
+                            <div class="useful-links__icon"><img class="useful-links__elem-img" src="assets/img/icons/list.png" alt="list" title="list"></div>
+                            <div class="useful-links__text">
+                              <div class="useful-links__title">Справочник бэк-офиса</div>
+                              <div class="useful-links__description">Образцы всех справок и заявлений</div>
+                            </div></a></li>
+                        <li class="useful-links__elem"><a class="useful-links__link" href="#">
+                            <div class="useful-links__icon"><img class="useful-links__elem-img" src="assets/img/icons/nut.png" alt="list" title="list"></div>
+                            <div class="useful-links__text">
+                              <div class="useful-links__title">СИС ДКО</div>
+                              <div class="useful-links__description">Образцы всех справок и заявлений</div>
+                            </div></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section_info__block">
+                <h2 class="title-small border-bottom">Мои заявки</h2>
+                <div class="section_info__block-wrap">
+                  <div class="bid">
+                    <div class="bid__wrap">
+                      <ul class="bid__list">
+                        <li class="bid__elem"><a class="bid__link" href="#">
+                            <div class="bid__title">Командировка на основании утвержденного приказа</div>
+                            <div class="bid__info">
+                              <div class="bid__status"> 
+                                <div class="bid__icon"><img class="bid__elem-img" src="assets/img/icons/rejected.png" alt="phone" title="phone"></div>
+                                <div class="bid__text">Отклонена</div>
+                              </div>
+                              <div class="bid__time">10.02.2017</div>
+                            </div></a></li>
+                        <li class="bid__elem"><a class="bid__link" href="#">
+                            <div class="bid__title">Заявка на изготовление копий документов</div>
+                            <div class="bid__info">
+                              <div class="bid__status"> 
+                                <div class="bid__icon"><img class="bid__elem-img" src="assets/img/icons/clock.png" alt="clock" title="clock"></div>
+                                <div class="bid__text">Принята в работу</div>
+                              </div>
+                              <div class="bid__time">10.02.2017			</div>
+                            </div></a></li>
+                        <li class="bid__elem"><a class="bid__link" href="#">
+                            <div class="bid__title">Командировка на основании утвержденного приказа</div>
+                            <div class="bid__info">
+                              <div class="bid__status"> 
+                                <div class="bid__icon"><img class="bid__elem-img" src="assets/img/icons/approved.png" alt="approved" title="approved"></div>
+                                <div class="bid__text">Выполнена</div>
+                              </div>
+                              <div class="bid__time">10.02.2017</div>
+                            </div></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="button-send-wrap">
+                    <button class="button-send">Создать заявку</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="tiles"> <a class="tiles__tile" href="#">
+              <div class="tiles__img"><img src="assets/img/tiles/1.jpg" alt=""></div>
+              <h3 class="tiles__title">Учебный портал</h3>
+              <div class="tiles__text">Онлайн подготовка для сотрудников</div></a><a class="tiles__tile" href="#">
+              <div class="tiles__img"><img src="assets/img/tiles/2.jpg" alt=""></div>
+              <h3 class="tiles__title">Моя идея</h3>
+              <div class="tiles__text">Онлайн подготовка для сотрудников</div></a><a class="tiles__tile" href="#">
+              <div class="tiles__img"><img src="assets/img/tiles/3.jpg" alt=""></div>
+              <h3 class="tiles__title">Корпоративная библиотека</h3>
+              <div class="tiles__text">Онлайн подготовка для сотрудников</div></a><a class="tiles__tile" href="#">
+              <div class="tiles__img"><img src="assets/img/tiles/4.jpg" alt=""></div>
+              <h3 class="tiles__title">База знаний ТП</h3>
+              <div class="tiles__text">Онлайн подготовка для сотрудников</div></a><a class="tiles__tile" href="#">
+              <div class="tiles__img"><img src="assets/img/tiles/1.jpg" alt=""></div>
+              <h3 class="tiles__title">Нормативно-справочная информация</h3>
+              <div class="tiles__text"> </div></a><a class="tiles__tile" href="#">
+              <div class="tiles__img"><img src="assets/img/tiles/2.jpg" alt=""></div>
+              <h3 class="tiles__title">Партнерские предложения</h3>
+              <div class="tiles__text">Онлайн подготовка для сотрудников</div></a></div>
+        </div>
+      </section>
+      <footer class="footer"> 
+        <div class="footer__wrap">
+          <div class="container"><a class="footer__link footer__link-map" href="#">Карта портала</a><a class="footer__link footer__link-map" href="#">Карта филиалов</a></div>
+        </div>
+        <div class="footer__wrap">
+          <div class="container"> 
+            <div class="footer__bottom">
+              <div class="footer__copy">© 2016  ВТБ24 (ПАО). Корпоративный портал</div>
+              <div class="footer__tell"> <span>Техподдержка:</span>
+                <div class="footer__tell-tell">8-800-100-24-24</div>
+              </div><a class="footer__support" href="#">Написать в поддержку </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,346 @@
+.section_info {
+	display: flex;
+	align-items: stretch;
+	min-height: 650px;
+
+	&__blocks {
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
+		width: 100%;
+		min-height: 650px;
+		padding:60px 0;		
+	}
+
+	&__block {
+		background-color: #fff;
+		width: 360px;
+		height: 100%;
+		padding: 25px 30px 10px;
+		border-radius: 3px;
+		box-shadow: 0px 20px 54px 0px rgba(196, 208, 227, 0.75);
+		&-wrap {
+			width: 100%;
+		}
+	}
+}
+
+.search {
+	&__input {
+		width: 100%;
+		font-size:16px;
+		padding:13px 30px 13px 13px;
+		border:2px solid lighten($gray,20%);
+		border-radius:4px;
+		margin-bottom: 10px;
+		color: $gray;
+		background-color: transparent;
+
+		&-wrap {
+			position: relative;
+
+			i {
+				position: absolute;
+				top: 15px;
+				right: 20px;
+				color: $gray;
+			}
+		}
+	}
+
+
+	&__button {
+		width: 100%;
+		background-color: $btn_blue;
+		border:0;	
+		border-radius:3px;
+		cursor: pointer;
+		
+		&-inside {
+			&-left {
+				border-right:1px solid lighten($blue, 25%);
+				color: #fff;
+				float: left;
+				font-size: 14px;
+				padding: 15px 13px;
+				text-transform: uppercase;
+			}	
+			&-right {
+				color: #fff;
+				float: left;
+				font-size:14px;
+				padding: 15px 13px;
+				text-transform: uppercase;
+			}
+		}
+	}
+}	
+
+.name-day {
+	display: flex;
+	align-items: center;
+	height: 65px;
+	border-bottom: 1px solid $light_blue;
+	
+	&__left {
+		width: 45px;
+		height: 45px;
+		margin-right:25px;
+		background-image: url("../../assets/img/cake.png");
+	}
+
+	&__right {
+		display: flex;
+		align-items: center;
+	}
+
+	&__number {
+		font-family: 'Open Sans Bold';
+		color: $red;
+		font-size:	41px;
+		margin-right:5px;
+		line-height:1.5;
+
+	}
+
+	&__date {
+		color: $gray;
+		font-size:14px;
+	}
+
+	&__signature {
+		color: $blue;
+	}
+}
+
+
+
+.birsdays {
+	width: 107%;
+	height: 280px;
+ 	overflow-x: hidden;
+ 	// overflow-y: auto;
+	  ::-webkit-scrollbar { width: 0px !important; }
+	  & { -ms-overflow-style: none !important; }
+	  & { overflow: -moz-scrollbars-none !important; }
+
+
+
+
+	&__wrap {
+		width: 95%;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+	}
+
+	&__link {
+		display: flex;
+		align-items: flex-start;
+		padding: 13px 0;
+
+		// &:hover {
+
+		// 	& .birsdays__name {
+		// 		color: lighten($blue, 20%);
+		// 	}
+
+		// }	
+		// &:active {
+		// 	& .birsdays__name {
+		// 		color: $gray;
+		// 	}
+		// }
+	}
+
+	&__elem {
+		display: flex;
+		border-bottom:1px solid $light_blue;
+		transition: 1s;
+
+		// &:hover {
+		// 	background-color: $light_blue;
+		// } 
+	}
+
+	&__photo {
+		width: 55px;
+		height: 55px;
+		border-radius: 50%;
+		margin-right:25px;
+		overflow: hidden;
+	}
+
+	&__text {
+		width: 210px;
+		margin-top:10px;
+	}
+
+	&__name {
+		color: $blue;
+	}
+
+	&__position {
+		color: $gray;
+		font-size:14px;		
+	}
+}
+
+
+.useful-links {
+	width: 107%;
+	height: 435px;
+
+	// overflow-x: hidden;
+	// overflow-y: scroll;
+
+
+	&__wrap {
+		width: 95%;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+	}
+
+	&__link {
+		display: flex;
+		align-items: flex-start;
+		padding: 15px 0;		
+	}
+
+	&__icon {
+		width: 20px;
+		margin-right:15px;
+	}
+
+	&__elem {
+		display: flex;
+		border-bottom:1px solid $light_blue;
+		transition: 1s;
+		&:last-child {
+			border-bottom:0px;			
+		}
+
+		// &:hover {
+		// 	background-color: $light_blue;
+		// } 
+	}
+
+	&__title {
+		color: $blue;
+		margin-bottom: 8px;
+	}
+
+	&__description {
+		color: $gray;
+		font-size:14px;
+		font-family: 'Open Sans';
+	}
+}
+
+
+
+.bid {
+	display: flex;
+	flex-direction: column;	
+	width: 107%;
+	height: 320px;
+	// overflow-x: hidden;
+	// overflow-y: scroll;
+	margin-bottom: $sp*2+10px;
+
+	&__wrap {
+		width: 95%;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+	}
+
+	&__link {
+		// display: flex;
+		// flex-direction: column;
+		// align-items: flex-start;
+		padding: 18px 0;		
+	}
+
+	&__icon {
+		width: 17px;
+		margin-right:10px;
+		margin-top: 2px;
+	}
+
+	&__elem {
+		display: flex;
+		border-bottom:1px solid $light_blue;
+		transition: 1s;
+
+		&:last-child {
+			//border-bottom:0px;			
+		}
+
+		// &:hover {
+		// 	background-color: $light_blue;
+		// } 
+	}
+
+	&__title {
+		color: $blue;
+		margin-bottom: 8px;
+	}
+
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+
+	&__status {
+		display: flex;		
+	}
+
+	&__text {
+		color: $gray;
+		font-size:14px;
+		font-family: 'Open Sans';
+	}
+
+	&__time {
+		color: $gray;
+		font-size:14px;
+		font-family: 'Open Sans';		
+	}
+
+	&__button {
+		margin: 0 auto;
+	}
+}
+
+.button-send-wrap {
+	display: flex;
+	justify-content: center;
+}
+
+.button-send {
+	background-color: $red;
+	border:0;
+	color: #fff;
+	text-transform: uppercase;
+	padding: $sp 40px;
+	border-radius: 5px;
+	font-size: 14px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: lighten($red, 10%);		
+	}
+}

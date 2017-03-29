@@ -3,7 +3,7 @@
 	justify-content: center;
   min-width: 1160px;
 	height: 100px;
-	background-color: $light_blue;
+	background-color: @light_blue;
 
 	&__content {
 		display: flex;
@@ -24,16 +24,16 @@
 			&-link {
 				position: relative;
 				top:-1px;
-				color: $blue;
+				color: @blue;
 				padding: 10px;
 				transition: 1s ease;
     		font-size: 19px;
 
 				&:hover {
-					color: $link_hover;
+					color: @link_hover;
 				}	
 				&:active {
-				  color: $link_active;
+				  color: @link_active;
 				}			
 			}		
 	}
@@ -51,7 +51,7 @@
 			}
 
 			.header__login-drop-down-elem {
-				padding: $sp 0;
+				padding: @sp 0;
 			}
 
 			.header__login-link {
@@ -75,7 +75,7 @@
 			align-items: center;			
 			width: 100%;
 			height: 100%;
-   		padding: 0 $sp 0 20px;
+   		padding: 0 @sp 0 20px;
 		
 		}
 
@@ -84,14 +84,14 @@
 			top:-2px;
 			white-space: nowrap;
 			width: 145px;
-			font-size:$sp;
+			font-size:@sp;
 			overflow:hidden;
 			text-overflow: ellipsis;
 			-o-text-overflow: ellipsis;
 			span {
 				white-space: nowrap;
 				
-				font-size:$sp;
+				font-size:@sp;
 				overflow: hidden;
 				display: block;
 				text-overflow: ellipsis;
@@ -100,13 +100,13 @@
 		}
 
 		&-link {
-			color: $blue;
+			color: @blue;
 			padding: 10px 0;
 			transition: 0.3s;
 			font-size:12px;
 
 			&:hover {
-				color: lighten($blue, 20%);
+				color: lighten(@blue, 20%);
 			}				
 		}
 
@@ -116,8 +116,8 @@
 			left:0;
 			width: 100%;
 			background-color: #fff;
-			padding:0 $sp*2;
-			border-radius: 0 0 $sp/3 $sp/3;
+			padding:0 @sp*2;
+			border-radius: 0 0 @sp/3 @sp/3;
 			opacity:0;
 			overflow: hidden;
 			transition: .3s;
@@ -140,10 +140,10 @@
 			color: #3b4256;
 			
 			&:hover {
-				color: $link_hover;
+				color: @link_hover;
 			}	
 			&:active {
-		    color: $link_active;
+		    color: @link_active;
 		  }
 
 		}
@@ -162,22 +162,22 @@
 		align-items: center;
 		height: 100%;
 		font-family: verdana;
-		font-size:$sp;
+		font-size:@sp;
 		text-transform:	uppercase;		
 	}
 
 	&__link {
-		color: $blue;
+		color: @blue;
     	line-height: 3;
 		transition: .3s ease;
 
 
 
 		&:hover {
-			color: $link_hover;
+			color: @link_hover;
 		}	
 		&:active {
-	    color: $link_active;
+	    color: @link_active;
 	  }			    
 	}
 }

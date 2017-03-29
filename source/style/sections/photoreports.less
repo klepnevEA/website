@@ -4,11 +4,11 @@
 
 	.title {
 		display: inline-block;
-		margin-right: $sp;
+		margin-right: @sp;
 		&-link {
-			color: $blue;
+			color: @blue;
 			&:hover {
-				color: darken($blue, 10%);
+				color: darken(@blue, 10%);
 			}
 		}
 	}
@@ -65,7 +65,7 @@
 		}
 
 		&-text {
-			color: $blue;
+			color: @blue;
 			font-size:15px;	
 			line-height:1.6;
 			margin-bottom:13px;
@@ -73,7 +73,7 @@
 		}
 
 		&-date {
-			color: $gray;
+			color: @gray;
 			margin-bottom:35px;
 			font-size:14px;
 		}
@@ -87,7 +87,7 @@
 			&-number {
 				font-family: 'Open Sans Bold';
 				font-size:32px;
-				color: $red;
+				color: @red;
 				line-height: 0;	
 			}		
 
@@ -107,12 +107,12 @@
 				height: 30px;
 				text-align: center;
 				background-color: #fff;
-				border: 2px solid $light_blue;
+				border: 2px solid @light_blue;
 				border-radius: 50%;
 				margin-right:10px;
 				font-size:12px;
 				z-index:5;
-				color: $gray;	
+				color: @gray;	
 				transition: 1s ease;
 
 				&:hover {

@@ -16,6 +16,6 @@ module.exports = function() {
       }))
       .pipe($.gp.uglify())
       .pipe($.gp.sourcemaps.write('./maps'))
-      .pipe($.gulp.dest($.config.root + '/assets/js'))
+      .pipe($.gulp.dest($.config.root + '/js'))
   })
 };

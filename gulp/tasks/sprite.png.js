@@ -5,7 +5,7 @@
 module.exports = function () {
   $.gulp.task('sprite:png', function () {
     var spriteData = $.gulp.src('./source/sprite/png/*.png').pipe($.gp.spritesmith({
-      imgName: '../../assets/img/sprite.png', // итоговый спрайт
+      imgName: '../img/sprite.png', // итоговый спрайт
       cssName: 'sprite.scss', // файл стилей
       algorithm: 'left-right',
       padding: 20

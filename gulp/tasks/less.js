@@ -9,7 +9,7 @@ var path = require('path');
       .pipe($.gp.less()).on('error', $.gp.notify.onError({ title: 'Style' }))
       .pipe($.gp.autoprefixer({ browsers: $.config.autoprefixerConfig }))
       .pipe($.gp.sourcemaps.write())
-      .pipe($.gulp.dest($.config.root + '/assets/css'))
+      .pipe($.gulp.dest($.config.root + '/css'))
       .pipe($.browserSync.stream());
 		  // .pipe($.gp.less())
 		  // .pipe($.gp.sourcemaps.write())

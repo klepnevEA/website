@@ -1,0 +1,49 @@
+.useful-links {
+	width: 107%;
+	height: 435px;
+
+	&__wrap {
+		width: 95%;
+	}
+
+	&__list {
+		overflow: hidden;
+	}
+
+	&__link {
+		padding: 15px 0;
+	}
+	&__elem {
+		border-bottom: 1px solid #e6ecf2;
+		transition: 1s;
+		position: relative;
+		padding: 17px 0 16px 33px;
+		&:last-child {
+			border-bottom: 0px;
+		}
+
+		// &:hover {
+		// 	background-color: $light_blue;
+		// } 
+	}
+
+	&__icon {
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		top: 17px;
+		left: 0;
+	}
+
+
+	&__title {
+		color: @blue;
+		margin-bottom: 8px;
+	}
+
+	&__description {
+		color: @gray;
+		font-size:14px;
+		font-family: 'Open Sans';
+	}
+}

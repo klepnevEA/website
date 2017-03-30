@@ -1,0 +1,33 @@
+.nav-menu {
+	&__list {
+		display: block;
+		font-family: verdana;
+		font-size: @sp;
+		text-transform:	uppercase;
+		display: block;
+	}
+
+	&__link {
+		color: @blue;
+		transition: .3s ease;
+		display: block;
+				
+		&:last-child {
+			margin-right: 0;
+		}
+
+
+
+		&:hover {
+			color: @link_hover;
+		}	
+		&:active {
+		color: @link_active;
+		}
+	}
+	&__elem {
+		float: left;
+		margin-right: 30px;
+		margin-top: 40px;
+	}
+}

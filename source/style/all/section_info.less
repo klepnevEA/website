@@ -1,0 +1,131 @@
+.section_info {
+	height: 650px;
+
+	&__blocks {
+		width: 100%;
+		padding: 60px 0;
+		.clearfix;
+
+	}
+
+	&__block {
+		float: left;
+		background: #fff;
+		width: 360px;
+		padding: 25px 30px;
+		height: 530px;
+		border-radius: 3px;
+		box-shadow: 0px 20px 54px 0px rgba(196, 208, 227, 0.75);
+		margin-right: 40px;
+		overflow: hidden;
+
+		&-last {
+			margin-right: 0px;
+		}
+		&-wrap {
+			height: 435px;
+			
+		}
+		
+	}
+}
+
+.search {
+	&__input {
+		width: 100%;
+		font-size:16px;
+		padding:13px 30px 13px 13px;
+		border:2px solid lighten(@gray,20%);
+		border-radius:4px;
+		margin-bottom: 10px;
+		color: @gray;
+		background-color: transparent;
+
+		&-wrap {
+			position: relative;
+
+			i {
+				position: absolute;
+				top: 15px;
+				right: 20px;
+				color: @gray;
+			}
+		}
+	}
+
+
+	&__button {
+		width: 100%;
+		background-color: @btn_blue;
+		border:0;
+		border-radius:3px;
+		cursor: pointer;
+		
+		&-inside {
+			&-left {
+				border-right:1px solid lighten(@blue, 25%);
+				color: #fff;
+				float: left;
+				font-size: 14px;
+				padding: 15px 13px;
+				text-transform: uppercase;
+			}	
+			&-right {
+				color: #fff;
+				float: left;
+				font-size:14px;
+				padding: 15px 13px;
+				text-transform: uppercase;
+			}
+		}
+	}
+}	
+
+.name-day {
+	
+	height: 65px;
+	border-bottom: 1px solid @light_blue;
+	
+	&__left {
+		width: 45px;
+		height: 45px;
+		margin-right:25px;
+		float: left;
+		background-image: url("../img/cake.png");
+		margin-top: @sp/2;
+	}
+
+	&__right {
+		float: left;
+		margin-top: 10px;
+		width: 225px;
+	}
+	&__text {
+		float: left;
+		.clearfix;
+	}
+	&__number {
+		font-family: 'Open Sans Bold';
+		color: @red;
+		font-size:	41px;
+		margin-right:5px;
+		line-height:1;
+		float: left;
+
+	}
+
+	&__date {
+		color: @gray;
+		font-size:14px;
+		width: 100%;
+		display: block;
+		margin-top: 3px;
+		
+	}
+
+	&__signature {
+		color: @blue;
+		display: block;
+		margin-top: -4px;
+	}
+} 

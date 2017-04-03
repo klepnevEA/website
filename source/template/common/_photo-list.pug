@@ -36,7 +36,15 @@
 							a(href="#").gallery__item
 								.gallery__img(style="background: url(img/tiles/1.jpg);")
 									.gallery__quantity 
-										.gallery__quantity-top 8 
+										.gallery__quantity-top 10 
+										.gallery__quantity-photo фото 
+								.gallery__text В москве открылся офис нового формата ДО «Цветной бульвар»
+								.gallery__data 09 Февраля 2017
+						.col-xs-4
+							a(href="#").gallery__item
+								.gallery__img(style="background: url(img/tiles/1.jpg);")
+									.gallery__quantity 
+										.gallery__quantity-top 12 
 										.gallery__quantity-photo фото 
 								.gallery__text В москве открылся офис нового формата ДО «Цветной бульвар»
 								.gallery__data 09 Февраля 2017
@@ -52,7 +60,7 @@
 							a(href="#").gallery__item
 								.gallery__img(style="background: url(img/tiles/1.jpg);")
 									.gallery__quantity 
-										.gallery__quantity-top 8 
+										.gallery__quantity-top 6 
 										.gallery__quantity-photo фото 
 								.gallery__text В москве открылся офис нового формата ДО «Цветной бульвар»
 								.gallery__data 09 Февраля 2017
@@ -64,15 +72,26 @@
 										.gallery__quantity-photo фото 
 								.gallery__text В москве открылся офис нового формата ДО «Цветной бульвар»
 								.gallery__data 09 Февраля 2017
-						.col-xs-4
-							a(href="#").gallery__item
-								.gallery__img(style="background: url(img/tiles/1.jpg);")
-									.gallery__quantity 
-										.gallery__quantity-top 8 
-										.gallery__quantity-photo фото 
-								.gallery__text В москве открылся офис нового формата ДО «Цветной бульвар»
-								.gallery__data 09 Февраля 2017
-	
+						
+					.pager
+						.pager__wrap
+							ul.pager__list
+								li.pager__elem.pager__elem-first-child.pager__elem-active
+									a(href="#") 1
+								li.pager__elem
+									a(href="#") 2
+								li.pager__elem 
+									a(href="#") 3
+								li.pager__elem 
+									a(href="#") ...
+								li.pager__elem.pager__elem-last-child 
+									a(href="#") 15
+							.pager__hext
+								a(href="#")
+									i.fa.fa-chevron-right(aria-hidden="true")
+							.pager__prev
+								a(href="#")
+									i.fa.fa-chevron-left(aria-hidden="true")
 						
 
 						
@@ -86,17 +105,15 @@
 					nav.aside__menu
 						ul.aside__list
 							li.aside__elem
-								a(href="#").aside__link Основные соревнования
+								a(href="#").aside__link Новости
+							li.aside__elem.active
+								a(href="#").aside__link Фоторепортажи
 							li.aside__elem
-								a(href="#").aside__link Специальные соревнования
+								a(href="#").aside__link Обзор СМИ
 							li.aside__elem
-								a(href="#").aside__link График соревнований
-							li.aside__elem
-								a(href="#").aside__link Архив соревнований
-							li.aside__elem
-								a(href="#").aside__link Наградные материалы
-							li.aside__elem
-								a(href="#").aside__link.aside__link-last-child Положение
+								a(href="#").aside__link.aside__link-last-child Газеты и журналы
+							
+						
 					.aside__tile
 						a(href="#").aside__tile-link
 							.aside__tile-img

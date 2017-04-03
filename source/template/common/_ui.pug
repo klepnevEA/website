@@ -1,0 +1,130 @@
+.section
+	.container
+		.row
+			.col-xs-12
+				.breadcrumb
+					nav.breadcrumb__wrap
+						a(href="#").breadcrumb__item Главная
+						a(href="#").breadcrumb__item.breadcrumb__item-last-child Корпоративные соревнования
+		.row
+			.col-xs-12
+
+				p(style="color: red;") большой заголовок
+				h1.title большой заголовок
+				p(style="color: red;") маленький заголовок
+				h2.title-small маленький заголовок
+
+		.row
+			.col-xs-9.col-width-74
+
+				p(style="color: red;") дата
+				.date 17 февраля 2017
+
+				p(style="color: red;") отдельная ссылка
+
+				a(href="#").link-simple отдельная ссылка
+
+				p(style="color: red;") горизонтальная полоса
+
+				hr.horizontal-stripe
+				
+				p(style="color: red;") большая картинка
+				img.big-img(src='img/text.jpg', alt='')
+
+				p(style="color: red;") просто текст
+				.text
+					p  просто текст
+					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi maxime aliquid iure velit ducimus at deleniti, sunt voluptatum! Vel ullam rem quia velit odit sunt unde dignissimos similique dolorem veniam!
+					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic provident laborum voluptates quo sunt, maiores pariatur, ex asperiores iusto perspiciatis officiis veritatis saepe eligendi qui assumenda voluptate blanditiis sit ad!
+
+
+				p(style="color: red;") жирный текст
+				.text.text-bold
+					p  жирный текст
+					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi maxime aliquid iure velit ducimus at deleniti, sunt voluptatum! Vel ullam rem quia velit odit sunt unde dignissimos similique dolorem veniam!					
+				
+				p(style="color: red;") выдделенный текст с кавычками (не нужная штука)
+				.utterance
+					.utterance__quotes “
+					.utterance__info
+						.utterance__title выдделенный текст с кавычками (не нужная штука)
+						.utterance__text Успеха всем, процветания и любви
+				.text
+					p ВТБ 24 (ПАО) — один из крупнейших участников российского рынка банковских услуг. Мы входим в международную финансовую группу ВТБ и специализируемся на обслуживании физических лиц, индивидуальных предпринимателей и предприятий малого бизнеса.
+				
+				p(style="color: red;") простой список
+				.roster
+					.roster__title Простой список:
+					ul.roster__list
+						li.roster__elem
+							a(href="#").roster__text Пункт 1
+						li.roster__elem
+							a(href="#").roster__text Пункт 2
+
+				p(style="color: red;") аккордион
+				#accordion.accordion-style(role='tablist', aria-multiselectable='true')
+					.card
+						#headingTwo.card-header.accordion-style__card-header(role='tab')
+							h5.mb-0
+								a.collapsed.accordion-style__button(data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+									| Аккордион
+									i.fa.fa-chevron-up(aria-hidden="true")
+						#collapseTwo.collapse(role='tabpanel', aria-labelledby='headingTwo')
+							.card-block.accordion-style__text
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias recusandae optio eos ad maxime veniam nam. Ut laudantium optio, quam odio illum doloribus dolores quod expedita officiis eum porro, maxime.
+
+				p(style="color: red;") пагинатор
+
+				.pager
+					.pager__wrap
+						ul.pager__list
+							li.pager__elem.pager__elem-first-child.pager__elem-active
+								a(href="#") 1
+							li.pager__elem
+								a(href="#") 2
+							li.pager__elem 
+								a(href="#") 3
+							li.pager__elem 
+								a(href="#") ...
+							li.pager__elem.pager__elem-last-child 
+								a(href="#") 15
+						.pager__hext
+							a(href="#")
+								i.fa.fa-chevron-right(aria-hidden="true")
+						.pager__prev
+							a(href="#")
+								i.fa.fa-chevron-left(aria-hidden="true")
+
+
+
+			.col-xs-3.col-width-26
+				.aside
+					nav.aside__menu
+						ul.aside__list
+							li.aside__elem
+								a(href="#").aside__link Основные соревнования
+							li.aside__elem
+								a(href="#").aside__link Специальные соревнования
+							li.aside__elem
+								a(href="#").aside__link График соревнований
+							li.aside__elem
+								a(href="#").aside__link Архив соревнований
+							li.aside__elem
+								a(href="#").aside__link Наградные материалы
+							li.aside__elem
+								a(href="#").aside__link.aside__link-last-child Положение
+					.aside__tile
+						a(href="#").aside__tile-link
+							.aside__tile-img
+								img(src='img/tiles/1.jpg', alt='')
+							h3.aside__tile-title Моя идея
+					.aside__tile
+						a(href="#").aside__tile-link
+							.aside__tile-img
+								img(src='img/tiles/2.jpg', alt='')
+							h3.aside__tile-title Нормативно-справочная информация
+					.aside__tile
+						a(href="#").aside__tile-link
+							.aside__tile-img
+								img(src='img/tiles/3.jpg', alt='')
+							h3.aside__tile-title База знаний для ТП

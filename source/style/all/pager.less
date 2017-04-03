@@ -1,0 +1,109 @@
+.pager {
+	border-top: 1px solid @light_blue;
+	padding-top:@sp*3;
+	margin-bottom: @sp*2;
+	// text-align: center;
+
+	&__wrap {
+		position: relative;
+		border:1px solid @light_blue;
+		box-sizing: border-box;
+		width: 250px;
+		height: 50px;
+		margin: 0 auto; 
+		float: none;
+		border-radius: 5px;
+		background-color: #fff;
+	}
+
+	&__elem {
+		text-align: center;
+		width: 20%;
+		float: left;
+		border-right: 1px solid @light_blue;
+
+
+		& a {
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			padding: @sp 0;
+			color: @blue;
+
+			&:hover {
+				color: @link_hover;		
+			}
+
+			&:active {
+				color: @link_active;		
+			}			
+		}
+
+		&-last-child {
+			border-right: 0px;
+			border-radius: 0 5px 5px 0;			
+		}
+
+		&-first-child {
+			border-radius: 5px 0 0 5px;
+		}
+
+		&-active {
+			background-color: @blue;	
+
+			& a {
+				color: #fff;
+
+				&:hover {
+					color: #fff;		
+				}
+
+				&:active {
+					color: #fff;		
+				}					
+			}
+		}		
+
+	}
+
+	&__hext {
+		position: absolute;
+		top: 0;
+		right: -50px;
+		width: 50px;
+		text-align: center;
+		padding: @sp 0;		
+		
+		& a {
+			color: @blue;
+
+			&:hover {
+				color: @link_hover;		
+			}
+
+			&:active {
+				color: @link_active;		
+			}
+		}
+	}
+	&__prev {
+		position: absolute;
+		top: 0;
+		left: -50px;
+		width: 50px;
+		text-align: center;
+		padding: @sp 0;		
+		
+		& a {
+			color: @blue;
+
+			&:hover {
+				color: @link_hover;		
+			}
+
+			&:active {
+				color: @link_active;		
+			}			
+		}		
+	}
+}

@@ -1,0 +1,108 @@
+.section
+	.container
+		.row
+			.col-xs-12
+				.breadcrumb
+					nav.breadcrumb__wrap
+						a(href="#").breadcrumb__item Главная
+						a(href="#").breadcrumb__item Новости и публикации
+						a(href="#").breadcrumb__item.breadcrumb__item-last-child Фоторепортажи
+		.row
+			.col-xs-12
+				h1.title В предверии Нового года сотрудники ВТБ 24 в Благовещенске провели волонтерскую акцию
+		.row
+			.col-xs-9.col-width-74
+				.date 17 февраля 2017	
+
+				#carousel-example-generic.carousel.slide(data-ride='carousel').carousel-my-style 
+					// Indicators
+					ol.carousel-indicators.carousel-indicators-my-style
+						li.active(data-target='#carousel-example-generic', data-slide-to='0')
+						li(data-target='#carousel-example-generic', data-slide-to='1')
+						li(data-target='#carousel-example-generic', data-slide-to='2')
+					// Wrapper for slides
+					.carousel-inner.carousel-inner-my-style(role='listbox')
+						.item.active
+							img(src='img/photo-slider.png', alt='...')
+							.carousel-caption
+						.item
+							img(src='img/photo-slider.png', alt='...')
+							.carousel-caption
+						.item
+							img(src='img/photo-slider.png', alt='...')
+							.carousel-caption
+					// Controls
+					a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+						span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+							i.fa.fa-chevron-left(aria-hidden="true")
+					a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+						span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+							i.fa.fa-chevron-right(aria-hidden="true")
+
+				h1.title Добавить комментарий
+
+				.commentary 
+					.commentary__left Комментрарий
+					.commentary__right
+						textarea.commentary__textarea(rows="10", cols="45", name="text")
+						button.btn__blue.btn__right Отправить комментарий
+
+
+				.comments
+					.comments__title Комментарии <span>6</span>
+					.comments__wrap
+						ul.comments__list
+							li.comments__elem
+								.comments__user
+									.comments__user-photo
+										.comments__user-photo-img
+											img.header__login-photo-img(src='img/photo.jpg', alt='')
+									.comments__user-info
+										.comments__user-name Хританович Елена Александровна
+										.comments__user-date
+											.comments__user-day 16.12.2016
+											.comments__user-time 08:55
+								.comments__question
+									.comments__text Идея очень хорошая, но трудно реализуемая из регионов. Просьба рассмотреть возможность трансляции аналогичных мероприятий в режиме вебинара. Это бы сильно упростила внедрение курса.
+									a(href="#").comments__btn-answer Ответить
+
+
+						
+	
+						
+
+						
+
+
+
+
+
+			.col-xs-3.col-width-26
+				.aside
+					nav.aside__menu
+						ul.aside__list
+							li.aside__elem
+								a(href="#").aside__link Новости
+							li.aside__elem.active
+								a(href="#").aside__link Фоторепортажи
+							li.aside__elem
+								a(href="#").aside__link Обзор СМИ
+							li.aside__elem
+								a(href="#").aside__link.aside__link-last-child Газеты и журналы
+
+
+					.aside__tile
+						a(href="#").aside__tile-link
+							.aside__tile-img
+								img(src='img/tiles/1.jpg', alt='')
+							h3.aside__tile-title Моя идея
+					.aside__tile
+						a(href="#").aside__tile-link
+							.aside__tile-img
+								img(src='img/tiles/2.jpg', alt='')
+							h3.aside__tile-title Нормативно-справочная информация
+					.aside__tile
+						a(href="#").aside__tile-link
+							.aside__tile-img
+								img(src='img/tiles/3.jpg', alt='')
+							h3.aside__tile-title База знаний для ТП

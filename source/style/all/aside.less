@@ -1,0 +1,64 @@
+.aside {
+	
+	&__menu {
+		padding: 0 @sp*2;
+		background-color: #fff;
+		border-radius: 5px;
+		box-shadow: 0px 10px 62px 0px rgba(19, 77, 127, 0.17);
+		margin-bottom: @sp*2;
+		padding-bottom: @sp/3;
+	}
+
+	&__link {
+		display: inline-block;
+		padding: 21.4px 0;
+		width: 100%;
+		font-size:15px;
+		color: @blue;
+		font-family: 'Open Sans';
+		border-bottom: 1px solid @light_blue;
+
+		&-last-child {
+			border-bottom: 0px;
+		}
+
+		&:hover {
+			color: @link_hover;
+		}	
+	}
+
+	&__tile {
+		margin-bottom: @sp;
+		overflow: hidden;
+		border-radius: 5px;
+		background-color: #fff;
+		box-shadow: 0px 20px 54px 0px rgba(196, 208, 227, 0.75);
+		margin-bottom: @sp*2;
+
+		&-img {
+			overflow: hidden;
+			height: 130px;
+			margin-bottom: 25px;
+
+			img {
+				height: 130px;
+				transform: scale(1.2, 1.2);
+				transition: 1s;
+
+				&:hover {
+					transform: scale(1, 1);				
+				}
+			}
+		
+		}
+
+		&-title {
+			text-align: center;
+			color: @gray-blue;
+			font-size: 20px;
+			line-height: 1.2;
+			margin-bottom: 25px;
+		} 
+
+	}
+}

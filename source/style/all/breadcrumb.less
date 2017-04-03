@@ -1,0 +1,36 @@
+.breadcrumb {
+	padding: 25px 0 @sp;
+  .clearfix;
+	&__wrap {
+
+	}
+
+	&__item {
+		float: left;
+		color: @gray;
+    position: relative;
+    margin-right: 25px;
+    font-family: 'Open Sans';
+    font-size: 13px;
+		
+		&:after {
+			content: '\203A';
+			font-size:1.4em;
+	    height: 10px;
+	    width: 10px;
+	    position: absolute;
+	    right: -20px;
+	    top: -1px;		
+		}
+
+
+		&-last-child {
+			&:after{
+				content: '';
+				display: none;				
+			}
+		}
+	}
+
+
+}

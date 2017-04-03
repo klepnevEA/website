@@ -32,13 +32,12 @@
 		left: 0;
 		z-index: 10001;
 		&-wrap {
-			display: flex;
-			align-items:center;
+			padding-top: 40px;
 			height: 130px;
 		}
 	}
 	&__left {
-		flex: 0 0 960px;
+		float: left;
 		input {
 			height: 50px;
 		    border: none; 
@@ -53,7 +52,7 @@
 		}
 	}
 	&__right {
-		flex: 1 0 1px;
+		float: right;
 		text-align: right;
 		.btn__close {
 			margin-left: @sp*3;

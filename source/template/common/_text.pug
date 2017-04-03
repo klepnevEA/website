@@ -1,0 +1,88 @@
+.section
+	.container
+		.row
+			.col-xs-12
+				.breadcrumb
+					nav.breadcrumb__wrap
+						a(href="#").breadcrumb__item Главная
+						a(href="#").breadcrumb__item.breadcrumb__item-last-child Корпоративные соревнования
+		.row
+			.col-xs-12
+				h1.title Корпоративные соревнования
+		.row
+			.col-xs-9.col-width-74
+				
+				// большая картинка
+				img.big-img(src='img/text.jpg', alt='')
+
+				// просто текст
+				.text
+					p ВТБ 24 (ПАО) — один из крупнейших участников российского рынка банковских услуг. Мы входим в международную финансовую группу ВТБ и специализируемся на обслуживании физических лиц, индивидуальных предпринимателей и предприятий малого бизнеса.
+					p Сеть банка формируют 1062 офиса в 72 регионах страны. Мы предлагаем клиентам основные банковские продукты, принятые в международной финансовой практике.ВТБ 24 (ПАО) — один из крупнейших участников российского рынка банковских услуг. Мы входим в международную финансовую группу ВТБ и специализируемся на обслуживании физических лиц, индивидуальных предпринимателей и предприятий малого бизнеса.
+				
+				// выдделенный текст с кавычками
+				.utterance
+					.utterance__quotes “
+					.utterance__info
+						.utterance__title Девиз соревнований
+						.utterance__text Успех банка	—	это успех каждого из нас
+				.text
+					p ВТБ 24 (ПАО) — один из крупнейших участников российского рынка банковских услуг. Мы входим в международную финансовую группу ВТБ и специализируемся на обслуживании физических лиц, индивидуальных предпринимателей и предприятий малого бизнеса.
+				
+				// список
+				.roster
+					.roster__title Виды соревнований:
+					ul.roster__list
+						li.roster__elem
+							a(href="#").roster__text Основные соревнования
+						li.roster__elem
+							a(href="#").roster__text Специальные соревнования
+
+				// аккордион
+
+				#accordion.accordion-style(role='tablist', aria-multiselectable='true')
+					.card
+						#headingTwo.card-header.accordion-style__card-header(role='tab')
+							h5.mb-0
+								a.collapsed.accordion-style__button(data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+									| Сервисы
+									i.fa.fa-chevron-up(aria-hidden="true")
+						#collapseTwo.collapse(role='tabpanel', aria-labelledby='headingTwo')
+							.card-block.accordion-style__text
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias recusandae optio eos ad maxime veniam nam. Ut laudantium optio, quam odio illum doloribus dolores quod expedita officiis eum porro, maxime.
+
+
+
+
+
+			.col-xs-3.col-width-26
+				.aside
+					nav.aside__menu
+						ul.aside__list
+							li.aside__elem
+								a(href="#").aside__link Основные соревнования
+							li.aside__elem
+								a(href="#").aside__link Специальные соревнования
+							li.aside__elem
+								a(href="#").aside__link График соревнований
+							li.aside__elem
+								a(href="#").aside__link Архив соревнований
+							li.aside__elem
+								a(href="#").aside__link Наградные материалы
+							li.aside__elem
+								a(href="#").aside__link.aside__link-last-child Положение
+					.aside__tile
+						a(href="#").aside__tile-link
+							.aside__tile-img
+								img(src='img/tiles/1.jpg', alt='')
+							h3.aside__tile-title Моя идея
+					.aside__tile
+						a(href="#").aside__tile-link
+							.aside__tile-img
+								img(src='img/tiles/2.jpg', alt='')
+							h3.aside__tile-title Нормативно-справочная информация
+					.aside__tile
+						a(href="#").aside__tile-link
+							.aside__tile-img
+								img(src='img/tiles/3.jpg', alt='')
+							h3.aside__tile-title База знаний для ТП

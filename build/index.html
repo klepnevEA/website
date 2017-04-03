@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <script src="js/foundation.js" defer></script>
-    <script src="js/app.js" defer></script>
-    <script src="https://unpkg.com/simplebar@2.1.0/dist/simplebar.js"></script>
+    <script src="js/app.js" defer></script><script src="http://code.jquery.com/jquery-1.9.1.js"></script> 
   </head>
   <body>
     <div class="wrapper">
@@ -22,7 +21,7 @@
           <div class="container">
             <form class="search-top__white-wrap">
               <div class="search-top__left">
-                <input type="text" placeholder="Введите вопрос">
+                <input id="search-top" type="text" value="Введите вопрос">
               </div>
               <div class="search-top__right"> 
                 <button class="btn">найти</button>
@@ -64,6 +63,7 @@
                 </div>
               </div>
             </div>
+            <div class="header__logo"></div>
           </div>
         </div>
       </div>
@@ -186,7 +186,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="birsdays" id="birsdays"> 
+                    <div class="birsdays" id="birsdays">
                       <div class="birsdays__wrap">
                         <ul class="birsdays__list">
                           <li class="birsdays__elem"><a class="birsdays__link" href="#">

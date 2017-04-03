@@ -1,10 +1,11 @@
 .comments {
-	margin-bottom: @sp*2;
-			.clearfix;
+	margin-bottom: @sp*5;
+	.clearfix;
 	&__title {
 		font-family: 'Open Sans Bold';
 		font-size:32px;
 		margin-bottom: 20px;
+		line-height: 1.4;
 
 		& span {
 			color: @red;
@@ -13,41 +14,52 @@
 	}
 
 	&__wrap {
-		border-top: 1px solid @light_blue;
+		border-top: 1px solid @gray-bord;
 	}
 
 	&__elem {
-		padding:40px 0;
-		border-bottom: 1px solid @light_blue;
+		padding: @sp*2 0 0 0;
+		border-bottom: 1px solid @gray-bord;
 		.clearfix;
+		&-wrap {
+			.clearfix;
+
+		}
 	}
 
 	&__user {
 		width: 285px;
 		float: left;
+		margin-bottom: @sp*2;
 
 		&-photo {
-			width: 50px;
-			float: left;
+			width: 60px;
 			heigth: 100%;
 		}
 
 		&-img {
-			width: 50px;
-			height: 50px;
-			border-radius: 50%;			
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
 		}
 
 		&-info {
-			width: 230px;
-			float: right;
-			padding:0 @sp;
+			//width: 270px;
+			padding:0 @sp 0 80px;
+			margin-top: -52px;
 		}
 
 		&-name {
 			color: @blue;
-			font-size:14px;
+			font-size:16px;
 			margin-bottom: 5px;
+			display: block;
+			&:hover {
+				color: @link_hover;
+			}
+		}
+		&-date {
+			margin-top: 10px;
 		}
 
 		&-day {
@@ -66,34 +78,44 @@
 
 	&__question {
 		float: left;
-		width: 555px;
-		margin-bottom: @sp;
-		padding-bottom: @sp;
+		width: 565px;
+		padding-bottom: 25px; 
+		.clearfix;
 
 		&-have-answer {
-			border-bottom: 1px solid @light_blue; 
+			border-bottom: 1px solid @gray-bord; 
 		}
 	}
 
 	&__text {
 			font-family: 'Open Sans';
 			font-size: 14px;
-			margin-bottom: 20px;
+			margin-bottom: @sp;
+			margin-top: 10px;
+			line-height: 1.8;
 	}
 
 	&__btn-answer {
 		color: @blue;
 		text-transform: uppercase;
 		font-size:14px;
+		&:hover {
+			color: @link_hover;
+		}
 	}
 
 	&__answer {
-		margin-top:40px;
-		padding: 75px 40px;
+		margin-top: 25px;
+		padding: 0 0 0 75px;
+		.clearfix;
 
 		& .comments__question {
 			width: 485px;
 		}
+	}
+	&__sep {
+		height: 10px;
+		.clearfix;
 	}
 
 }

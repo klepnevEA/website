@@ -28,7 +28,7 @@
 
 				hr.horizontal-stripe
 				
-				p(style="color: red;") большая картинка
+				p(style="color: red;") большая a(href="#")
 				img.big-img(src='img/text.jpg', alt='')
 
 				p(style="color: red;") просто текст
@@ -105,48 +105,52 @@
 
 				p(style="color: red;") комментарии
 					.comments
-						.comments__title Комментарии <span>6</span>
-						.comments__wrap
-							ul.comments__list
-								li.comments__elem
-									.comments__user
-										.comments__user-photo
-											.comments__user-photo-img
-												img.header__login-photo-img(src='img/photo.jpg', alt='')
-										.comments__user-info
-											.comments__user-name Хританович Елена Александровна
-											.comments__user-date
-												.comments__user-day 16.12.2016
-												.comments__user-time 08:55
-									.comments__question
-										.comments__text Идея очень хорошая, но трудно реализуемая из регионов. Просьба рассмотреть возможность трансляции аналогичных мероприятий в режиме вебинара. Это бы сильно упростила внедрение курса.
-										a(href="#").comments__btn-answer Ответить
-								li.comments__elem
-									.comments__user
-										.comments__user-photo
-											.comments__user-photo-img
-												img.header__login-photo-img(src='img/photo.jpg', alt='')
-										.comments__user-info
-											.comments__user-name Хританович Елена Александровна
-											.comments__user-date
-												.comments__user-day 16.12.2016
-												.comments__user-time 08:55
-									.comments__question.comments__question-have-answer
-										.comments__text Идея очень хорошая, но трудно реализуемая из регионов. Просьба рассмотреть возможность трансляции аналогичных мероприятий в режиме вебинара. Это бы сильно упростила внедрение курса.
-										a(href="#").comments__btn-answer Ответить
-									.comments__answer
-										.comments__user
-											.comments__user-photo
-												.comments__user-photo-img
-													img.header__login-photo-img(src='img/photo.jpg', alt='')
-											.comments__user-info
-												.comments__user-name Полетаев Виктор Владимирович
-												.comments__user-date
-													.comments__user-day 16.12.2016
-													.comments__user-time 08:55
-										.comments__question
-											.comments__text Да, конечно, повторение планируем
-											a(href="#").comments__btn-answer Ответить 
+							.comments__title Комментарии <span>6</span>
+							.comments__wrap
+								ul.comments__list
+									li.comments__elem
+										.comments__elem-wrap
+											.comments__user
+												.comments__user-photo
+													.comments__user-photo-img
+														img.header__login-photo-img(src='img/photo.jpg', alt='')
+												.comments__user-info
+													a(href="#").comments__user-name Хританович Елена Александровна
+													.comments__user-date
+														.comments__user-day 16.12.2016
+														.comments__user-time 08:55
+											.comments__question
+												.comments__text Идея очень хорошая, но трудно реализуемая из регионов. Просьба рассмотреть возможность трансляции аналогичных мероприятий в режиме вебинара. Это бы сильно упростила внедрение курса.
+												a(href="#").comments__btn-answer Ответить 
+									li.comments__elem
+										.comments__elem-wrap 
+											.comments__user
+												.comments__user-photo
+													.comments__user-photo-img
+														img.header__login-photo-img(src='img/photo.jpg', alt='')
+												.comments__user-info
+													a(href="#").comments__user-name Константинопольский Константин Аркадьевич
+													.comments__user-date
+														.comments__user-day 16.12.2016
+														.comments__user-time 08:55
+											.comments__question.comments__question-have-answer
+												.comments__text Идея очень хорошая, но трудно реализуемая из регионов. Просьба рассмотреть возможность трансляции аналогичных мероприятий в режиме вебинара. Это бы сильно упростила внедрение курса.
+												a(href="#").comments__btn-answer Ответить
+
+										
+										.comments__answer
+											.comments__user
+												.comments__user-photo
+													.comments__user-photo-img
+														img.header__login-photo-img(src='img/photo.jpg', alt='')
+												.comments__user-info
+													a(href="#").comments__user-name Полетаев Виктор Владимирович
+													.comments__user-date
+														.comments__user-day 16.12.2016
+														.comments__user-time 08:55
+											.comments__question
+												.comments__text Да, конечно, повторение планируем
+												a(href="#").comments__btn-answer Ответить  
 
 
 			.col-xs-3.col-width-26

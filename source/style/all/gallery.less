@@ -1,0 +1,59 @@
+.gallery {
+	.clearfix;
+	&__item {
+		height: 400px;
+		margin-bottom: @sp;
+		display: block;
+		transition: all 0.2s;
+		&:hover {
+			cursor: pointer;
+			.gallery__text {
+				color: red;
+			}
+		}
+	}
+	&__img {
+		height: 210px;
+		overflow: hidden;
+		background: black;
+		position: relative;
+		background-position: center center !important;
+		background-size: cover !important;
+		
+	}
+	&__quantity {
+		position: absolute;
+		background: @red;
+		bottom: 0;
+		left: 0;
+		text-align: center;
+		width: 70px;
+		height: 70px;
+		overflow: hidden;
+		&-top {
+			color: white;
+			font-size: 38px;
+			font-family: 'Open Sans Bold';
+			padding-top: 7px;
+			line-height: 1;
+		}
+		&-photo {
+			font-size: 14px;
+			color: white;
+			font-family: 'Open Sans';
+			line-height: 14px;
+		}
+	}
+	&__text {
+		color: @blue;
+		margin-top: @sp;
+		margin-bottom: @sp;
+		line-height: 1.5;
+	}
+	&__data {
+		color: #97a4b1;
+		margin-bottom: 35px;
+		font-size: 14px;
+		display: block; 
+	}
+}

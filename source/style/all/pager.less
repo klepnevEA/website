@@ -1,69 +1,63 @@
 .pager {
-	border-top: 1px solid @light_blue;
+	border-top: 1px solid @gray-bord;
 	padding-top:@sp*3;
-	margin-bottom: @sp*2;
-	// text-align: center;
+	margin-bottom: @sp*3;
 
 	&__wrap {
 		position: relative;
-		border:1px solid @light_blue;
+		border:1px solid @gray-bord;
 		box-sizing: border-box;
 		width: 250px;
 		height: 50px;
 		margin: 0 auto; 
 		float: none;
-		border-radius: 5px;
-		background-color: #fff;
+		border-radius: 3px;
+		background-color: #fff; 
 	}
 
 	&__elem {
 		text-align: center;
 		width: 20%;
 		float: left;
-		border-right: 1px solid @light_blue;
-
-
-		& a {
+		border-right: 1px solid @gray-bord;
+		a {
 			display: inline-block;
 			width: 100%;
 			height: 100%;
-			padding: @sp 0;
+			line-height: 48px;
 			color: @blue;
-
 			&:hover {
-				color: @link_hover;		
+				color: @link_hover; 
 			}
-
 			&:active {
-				color: @link_active;		
-			}			
+				color: @link_active;
+			}
 		}
 
 		&-last-child {
 			border-right: 0px;
-			border-radius: 0 5px 5px 0;			
+			border-radius: 0 3px 3px 0;
 		}
 
 		&-first-child {
-			border-radius: 5px 0 0 5px;
+			border-radius: 3px 0 0 3px;
 		}
 
 		&-active {
-			background-color: @blue;	
+			background-color: @blue;
 
-			& a {
+			a {
 				color: #fff;
 
 				&:hover {
-					color: #fff;		
+					color: #fff;
 				}
 
 				&:active {
-					color: #fff;		
-				}					
+					color: #fff;
+				}
 			}
-		}		
-
+		}
 	}
 
 	&__hext {
@@ -72,17 +66,18 @@
 		right: -50px;
 		width: 50px;
 		text-align: center;
-		padding: @sp 0;		
+		padding: @sp 0;
+		font-size: 12px;
 		
-		& a {
-			color: @blue;
+		a {
+			color: darken(@gray-bord, 20%);
 
 			&:hover {
-				color: @link_hover;		
+				color: @link_hover;
 			}
 
 			&:active {
-				color: @link_active;		
+				color: @link_active;
 			}
 		}
 	}
@@ -92,18 +87,19 @@
 		left: -50px;
 		width: 50px;
 		text-align: center;
-		padding: @sp 0;		
+		padding: @sp 0;
+		font-size: 12px;
 		
-		& a {
-			color: @blue;
+		a {
+			color: darken(@gray-bord, 20%);
 
 			&:hover {
-				color: @link_hover;		
+				color: @link_hover;
 			}
 
 			&:active {
-				color: @link_active;		
-			}			
-		}		
+				color: @link_active;
+			}
+		}
 	}
 }

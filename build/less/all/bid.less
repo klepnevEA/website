@@ -1,0 +1,72 @@
+.bid {
+	&__wrap {
+
+	}
+
+	&__list {
+		overflow: hidden;
+		height: 360px;
+	}
+
+	&__link {
+		display: block; 
+	}
+	
+	&__title {
+		color: @blue;
+		margin-bottom: 8px;
+		display: block;
+		margin-top: 18px;
+		.clearfix;
+	}
+	&__info {
+		margin-bottom: 18px;
+		display: block;
+		position: relative;
+		height: 20px;
+		
+	}
+	&__status {
+		position: relative;
+		float: left;
+	}
+
+	&__icon {
+		width: 17px;
+		margin-right:10px;
+		margin-top: 2px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&__text {
+		color: @gray;
+		font-size:14px;
+		font-family: 'Open Sans';
+		margin-left: 22px;
+		
+	}
+	&__time {
+		color: @gray;
+		font-size:14px;
+		font-family: 'Open Sans';
+		float: right;
+	}
+
+	&__elem {
+		border-bottom:1px solid #e6ecf2;
+		transition: 1s;
+
+		&:last-child {
+			//border-bottom:0px;
+		}
+
+		// &:hover {
+		// 	background-color: $light_blue;
+		// } 
+	}
+	&__btn {
+		
+	}
+}

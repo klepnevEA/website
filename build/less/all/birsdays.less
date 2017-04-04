@@ -1,0 +1,69 @@
+.birsdays { 
+	width: 107%;
+	height: 260px;
+	padding-bottom: 0 !important;
+ 	overflow-y: scroll;
+	  // ::-webkit-scrollbar { width: 0px !important; }
+	  // & { -ms-overflow-style: none !important; }
+	  // & { overflow: -moz-scrollbars-none !important; }
+
+	&__wrap {
+		width: 95%;
+	}
+
+	&__list {
+		overflow: hidden;
+		width: 300px;
+	}
+
+	&__link {
+		
+		padding: 13px 0 10px;
+		display: inline-block;
+	}
+
+	&__elem {
+		border-bottom: 1px solid #e6ecf2;
+		transition: 1s;
+		height: 100%;
+		background-size: cover !important;
+		.clearfix;
+	}
+
+	&__photo {
+		width: 55px;
+		height: 55px;
+		border-radius: 50%;
+		margin-right:25px;
+		overflow: hidden;
+		float: left;
+	}
+
+	&__text {
+		width: 210px;
+		display: table;
+		vertical-align: middle;
+		float: left;
+		height: 100%;
+		&-wrap {
+			display: table-cell;
+			vertical-align: middle;
+			
+			height: 53px;
+
+			.clearfix;
+		}
+	}
+
+	&__name {
+		color: @blue;
+		margin-bottom: 3px;
+		
+		
+	}
+
+	&__position {
+		color: @gray;
+		font-size:14px;
+	}
+}

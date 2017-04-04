@@ -1,0 +1,48 @@
+.name-day {
+	
+	height: 65px;
+	border-bottom: 1px solid @light_blue;
+	
+	&__left {
+		width: 45px;
+		height: 45px;
+		margin-right:25px;
+		float: left;
+		background-image: url("../img/cake.png");
+		margin-top: @sp/2;
+	}
+
+	&__right {
+		float: left;
+		margin-top: 10px;
+		width: 225px;
+	}
+	&__text {
+		float: left;
+		.clearfix;
+	}
+	&__number {
+		font-family: 'Open Sans Bold';
+		color: @red;
+		font-size:	41px;
+		margin-right:5px;
+		line-height:1;
+		float: left;
+
+	}
+
+	&__date {
+		color: @gray;
+		font-size:14px;
+		width: 100%;
+		display: block;
+		margin-top: 3px;
+		
+	}
+
+	&__signature {
+		color: @blue;
+		display: block;
+		margin-top: -4px;
+	}
+} 

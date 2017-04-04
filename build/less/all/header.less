@@ -1,0 +1,198 @@
+.header {
+	display: block;
+	min-width: 1160px;
+	height: 100px;
+	background-color: @light_blue;
+	position: relative;
+	z-index: 501;
+
+	&__content {
+		display: block; 
+		min-width: 1160px;
+		width: 1160px;
+		height: 100px;
+		margin: 0 auto;
+	}
+
+	&__menu {
+		min-width: 66%;
+		float: left;
+	}
+
+	&__search {
+		float: left;
+		width: 60px;
+		&-link {
+			position: relative;
+			top:-1px;
+			color: @blue;
+			padding: 10px;
+			transition: 1s ease;
+			font-size: 19px;
+			margin-top: 28px;
+			display: block;
+
+			&:hover {
+				color: @link_hover;
+			}
+			&:active {
+				color: @link_active;
+			}
+		}
+	}
+
+	&__login {
+		position: relative;
+		width: 25%;
+		z-index:10;
+		float: right;
+		height: 100px;
+
+		&-small {
+			.header__login-photo {
+				width: 50px;
+				height: 50px;
+			}
+
+			.header__login-top {
+				padding: @sp @sp 0 @sp*2;
+			}
+
+			.header__login-name {
+				padding: 8px 0 0 10px;
+			}
+
+			.header__logo {
+				display: block;
+			}
+		}
+		
+
+		&-top {
+			height: 100px;
+			padding: @sp @sp 0 20px;
+			position: relative;
+		}
+		&-photo {
+			width: 70px;
+			height: 70px;
+			border-radius:50%;
+			overflow: hidden;
+			float: left; 
+		}
+
+		&-wrap {
+			height: 100px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1000;
+			overflow: hidden;
+			width: 290px;
+			&:hover {
+				height: auto;
+				background: white;
+				box-shadow: 0px 10px 62px 0px rgba(19, 77, 127, 0.17);
+				border-radius: 0 0 3px 3px;
+
+				.header__login-drop-down {
+					opacity: 1;
+					
+				}
+
+				.header__login-drop-down-elem {
+					padding: @sp 0;
+				}
+
+				.header__login-link {
+					transform: rotate(180deg);
+				}
+			}
+
+
+		}
+		&-name {
+			position: relative;
+			top:-2px;
+			white-space: nowrap;
+			width: 166px;
+			font-size:@sp;
+			overflow:hidden;
+			text-overflow: ellipsis;
+			-o-text-overflow: ellipsis;
+			float: left;
+			padding: @sp 0 0 @sp;
+			display: block;
+			height: 80px;
+			span {
+				white-space: nowrap;
+				font-size:@sp;
+				overflow: hidden;
+				display: block;
+				text-overflow: ellipsis;
+				-o-text-overflow: ellipsis;
+			}
+		}
+
+		&-link {
+			color: @blue;
+			transition: 0.3s;
+			font-size:12px;
+			position: absolute;
+			top: 38px;
+			right: 15px;
+
+
+			&:hover {
+				color: lighten(@blue, 20%);
+			}               
+		}
+
+		&-drop-down {
+			
+			padding: 0  @sp*2;
+			overflow: hidden;
+			transition: .3s;
+			
+
+			
+
+		}
+
+		&-drop-down-elem {
+			border-top: 1px solid #e6ecf2;
+			padding: 0;
+			transition: .3s;
+		}
+
+		&-drop-down-link {
+			display: inline-block;
+			width: 100%;
+			padding: 0;
+			color: #3b4256;
+			
+			&:hover {
+				color: @link_hover;
+			}   
+			&:active {
+			color: @link_active;
+		  }
+
+		}
+	}
+
+
+	&__logo {
+		display: none;
+		position: absolute;
+		width: 145px;
+		height: 40px;
+		bottom: -27px;
+		left: 50px;
+		background-image: url("../img/logo.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		z-index:100;		
+	}	
+}
+

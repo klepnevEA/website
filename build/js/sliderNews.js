@@ -49,6 +49,6 @@ var sliderNewsGo = function() {
 };
 
 
-  sliderNewsGo();
+
 
 

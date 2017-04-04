@@ -65,6 +65,6 @@ var sliderGo = function() {
 
 };
 
-sliderGo();
+
 
 

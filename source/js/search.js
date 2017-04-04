@@ -26,7 +26,7 @@ var searchOpen = function() {
 
 };
 
-searchOpen();
+
 
 
 

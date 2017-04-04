@@ -1,0 +1,156 @@
+.comments {
+	margin-bottom: @sp*5;
+	.clearfix;
+
+	&__close {
+		position: absolute;
+		display: none;
+		top: @sp;
+		right: 0;
+		width: @sp;
+		height: @sp;
+
+		&:hover {
+			&:before,
+			&:after {
+				background-color: @link_hover;				
+			}			
+		}
+
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			transform: rotate(45deg);
+			width: @sp;
+			height: 2px;
+			background-color: @gray;
+		}
+
+		&:after {
+			transform: rotate(-45deg);
+		}
+
+		&-active {
+			display: inline-block;
+		}
+	}
+	&__title {
+		font-family: 'Open Sans Bold';
+		font-size:32px;
+		margin-bottom: 20px;
+		line-height: 1.4;
+
+		& span {
+			color: @red;
+			font-family: 'Open Sans Bold';
+		}
+	}
+
+	&__wrap {
+		border-top: 1px solid @gray-bord;
+	}
+
+	&__elem {
+		position: relative;
+		padding: @sp*2 0 0 0;
+		border-bottom: 1px solid @gray-bord;
+		.clearfix;
+		&-wrap {
+			.clearfix;
+
+		}
+	}
+
+	&__user {
+		width: 285px;
+		float: left;
+		margin-bottom: @sp*2;
+
+		&-photo {
+			width: 60px;
+			heigth: 100%;
+		}
+
+		&-img {
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+		}
+
+		&-info {
+			//width: 270px;
+			padding:0 @sp 0 80px;
+			margin-top: -52px;
+		}
+
+		&-name {
+			color: @blue;
+			font-size:16px;
+			margin-bottom: 5px;
+			display: block;
+			&:hover {
+				color: @link_hover;
+			}
+		}
+		&-date {
+			margin-top: 10px;
+		}
+
+		&-day {
+			float: left;
+			color: @gray;
+			font-size:14px;
+			margin-right: 10px; 
+		}
+
+		&-time {
+			float: left;
+			color: @gray;
+			font-size:14px;
+		}		
+	}
+
+	&__question {
+		float: left;
+		width: 565px;
+		padding-bottom: 25px; 
+		.clearfix;
+
+		&-have-answer {
+			border-bottom: 1px solid @gray-bord; 
+		}
+	}
+
+	&__text {
+			font-family: 'Open Sans';
+			font-size: 14px;
+			margin-bottom: @sp;
+			margin-top: 10px;
+			line-height: 1.8;
+	}
+
+	&__btn-answer {
+		color: @blue;
+		text-transform: uppercase;
+		font-size:14px;
+		&:hover {
+			color: @link_hover;
+		}
+	}
+
+	&__answer {
+		margin-top: 25px;
+		padding: 0 0 0 75px;
+		.clearfix;
+
+		& .comments__question {
+			width: 485px;
+		}
+	}
+	&__sep {
+		height: 10px;
+		.clearfix;
+	}
+
+}

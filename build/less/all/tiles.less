@@ -1,0 +1,48 @@
+.tiles {
+	padding: 60px 0 90px;
+	height: 100%;
+	display: block;
+	height: 710px;
+	.clearfix;
+	&__tile {
+		width: 360px;
+		float: left;
+		margin: 0 0 @sp*2;
+		height: 250px;
+		border-radius: 3px;
+		background-color: white;
+		box-shadow: 0px 20px 54px 0px rgba(196, 208, 227, 0.75);
+		text-align: center;
+		overflow: hidden;
+		display: block; 
+		//border-bottom: 1px solid #eaeef5;
+		&-last {
+			margin-right: 0;
+		}
+	}
+	&__img {
+		height: 130px;
+		background: black;
+		margin-bottom: 35px;
+		overflow: hidden;
+
+		img {
+			transform: scale(1.2, 1.2);
+			transition: 1s;
+
+			&:hover {
+				transform: scale(1, 1);				
+			}
+		}
+	}
+	&__title {
+		color: #3b4256;
+		font-size: 22px;
+		line-height: 1.2;
+		margin-bottom: @sp/3;
+	}
+	&__text {
+		color: #97a4b1;
+		font-size: 14px;
+	}
+}

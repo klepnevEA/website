@@ -51,6 +51,10 @@ div.fotorama__dot {
 	border-radius: 50%;
 	
 }
+div.fotorama__nav-wrap {
+	margin: 0 300px;
+	overflov: hidden;
+}
 
 div.fotorama__nav__frame.fotorama__active .fotorama__dot {
 	border:1px solid @blue;
@@ -63,11 +67,11 @@ div.fotorama__nav__frame.fotorama__nav__frame {
     width: 25px;	
 }
 
-div.fotorama__arr.fotorama__arr--prev {
-	position: absolute;
-	bottom: 100px;
-	opacity:1;
-}
+// div.fotorama__arr.fotorama__arr--prev {
+// 	position: absolute;
+// 	bottom: 100px;
+// 	opacity:1;
+// }
 
 div.fotorama__wrap--no-controls.fotorama__wrap--toggle-arrows .fotorama__arr {
 	opacity:1;	
@@ -76,4 +80,32 @@ div.fotorama__wrap--no-controls.fotorama__wrap--toggle-arrows .fotorama__arr {
 div.fotorama__wrap--css3.fotorama__wrap--no-controls.fotorama__wrap--slide.fotorama__wrap--toggle-arrows .fotorama__arr--prev:not(:focus),
 div.fotorama__wrap--css3.fotorama__wrap--no-controls.fotorama__wrap--slide.fotorama__wrap--toggle-arrows .fotorama__arr--next:not(:focus){
     transform: translate3d(0, 0, 0);	
+}
+
+div.fotorama__arr--next {
+	margin-right:265px;
+}
+
+div.fotorama__arr--prev {
+	margin-left:265px;
+}
+
+// div.fotorama__nav__shaft {
+// 	width: 300px;
+// }
+
+div.fotorama__stage__shaft {
+	z-index:1000;	
+}
+
+div.fotorama__arr {
+	top:auto;
+	bottom:-11%!important;
+	z-index:1000;
+}
+
+
+
+div.fotorama__stage {
+	overflow: visible;
 }

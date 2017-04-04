@@ -5,27 +5,31 @@
         h1.title Новости и публикации
         // a(href="#").title-link Все новости
         .news__block
-          a.news__block-column(href='#')
-            .news__block-photo
-              img.news__block-photo-img(src='img/news1.jpg', alt='news')
-              .news__block-date
-                span.news__block-day 07
-                span.news__block-month декабря
-            .news__block-text Состоялся розыгрыш путевок в Чехию среди региональных менеджеров по кредитам
-          a.news__block-column(href='#')
-            .news__block-photo
-              img.news__block-photo-img(src='img/news2.jpg', alt='news')
-              .news__block-date
-                span.news__block-day 06
-                span.news__block-month декабря
-            .news__block-text Открыта запись на бесплатные обучающие курсы «Вежливый сотрудник»
-          a.news__block-column.news__block-column-last(href='#')
-            .news__block-photo
-              img.news__block-photo-img(src='img/news3.jpg', alt='news')
-              .news__block-date
-                span.news__block-day 01
-                span.news__block-month декабря
-            .news__block-text С 1 декабря повышены премии за подключене к пакету «Привилегия»
+          .row
+            .col-xs-4
+              a.news__block-column(href='#')
+                .news__block-photo
+                  img.news__block-photo-img(src='img/news1.jpg', alt='news')
+                  .news__block-date
+                    span.news__block-day 07
+                    span.news__block-month декабря
+                .news__block-text Состоялся розыгрыш путевок в Чехию среди региональных менеджеров по кредитам
+            .col-xs-4
+              a.news__block-column(href='#')
+                .news__block-photo
+                  img.news__block-photo-img(src='img/news2.jpg', alt='news')
+                  .news__block-date
+                    span.news__block-day 06
+                    span.news__block-month декабря
+                .news__block-text Открыта запись на бесплатные обучающие курсы «Вежливый сотрудник»
+            .col-xs-4
+              a.news__block-column.news__block-column-last(href='#')
+                .news__block-photo
+                  img.news__block-photo-img(src='img/news3.jpg', alt='news')
+                  .news__block-date
+                    span.news__block-day 01
+                    span.news__block-month декабря
+                .news__block-text С 1 декабря повышены премии за подключене к пакету «Привилегия»
       .photoreports
         h1.title Фоторепортажи
         // a(href="#").title-link Все фоторепортажи

@@ -1,0 +1,46 @@
+.news-form {
+	&__search {
+		width: 100%;
+		border: 2px solid @gray-bord;
+		border-radius:3px;
+		font-size: 14px;
+		padding: 20px;
+		margin-bottom: 10px;
+	}
+
+	&__datapicker-wrap {
+		&:before {
+ 			content: 'Дата начала';
+ 			position: absolute;
+ 			top: 10px;
+ 			left: 22px;	
+ 			z-index:100;
+ 			font-size:12px;
+		}
+
+		&-end {
+			&:before {
+ 				content: 'Дата окончания';
+ 			}
+		}
+	}
+
+	&__datapicker {
+		position: relative;
+		float: left;
+		width: 165px;
+		border: 2px solid @gray-bord;
+		border-radius:3px;
+		font-size: 14px;
+		padding: 30px 20px 10px;
+		margin-right:@sp*2;
+		font-family: 'Open Sans';
+		background-color: #fff;
+
+	}
+}
+
+.input-group {
+	float: left;
+	position: relative;
+}

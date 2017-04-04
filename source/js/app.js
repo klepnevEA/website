@@ -12,7 +12,7 @@
 
 $(document).ready(function() {
 
-
+		$('#datetimepicker1').datepicker();
 		//new SimpleBar(document.getElementById('#birsdays'), { autoHide: true });
 });
 
@@ -21,10 +21,9 @@ var simplebar = require('./simplebar');
 var searchOpen = require('./search');
 var sliderGo = require('./slider');
 var sliderNewsGo = require('./sliderNews');
-// var fotorama = require('./fotorama');
+
 
 simplebar.simplebar();
 searchOpen.search();
 sliderGo.slider();
 sliderNewsGo.sliderNews();
-// fotorama.fotorama();

@@ -1,0 +1,75 @@
+.section
+	.container
+		.row
+			.col-xs-12
+				.breadcrumb
+					nav.breadcrumb__wrap
+						a(href="#").breadcrumb__item Главная
+						a(href="#").breadcrumb__item Новости и публикации
+						a(href="#").breadcrumb__item.breadcrumb__item-last-child Фоторепортажи
+		.row
+			.col-xs-12
+				h1.title Новости
+		.row
+			.col-xs-9.col-width-74
+				.news-form
+					.news-form__wrap
+						input(type="text", placeholder="Поиск").news-form__search
+
+						.news-form__group
+							#datetimepicker1.input-group.date.news-form__datapicker-wrap.news-form__datapicker-wrap-start
+								input.form-control(type='text').news-form__datapicker
+								span.input-group-addon
+									span.glyphicon.glyphicon-calendar
+							#datetimepicker2.input-group.date.news-form__datapicker-wrap.news-form__datapicker-wrap-end
+								input.form-control(type='text').news-form__datapicker
+								span.input-group-addon
+									span.glyphicon.glyphicon-calendar
+
+
+
+					//- .form-group
+					//- 	#datetimepicker1.input-group.date
+					//- 		input.form-control(type='text')
+					//- 		span.input-group-addon
+					//- 			span.glyphicon.glyphicon-calendar
+					//- //- script(type='text/javascript').
+					//- //- 	$(function () {
+					//- //- 	$('#datetimepicker1').datetimepicker();
+					//- //- 	});
+
+
+
+
+
+
+
+			.col-xs-3.col-width-26
+				.aside
+					nav.aside__menu
+						ul.aside__list
+							li.aside__elem
+								a(href="#").aside__link Новости
+							li.aside__elem.active
+								a(href="#").aside__link Фоторепортажи
+							li.aside__elem
+								a(href="#").aside__link Обзор СМИ
+							li.aside__elem
+								a(href="#").aside__link.aside__link-last-child Газеты и журналы
+
+
+					.aside__tile
+						a(href="#").aside__tile-link
+							.aside__tile-img
+								img(src='img/tiles/1.jpg', alt='')
+							h3.aside__tile-title Моя идея
+					.aside__tile
+						a(href="#").aside__tile-link
+							.aside__tile-img
+								img(src='img/tiles/2.jpg', alt='')
+							h3.aside__tile-title Нормативно-справочная информация
+					.aside__tile
+						a(href="#").aside__tile-link
+							.aside__tile-img
+								img(src='img/tiles/3.jpg', alt='')
+							h3.aside__tile-title База знаний для ТП

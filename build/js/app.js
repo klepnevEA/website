@@ -7,6 +7,6 @@ $(document).ready(function() {
 		searchOpen();
 		sliderGo();
   	sliderNewsGo();
-		//new SimpleBar(document.getElementById('#birsdays'), { autoHide: true });
+
 });
 

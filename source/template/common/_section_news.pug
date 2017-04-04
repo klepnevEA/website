@@ -1,78 +1,81 @@
 .section
   .container
     .section_news
-      .news
-        h1.title Новости и публикации
-        // a(href="#").title-link Все новости
-        .news__block
-          .row
-            .col-xs-4
-              a.news__block-column(href='#')
-                .news__block-photo
-                  img.news__block-photo-img(src='img/news1.jpg', alt='news')
-                  .news__block-date
-                    span.news__block-day 07
-                    span.news__block-month декабря
-                .news__block-text Состоялся розыгрыш путевок в Чехию среди региональных менеджеров по кредитам
-            .col-xs-4
-              a.news__block-column(href='#')
-                .news__block-photo
-                  img.news__block-photo-img(src='img/news2.jpg', alt='news')
-                  .news__block-date
-                    span.news__block-day 06
-                    span.news__block-month декабря
-                .news__block-text Открыта запись на бесплатные обучающие курсы «Вежливый сотрудник»
-            .col-xs-4
-              a.news__block-column.news__block-column-last(href='#')
-                .news__block-photo
-                  img.news__block-photo-img(src='img/news3.jpg', alt='news')
-                  .news__block-date
-                    span.news__block-day 01
-                    span.news__block-month декабря
-                .news__block-text С 1 декабря повышены премии за подключене к пакету «Привилегия»
-      .photoreports
-        h1.title Фоторепортажи
-        // a(href="#").title-link Все фоторепортажи
-        .photoreports__block
-          ul.photoreports__list
-            li.photoreports__elem.active
-              .photoreports__photo
-                img.photoreports__photo-img(src='img/photoreports.jpg', alt='photoreports')
-              .photoreports__description
-                .photoreports__description-title
-                  .photoreports__description-photo-img
-                  .photoreports__description-photo-signature
-                    span.photoreports__description-photo-signature-number 34
-                    |  фото
-                .photoreports__description-text
-                  | В Москве прошло мероприятие для новых сотрудников Московской сети «День новичка ВТБ 24»
-                .photoreports__description-date 25 февраля 2017
-            li.photoreports__elem
-              .photoreports__photo
-                img.photoreports__photo-img(src='img/photoreports.jpg', alt='photoreports')
-              .photoreports__description
-                .photoreports__description-title
-                  .photoreports__description-photo-img
-                  .photoreports__description-photo-signature
-                    span.photoreports__description-photo-signature-number 34
-                    |  фото
-                .photoreports__description-text
-                  | В Москве прошло мероприятие для новых сотрудников Московской сети «День новичка ВТБ 24»
-                .photoreports__description-date 25 февраля 2017
-            li.photoreports__elem
-              .photoreports__photo
-                img.photoreports__photo-img(src='img/photoreports.jpg', alt='photoreports')
-              .photoreports__description
-                .photoreports__description-title
-                  .photoreports__description-photo-img
-                  .photoreports__description-photo-signature
-                    span.photoreports__description-photo-signature-number 34
-                    |  фото
-                .photoreports__description-text
-                  | В Москве прошло мероприятие для новых сотрудников Московской сети «День новичка ВТБ 24»
-                .photoreports__description-date 25 февраля 2017
-        .photoreports__description-nav
-          a.photoreports__description-nav-btn.photoreports__description-nav-left(href='#')
-            i.fa.fa-chevron-left(aria-hidden='true')
-          a.photoreports__description-nav-btn.photoreports__description-nav-right(href='#')
-            i.fa.fa-chevron-right(aria-hidden='true')
+      .row
+        .col-xs-6
+          .news
+            h1.title Новости и публикации
+            // a(href="#").title-link Все новости
+            .news__block
+              .row
+                .col-xs-4
+                  a.news__block-column(href='#')
+                    .news__block-photo
+                      img.news__block-photo-img(src='img/news1.jpg', alt='news')
+                      .news__block-date
+                        span.news__block-day 07
+                        span.news__block-month декабря
+                    .news__block-text Состоялся розыгрыш путевок в Чехию среди региональных менеджеров по кредитам
+                .col-xs-4
+                  a.news__block-column(href='#')
+                    .news__block-photo
+                      img.news__block-photo-img(src='img/news2.jpg', alt='news')
+                      .news__block-date
+                        span.news__block-day 06
+                        span.news__block-month декабря
+                    .news__block-text Открыта запись на бесплатные обучающие курсы «Вежливый сотрудник»
+                .col-xs-4
+                  a.news__block-column.news__block-column-last(href='#')
+                    .news__block-photo
+                      img.news__block-photo-img(src='img/news3.jpg', alt='news')
+                      .news__block-date
+                        span.news__block-day 01
+                        span.news__block-month декабря
+                    .news__block-text С 1 декабря повышены премии за подключене к пакету «Привилегия»
+        .col-xs-6
+          .photoreports
+            h1.title Фоторепортажи
+            // a(href="#").title-link Все фоторепортажи
+            .photoreports__block
+              ul.photoreports__list
+                li.photoreports__elem.active
+                  .photoreports__photo
+                    img.photoreports__photo-img(src='img/photoreports.jpg', alt='photoreports')
+                  .photoreports__description
+                    .photoreports__description-title
+                      .photoreports__description-photo-img
+                      .photoreports__description-photo-signature
+                        span.photoreports__description-photo-signature-number 34
+                        |  фото
+                    .photoreports__description-text
+                      | В Москве прошло мероприятие для новых сотрудников Московской сети «День новичка ВТБ 24»
+                    .photoreports__description-date 25 февраля 2017
+                li.photoreports__elem
+                  .photoreports__photo
+                    img.photoreports__photo-img(src='img/photoreports.jpg', alt='photoreports')
+                  .photoreports__description
+                    .photoreports__description-title
+                      .photoreports__description-photo-img
+                      .photoreports__description-photo-signature
+                        span.photoreports__description-photo-signature-number 34
+                        |  фото
+                    .photoreports__description-text
+                      | В Москве прошло мероприятие для новых сотрудников Московской сети «День новичка ВТБ 24»
+                    .photoreports__description-date 25 февраля 2017
+                li.photoreports__elem
+                  .photoreports__photo
+                    img.photoreports__photo-img(src='img/photoreports.jpg', alt='photoreports')
+                  .photoreports__description
+                    .photoreports__description-title
+                      .photoreports__description-photo-img
+                      .photoreports__description-photo-signature
+                        span.photoreports__description-photo-signature-number 34
+                        |  фото
+                    .photoreports__description-text
+                      | В Москве прошло мероприятие для новых сотрудников Московской сети «День новичка ВТБ 24»
+                    .photoreports__description-date 25 февраля 2017
+            .photoreports__description-nav
+              a.photoreports__description-nav-btn.photoreports__description-nav-left(href='#')
+                i.fa.fa-chevron-left(aria-hidden='true')
+              a.photoreports__description-nav-btn.photoreports__description-nav-right(href='#')
+                i.fa.fa-chevron-right(aria-hidden='true')

@@ -29,7 +29,6 @@ var sliderNewsGo = function() {
 			activeItem = items.filter('.active'),
 			nextItem = activeItem.next(),
 			prevItem = activeItem.prev();
-			console.log(container);
 
 		if ($this.hasClass('photoreports__description-nav-right')){ // листаем вперед
 			if (nextItem.length) {

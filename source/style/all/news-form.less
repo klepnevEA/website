@@ -9,6 +9,8 @@
 	}
 
 	&__datapicker-wrap {
+
+
 		&:before {
  			content: 'Дата начала';
  			position: absolute;
@@ -23,6 +25,16 @@
  				content: 'Дата окончания';
  			}
 		}
+		&-start {
+			&:after {
+				content: '\2014';
+				position: absolute;
+		    top: 20px;
+		    right: 6px;
+		    font-size:20px;
+			} 
+		}
+
 	}
 
 	&__datapicker {
@@ -36,7 +48,9 @@
 		margin-right:@sp*2;
 		font-family: 'Open Sans';
 		background-color: #fff;
-
+		background-image: url(../img/icons/calendar.png);
+		background-repeat: no-repeat;
+    background-position: 130px 20px;
 	}
 }
 

@@ -12,44 +12,124 @@
 				h1.title Новости
 		.row
 			.col-xs-9.col-width-74
-				.news-form
-					.news-form__wrap
-						input(type="text", placeholder="Поиск").news-form__search
+				.row
+					.col-xs-12
+						.news-form
+							.news-form__wrap
+								input(type="text", placeholder="Поиск").news-form__search
 
-						.news-form__group
-							#datetimepicker1.input-group.date.news-form__datapicker-wrap.news-form__datapicker-wrap-start
-								input.form-control(type='text').news-form__datapicker
-								span.input-group-addon
-									span.glyphicon.glyphicon-calendar
-							#datetimepicker2.input-group.date.news-form__datapicker-wrap.news-form__datapicker-wrap-end
-								input.form-control(type='text').news-form__datapicker
-								span.input-group-addon
-									span.glyphicon.glyphicon-calendar
+								.news-form__group
+									#datetimepicker1.input-group.date.news-form__datapicker-wrap.news-form__datapicker-wrap-start
+										input.form-control(type='text').news-form__datapicker
+										span.input-group-addon
+											span.glyphicon.glyphicon-calendar
+									#datetimepicker2.input-group.date.news-form__datapicker-wrap.news-form__datapicker-wrap-end
+										input.form-control(type='text').news-form__datapicker
+										span.input-group-addon
+											span.glyphicon.glyphicon-calendar
 
-							.dropdown
-								button#dropdownMenu1.btn.btn__dropdown.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
-									| Все авторы
-								ul.dropdown-menu(aria-labelledby='dropdownMenu1')
-									li
-										a(href='#') Автор 1
-									li
-										a(href='#') Автор 2
-									li
-										a(href='#') Автор 3
+									.dropdown.autor
+										i.fa.fa-angle-down(aria-hidden="true")
+										button#dropdownMenu1.btn.btn__dropdown.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+											| Все авторы
+										ul.dropdown-menu(aria-labelledby='dropdownMenu1')
+											li
+												a(href='#') Автор 1
+											li
+												a(href='#') Автор 2
+											li
+												a(href='#') Автор 3
+
+									.dropdown.news
+										i.fa.fa-angle-down(aria-hidden="true")
+										button#dropdownMenu1.btn.btn__dropdown.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+											| Новости персонала
+										ul.dropdown-menu(aria-labelledby='dropdownMenu1')
+											li
+												a(href='#') Новости персонала 1
+											li
+												a(href='#') Новости персонала 2
+											li
+												a(href='#') Новости персонала 3
+								.news-form__buttons
+									button.btn.btn__blue.btn__small(type="button") Отправить
+									button.btn.btn__transparent.btn__small(type="button") Очистить
+				
+
+				//- список новостей
+				.row
+					.col-xs-12
+						.news-list__wrap
+							ul.news-list
+								li.news-list__elem
+									a(href="#").news-list__link
+										.news-list__photo
+											.news-list__img
+												img(src="img/news3.jpg")
+										.news-list__info
+											.news-list__title  Lorem ipsum dolor sit amet
+											.news-list__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero incidunt atque, sed, deserunt ipsum nostrum possimus vel eum. Ipsa assumenda eum deleniti fuga, doloribus praesentium sequi animi tempora provident voluptatum.
+											.news-list__additional-info
+												.news-list__date 
+													span 17 февраля 1917
+													| / 
+												.news-list__name 
+													span Иванов Сергшей Викторович
+											.news-list__buttons
+												button.btn.btn__news-list Новости персонала
+								li.news-list__elem
+									a(href="#").news-list__link
+										.news-list__photo
+											.news-list__img
+												img(src="img/news3.jpg")
+										.news-list__info
+											.news-list__title  Lorem ipsum dolor sit amet
+											.news-list__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero incidunt atque, sed, deserunt ipsum nostrum possimus vel eum. Ipsa assumenda eum deleniti fuga, doloribus praesentium sequi animi tempora provident voluptatum.
+											.news-list__additional-info
+												.news-list__date 
+													span 17 февраля 1917
+													| / 
+												.news-list__name 
+													span Иванов Сергшей Викторович
+											.news-list__buttons
+												button.btn.btn__news-list Новости персонала
+								li.news-list__elem
+									a(href="#").news-list__link
+										.news-list__photo
+											.news-list__img
+												img(src="img/news3.jpg")
+										.news-list__info
+											.news-list__title  Lorem ipsum dolor sit amet
+											.news-list__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero incidunt atque, sed, deserunt ipsum nostrum possimus vel eum. Ipsa assumenda eum deleniti fuga, doloribus praesentium sequi animi tempora provident voluptatum.
+											.news-list__additional-info
+												.news-list__date 
+													span 17 февраля 1917
+													| / 
+												.news-list__name 
+													span Иванов Сергшей Викторович
+											.news-list__buttons
+												button.btn.btn__news-list Новости персонала
 
 
-
-					//- .form-group
-					//- 	#datetimepicker1.input-group.date
-					//- 		input.form-control(type='text')
-					//- 		span.input-group-addon
-					//- 			span.glyphicon.glyphicon-calendar
-					//- //- script(type='text/javascript').
-					//- //- 	$(function () {
-					//- //- 	$('#datetimepicker1').datetimepicker();
-					//- //- 	});
-
-
+						.pager
+							.pager__wrap
+								ul.pager__list
+									li.pager__elem.pager__elem-first-child.pager__elem-active
+										a(href="#") 1
+									li.pager__elem
+										a(href="#") 2
+									li.pager__elem 
+										a(href="#") 3
+									li.pager__elem 
+										a(href="#") ...
+									li.pager__elem.pager__elem-last-child 
+										a(href="#") 15
+								.pager__hext
+									a(href="#")
+										i.fa.fa-chevron-right(aria-hidden="true")
+								.pager__prev
+									a(href="#")
+										i.fa.fa-chevron-left(aria-hidden="true")
 
 
 

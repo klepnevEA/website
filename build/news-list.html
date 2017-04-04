@@ -89,23 +89,105 @@
           </div>
           <div class="row">
             <div class="col-xs-9 col-width-74">
-              <div class="news-form">
-                <div class="news-form__wrap">
-                  <input class="news-form__search" type="text" placeholder="Поиск">
-                  <div class="news-form__group">
-                    <div class="input-group date news-form__datapicker-wrap news-form__datapicker-wrap-start" id="datetimepicker1">
-                      <input class="form-control news-form__datapicker" type="text"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="news-form">
+                    <div class="news-form__wrap">
+                      <input class="news-form__search" type="text" placeholder="Поиск">
+                      <div class="news-form__group">
+                        <div class="input-group date news-form__datapicker-wrap news-form__datapicker-wrap-start" id="datetimepicker1">
+                          <input class="form-control news-form__datapicker" type="text"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                        </div>
+                        <div class="input-group date news-form__datapicker-wrap news-form__datapicker-wrap-end" id="datetimepicker2">
+                          <input class="form-control news-form__datapicker" type="text"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                        </div>
+                        <div class="dropdown autor"><i class="fa fa-angle-down" aria-hidden="true"></i>
+                          <button class="btn btn__dropdown btn-default dropdown-toggle" id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Все авторы</button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Автор 1</a></li>
+                            <li><a href="#">Автор 2</a></li>
+                            <li><a href="#">Автор 3</a></li>
+                          </ul>
+                        </div>
+                        <div class="dropdown news"><i class="fa fa-angle-down" aria-hidden="true"></i>
+                          <button class="btn btn__dropdown btn-default dropdown-toggle" id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Новости персонала</button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Новости персонала 1</a></li>
+                            <li><a href="#">Новости персонала 2</a></li>
+                            <li><a href="#">Новости персонала 3</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="news-form__buttons">
+                        <button class="btn btn__blue btn__small" type="button">Отправить</button>
+                        <button class="btn btn__transparent btn__small" type="button">Очистить</button>
+                      </div>
                     </div>
-                    <div class="input-group date news-form__datapicker-wrap news-form__datapicker-wrap-end" id="datetimepicker2">
-                      <input class="form-control news-form__datapicker" type="text"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-                    </div>
-                    <div class="dropdown">
-                      <button class="btn btn__dropdown btn-default dropdown-toggle" id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Все авторы</button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">Автор 1</a></li>
-                        <li><a href="#">Автор 2</a></li>
-                        <li><a href="#">Автор 3</a></li>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="news-list__wrap">
+                    <ul class="news-list">
+                      <li class="news-list__elem"><a class="news-list__link" href="#">
+                          <div class="news-list__photo">
+                            <div class="news-list__img"><img src="img/news3.jpg"></div>
+                          </div>
+                          <div class="news-list__info">
+                            <div class="news-list__title"> Lorem ipsum dolor sit amet</div>
+                            <div class="news-list__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero incidunt atque, sed, deserunt ipsum nostrum possimus vel eum. Ipsa assumenda eum deleniti fuga, doloribus praesentium sequi animi tempora provident voluptatum.</div>
+                            <div class="news-list__additional-info">
+                              <div class="news-list__date"> <span>17 февраля 1917</span>/ </div>
+                              <div class="news-list__name"> <span>Иванов Сергшей Викторович</span></div>
+                            </div>
+                            <div class="news-list__buttons">
+                              <button class="btn btn__news-list">Новости персонала</button>
+                            </div>
+                          </div></a></li>
+                      <li class="news-list__elem"><a class="news-list__link" href="#">
+                          <div class="news-list__photo">
+                            <div class="news-list__img"><img src="img/news3.jpg"></div>
+                          </div>
+                          <div class="news-list__info">
+                            <div class="news-list__title"> Lorem ipsum dolor sit amet</div>
+                            <div class="news-list__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero incidunt atque, sed, deserunt ipsum nostrum possimus vel eum. Ipsa assumenda eum deleniti fuga, doloribus praesentium sequi animi tempora provident voluptatum.</div>
+                            <div class="news-list__additional-info">
+                              <div class="news-list__date"> <span>17 февраля 1917</span>/ </div>
+                              <div class="news-list__name"> <span>Иванов Сергшей Викторович</span></div>
+                            </div>
+                            <div class="news-list__buttons">
+                              <button class="btn btn__news-list">Новости персонала</button>
+                            </div>
+                          </div></a></li>
+                      <li class="news-list__elem"><a class="news-list__link" href="#">
+                          <div class="news-list__photo">
+                            <div class="news-list__img"><img src="img/news3.jpg"></div>
+                          </div>
+                          <div class="news-list__info">
+                            <div class="news-list__title"> Lorem ipsum dolor sit amet</div>
+                            <div class="news-list__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero incidunt atque, sed, deserunt ipsum nostrum possimus vel eum. Ipsa assumenda eum deleniti fuga, doloribus praesentium sequi animi tempora provident voluptatum.</div>
+                            <div class="news-list__additional-info">
+                              <div class="news-list__date"> <span>17 февраля 1917</span>/ </div>
+                              <div class="news-list__name"> <span>Иванов Сергшей Викторович</span></div>
+                            </div>
+                            <div class="news-list__buttons">
+                              <button class="btn btn__news-list">Новости персонала</button>
+                            </div>
+                          </div></a></li>
+                    </ul>
+                  </div>
+                  <div class="pager">
+                    <div class="pager__wrap">
+                      <ul class="pager__list">
+                        <li class="pager__elem pager__elem-first-child pager__elem-active"><a href="#">1</a></li>
+                        <li class="pager__elem"><a href="#">2</a></li>
+                        <li class="pager__elem"> <a href="#">3</a></li>
+                        <li class="pager__elem"> <a href="#">...</a></li>
+                        <li class="pager__elem pager__elem-last-child"> <a href="#">15</a></li>
                       </ul>
+                      <div class="pager__hext"><a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
+                      <div class="pager__prev"><a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></div>
                     </div>
                   </div>
                 </div>

@@ -7,6 +7,7 @@ $(document).ready(function() {
 		searchOpen();
 		sliderGo();
   	sliderNewsGo();
+		highlightTable();
 		$("#birthdays-slider").slider({
 			formatter: function(value) {
 				return value;

@@ -1,0 +1,252 @@
+.section
+	.container
+		.row
+			.col-xs-12
+				.breadcrumb
+					nav.breadcrumb__wrap
+						a(href="#").breadcrumb__item Главная
+						a(href="#").breadcrumb__item Новости и публикации
+						a(href="#").breadcrumb__item.breadcrumb__item-last-child Фоторепортажи
+		.row
+			.col-xs-12
+				h1.title Адресная книга
+		.row
+			.col-xs-9.col-width-74
+				.row
+					.col-xs-12
+						.addres-form
+							.addres-form__wrap
+
+								.addres-form__group
+									.row
+										.col-xs-3
+											.addres-form__input-wrap.addres-form__input-wrap-name
+												input.form-control(type='text').addres-form__input
+										.col-xs-3
+											.addres-form__input-wrap
+												input.form-control(type='text', placeholder="Должность").addres-form__input
+										.col-xs-3
+											.addres-form__input-wrap
+												input.form-control(type='text', placeholder="Подр. верхн. уровня").addres-form__input
+										.col-xs-3
+											.addres-form__input-wrap
+												input.form-control(type='text', placeholder="Подразделение").addres-form__input
+										.col-xs-3
+											.addres-form__input-wrap
+												input.form-control(type='text', placeholder="Вн. телефон").addres-form__input
+										.col-xs-3
+											.addres-form__input-wrap
+												input.form-control(type='text', placeholder="Город").addres-form__input
+										.col-xs-3
+											.addres-form__input-wrap
+												input.form-control(type='text', placeholder="Комната").addres-form__input
+										.col-xs-3
+											.addres-form__input-wrap
+												input.form-control(type='text', placeholder="Руководитель").addres-form__input
+
+								.addres-form__buttons
+									button.btn.btn__blue.btn__small(type="button") Отправить
+									button.btn.btn__transparent.btn__small(type="button") Очистить
+
+				//- список адресов
+				.row
+					.col-xs-12
+						.addres-list__wrap
+							ul.addres-list
+								li.addres-list__elem
+									a(href="#").addres-list__link
+										.addres-list__photo
+											.addres-list__img
+												img(src="img/birsday/photo1.jpg")
+										.addres-list__info
+											.addres-list__name  Иванов Сергей Петрович
+											.addres-list__position Главный
+										table.addres-list__description
+											tr
+												td.addres-list__description-department
+													.addres-list__description-title Подразделение верхнего уровня
+													.addres-list__description-info Департамент банковских и информационных технологий
+												td.addres-list__description-contacts
+													.addres-list__description-title Вн. телефон
+													.addres-list__description-info (495) 960-24-24, доб. 49-711
+												td.addres-list__description-position 
+													.addres-list__description-title Руководитель
+													.addres-list__description-info Герман Марк Александрович
+											tr
+												td 
+													.addres-list__description-title Подразделение
+													.addres-list__description-info Отдел внутрибанковских систем
+												td 
+													.addres-list__description-title Комната
+													.addres-list__description-info 413
+												td 
+													.addres-list__description-title Город
+													.addres-list__description-info Москва
+								li.addres-list__elem
+									a(href="#").addres-list__link
+										.addres-list__photo
+											.addres-list__img
+												img(src="img/birsday/photo1.jpg")
+										.addres-list__info
+											.addres-list__name  Иванов Сергей Петрович
+											.addres-list__position Главный
+										table.addres-list__description
+											tr
+												td.addres-list__description-department
+													.addres-list__description-title Подразделение верхнего уровня
+													.addres-list__description-info Департамент банковских и информационных технологий
+												td.addres-list__description-contacts
+													.addres-list__description-title Вн. телефон
+													.addres-list__description-info (495) 960-24-24, доб. 49-711
+												td.addres-list__description-position 
+													.addres-list__description-title Руководитель
+													.addres-list__description-info Герман Марк Александрович
+											tr
+												td 
+													.addres-list__description-title Подразделение
+													.addres-list__description-info Отдел внутрибанковских систем
+												td 
+													.addres-list__description-title Комната
+													.addres-list__description-info 413
+												td 
+													.addres-list__description-title Город
+													.addres-list__description-info Москва
+								li.addres-list__elem
+									a(href="#").addres-list__link
+										.addres-list__photo
+											.addres-list__img
+												img(src="img/birsday/photo1.jpg")
+										.addres-list__info
+											.addres-list__name  Иванов Сергей Петрович
+											.addres-list__position Главный
+										table.addres-list__description
+											tr
+												td.addres-list__description-department
+													.addres-list__description-title Подразделение верхнего уровня
+													.addres-list__description-info Департамент банковских и информационных технологий
+												td.addres-list__description-contacts
+													.addres-list__description-title
+													.addres-list__description-info
+												td.addres-list__description-position 
+													.addres-list__description-title Руководитель
+													.addres-list__description-info Герман Марк Александрович
+											tr
+												td 
+													.addres-list__description-title Подразделение
+													.addres-list__description-info Отдел внутрибанковских систем
+												td 
+													.addres-list__description-title
+													.addres-list__description-info
+												td 
+													.addres-list__description-title
+													.addres-list__description-info
+				
+
+				//- //- список новостей
+				//- .row
+				//- 	.col-xs-12
+				//- 		.news-list__wrap
+				//- 			ul.news-list
+				//- 				li.news-list__elem
+				//- 					a(href="#").news-list__link
+				//- 						.news-list__photo
+				//- 							.news-list__img
+				//- 								img(src="img/news3.jpg")
+				//- 						.news-list__info
+				//- 							.news-list__title  Lorem ipsum dolor sit amet
+				//- 							.news-list__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero incidunt atque, sed, deserunt ipsum nostrum possimus vel eum. Ipsa assumenda eum deleniti fuga, doloribus praesentium sequi animi tempora provident voluptatum.
+				//- 							.news-list__additional-info
+				//- 								.news-list__date 
+				//- 									span 17 февраля 1917
+				//- 									| / 
+				//- 								.news-list__name 
+				//- 									span Иванов Сергшей Викторович
+				//- 							.news-list__buttons
+				//- 								button.btn.btn__news-list Новости персонала
+				//- 				li.news-list__elem
+				//- 					a(href="#").news-list__link
+				//- 						.news-list__photo
+				//- 							.news-list__img
+				//- 								img(src="img/news3.jpg")
+				//- 						.news-list__info
+				//- 							.news-list__title  Lorem ipsum dolor sit amet
+				//- 							.news-list__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero incidunt atque, sed, deserunt ipsum nostrum possimus vel eum. Ipsa assumenda eum deleniti fuga, doloribus praesentium sequi animi tempora provident voluptatum.
+				//- 							.news-list__additional-info
+				//- 								.news-list__date 
+				//- 									span 17 февраля 1917
+				//- 									| / 
+				//- 								.news-list__name 
+				//- 									span Иванов Сергшей Викторович
+				//- 							.news-list__buttons
+				//- 								button.btn.btn__news-list Новости персонала
+				//- 				li.news-list__elem
+				//- 					a(href="#").news-list__link
+				//- 						.news-list__photo
+				//- 							.news-list__img
+				//- 								img(src="img/news3.jpg")
+				//- 						.news-list__info
+				//- 							.news-list__title  Lorem ipsum dolor sit amet
+				//- 							.news-list__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero incidunt atque, sed, deserunt ipsum nostrum possimus vel eum. Ipsa assumenda eum deleniti fuga, doloribus praesentium sequi animi tempora provident voluptatum.
+				//- 							.news-list__additional-info
+				//- 								.news-list__date 
+				//- 									span 17 февраля 1917
+				//- 									| / 
+				//- 								.news-list__name 
+				//- 									span Иванов Сергшей Викторович
+				//- 							.news-list__buttons
+				//- 								button.btn.btn__news-list Новости персонала
+
+
+						.pager
+							.pager__wrap
+								ul.pager__list
+									li.pager__elem.pager__elem-first-child.pager__elem-active
+										a(href="#") 1
+									li.pager__elem
+										a(href="#") 2
+									li.pager__elem 
+										a(href="#") 3
+									li.pager__elem 
+										a(href="#") ...
+									li.pager__elem.pager__elem-last-child 
+										a(href="#") 15
+								.pager__hext
+									a(href="#")
+										i.fa.fa-chevron-right(aria-hidden="true")
+								.pager__prev
+									a(href="#")
+										i.fa.fa-chevron-left(aria-hidden="true")
+
+
+
+
+
+			.col-xs-3.col-width-26
+				.aside
+					nav.aside__menu
+						ul.aside__list
+							li.aside__elem
+								a(href="#").aside__link Новости
+							li.aside__elem.active
+								a(href="#").aside__link Фоторепортажи
+							li.aside__elem
+								a(href="#").aside__link Обзор СМИ
+							li.aside__elem
+								a(href="#").aside__link.aside__link-last-child Газеты и журналы
+
+
+					.aside__tile
+						a(href="#").aside__tile-link
+							.aside__tile-img
+								img(src='img/tiles/1.jpg', alt='')
+							h3.aside__tile-title Моя идея
+					.aside__tile
+						a(href="#").aside__tile-link
+							.aside__tile-img
+								img(src='img/tiles/2.jpg', alt='')
+							h3.aside__tile-title Нормативно-справочная информация
+					.aside__tile
+						a(href="#").aside__tile-link
+							.aside__tile-img
+								img(src='img/tiles/3.jpg', alt='')
+							h3.aside__tile-title База знаний для ТП

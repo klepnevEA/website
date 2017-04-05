@@ -1,0 +1,106 @@
+.birthdays-form {
+
+	margin-bottom: @sp*5;
+	.clearfix;
+	&__search {
+		width: 100%;
+		border: 2px solid @gray-bord;
+		border-radius:3px;
+		font-size: 14px;
+		padding: 20px;
+		margin-bottom: 10px;
+	}
+
+	&__group {
+		.clearfix;
+		margin-bottom: 10px;		
+	}
+
+	&__buttons {
+		.clearfix;	
+		button {
+			float:right;
+		}
+	}
+
+	&__input-wrap {
+		.clearfix;
+		float: left;
+
+		&-name {
+			&:before {
+	 			content: 'Ф.И.О.';
+	 			position: absolute;
+	 			top: 10px;
+	 			left: 35px;	
+	 			z-index:100;
+	 			font-size:12px;
+			}
+		}
+
+
+
+	}
+
+	&__input {
+		position: relative;
+		float: left;
+		width: 100%;
+		border: 2px solid @gray-bord;
+		border-radius:3px;
+		font-size: 14px;
+		padding: 20px;
+		font-family: 'Open Sans';
+		background-color: #fff;
+		background-repeat: no-repeat;
+    background-position: 130px 20px;
+    margin-bottom: @sp;
+
+		&-wrap-name {
+
+			.birthdays-form__input {
+				padding: @sp*2 20px 10px;
+			}			
+		}
+
+	}
+
+	&__btn-group {
+		width: 100%;
+		overflow: hidden;	
+		
+
+
+		& button {
+			float: left;
+			color: @link_hover;
+			border:2px solid @gray-bord;
+			border-right:0px;
+			width: 7.68%;
+			background-color: #fff;
+			cursor: pointer;
+			line-height: 5;
+			font-size: 13px;
+			padding:0;
+			&:last-child {
+				border-right:2px solid @gray-bord;
+				border-radius: 0 3px 3px 0;				 	
+			}
+
+			&:first-child {
+				border-radius: 3px 0 0 3px;				 	
+			}			
+
+			&:hover {
+				color: #fff;
+				background-color: @link_hover;
+			}
+			&.active {
+				color: #fff;
+				background-color: @link_hover;
+			}
+
+		}
+	}
+}
+

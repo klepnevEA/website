@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ВТБ</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/components/jquery.js" defer></script>
+    <script src="js/components/fotorama.js" defer></script>
+    <script src="js/components/bootstrap-datepicker.js" defer></script>
+    <script src="js/components/bootstrap.js" defer>    </script>
+    <script src="js/components/bootstrap-slider.js" defer> </script>
+    <script src="js/app.js" defer></script>
+    <script src="js/search.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <script src="js/sliderNews.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--для показа/выключения надо присвоить/убарть класс active для search-top-->
+      <search-top class="search-top"> 
+        <div class="search-top__white">
+          <div class="container">
+            <form class="search-top__white-wrap">
+              <div class="search-top__left">
+                <input id="search-top" type="text" value="Введите вопрос">
+              </div>
+              <div class="search-top__right"> 
+                <button class="btn">найти</button>
+                <button class="btn__close" id="search-close"></button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="search-top__black"> </div>
+      </search-top>
+      <div class="header">
+        <div class="header__content">
+          <div class="header__menu">
+            <nav class="nav-menu">
+              <ul class="nav-menu__list">
+                <li class="nav-menu__elem"><a class="nav-menu__link" href="#">Наша команда</a></li>
+                <li class="nav-menu__elem"><a class="nav-menu__link" href="#">Процессы </a></li>
+                <li class="nav-menu__elem"><a class="nav-menu__link" href="#">Сотруднику </a></li>
+                <li class="nav-menu__elem"><a class="nav-menu__link" href="#">Сообщество </a></li>
+                <li class="nav-menu__elem"><a class="nav-menu__link" href="#">Сервисы </a></li>
+                <li class="nav-menu__elem"><a class="nav-menu__link" href="#">Техподдержка </a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__search"><a class="header__search-link" id="seach-open" href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+          <div class="header__login header__login-small">
+            <div class="header__login-wrap">
+              <div class="header__login-top">
+                <div class="header__login-photo"><img class="header__login-photo-img" src="img/photo.jpg" alt=""></div>
+                <div class="header__login-name"><span>Анна <br></span><span>Власова-Петррова-Подиагонали</span></div><a class="header__login-link" href="#"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+              </div>
+              <div class="header__login-drop-down">
+                <div class="header__login-drop-down-wrap">
+                  <ul class="header__login-drop-down-list">
+                    <li class="header__login-drop-down-elem"><a class="header__login-drop-down-link" href="#">Помощь сотруднику</a></li>
+                    <li class="header__login-drop-down-elem"><a class="header__login-drop-down-link" href="#">Моя страница</a></li>
+                    <li class="header__login-drop-down-elem"><a class="header__login-drop-down-link" href="#">Выход</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="header__logo"></div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="breadcrumb">
+                <nav class="breadcrumb__wrap"><a class="breadcrumb__item" href="#">Главная</a><a class="breadcrumb__item" href="#">Новости и публикации</a><a class="breadcrumb__item breadcrumb__item-last-child" href="#">Фоторепортажи</a></nav>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <h1 class="title">Дни рождения</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-9 col-width-74">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="birthdays-form">
+                    <div class="birthdays-form__wrap">
+                      <div class="birthdays-form__group">
+                        <div class="row">
+                          <div class="col-xs-3">
+                            <div class="birthdays-form__input-wrap birthdays-form__input-wrap-name">
+                              <input class="form-control birthdays-form__input" type="text" placeholder="ФИО">
+                            </div>
+                          </div>
+                          <div class="col-xs-3">
+                            <div class="birthdays-form__input-wrap">
+                              <input class="form-control birthdays-form__input" type="text" placeholder="Должность">
+                            </div>
+                          </div>
+                          <div class="col-xs-3">
+                            <div class="birthdays-form__input-wrap">
+                              <input class="form-control birthdays-form__input" type="text" placeholder="Комната">
+                            </div>
+                          </div>
+                          <div class="col-xs-3">
+                            <div class="birthdays-form__input-wrap">
+                              <input class="form-control birthdays-form__input" type="text" placeholder="Руководитель">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <div class="birthdays-form__btn-group">
+                              <button class="active" type="button">За год</button>
+                              <button type="button">Январь</button>
+                              <button type="button">Февраль</button>
+                              <button type="button">Март</button>
+                              <button type="button">Апрель</button>
+                              <button type="button">Май</button>
+                              <button type="button">Июнь</button>
+                              <button type="button">Июль</button>
+                              <button type="button">Август</button>
+                              <button type="button">Октябрь</button>
+                              <button type="button">Ноябрь</button>
+                              <button type="button">Ноябрь</button>
+                              <button type="button">Декабрь	</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <div class="birthdays-slider">
+                              <div class="birthdays-slider__values">
+                                <div class="birthdays-slider__value birthdays-slider__value-min">от <span>10</span></div>
+                                <div class="birthdays-slider__value birthdays-slider__value-max">до <span>20</span></div>
+                              </div>
+                              <input id="birthdays-slider" type="text" value="" data-slider-min="0" data-slider-max="28" data-slider-step="1" data-slider-value="[10,20]">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="birthdays-form__buttons">
+                        <button class="btn btn__blue btn__small" type="button">Отправить</button>
+                        <button class="btn btn__transparent btn__small" type="button">Очистить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="birthdays-list__wrap">
+                    <ul class="birthdays-list">
+                      <li class="birthdays-list__elem"><a class="birthdays-list__link" href="#">
+                          <table class="birthdays-list__description">
+                            <tr>
+                              <td class="birthdays-list__description-photo">
+                                <div class="birthdays-list__photo">
+                                  <div class="birthdays-list__img"><img src="img/birsday/photo1.jpg"></div>
+                                </div>
+                              </td>
+                              <td class="birthdays-list__description-name">
+                                <div class="birthdays-list__name">Иванов Иван Иванович</div>
+                              </td>
+                              <td class="birthdays-list__description-position"> 
+                                <div class="birthdays-list__description-title">Руководитель</div>
+                                <div class="birthdays-list__description-text">Москва</div>
+                              </td>
+                              <td class="birthdays-list__description-date">
+                                <div class="birthdays-list__description-title">1 февраля</div>
+                                <div class="birthdays-list__description-text">Понедельник</div>
+                              </td>
+                              <td class="birthdays-list__description-contacts">
+                                <button class="btn btn__blue btn__small" type="button">Поздравить</button><a class="birthdays-list__description-link" href="#">Напомнить коллеге</a><a class="birthdays-list__description-link" href="#">Напомнить мне</a>
+                              </td>
+                            </tr>
+                          </table></a></li>
+                      <li class="birthdays-list__elem"><a class="birthdays-list__link" href="#">
+                          <table class="birthdays-list__description">
+                            <tr>
+                              <td class="birthdays-list__description-photo">
+                                <div class="birthdays-list__photo">
+                                  <div class="birthdays-list__img"><img src="img/birsday/photo1.jpg"></div>
+                                </div>
+                              </td>
+                              <td class="birthdays-list__description-name">
+                                <div class="birthdays-list__name">Иванов Иван Иванович</div>
+                              </td>
+                              <td class="birthdays-list__description-position"> 
+                                <div class="birthdays-list__description-title">Руководитель</div>
+                                <div class="birthdays-list__description-text">Москва</div>
+                              </td>
+                              <td class="birthdays-list__description-date">
+                                <div class="birthdays-list__description-title">1 февраля</div>
+                                <div class="birthdays-list__description-text">Понедельник</div>
+                              </td>
+                              <td class="birthdays-list__description-contacts">
+                                <button class="btn btn__blue btn__small" type="button">Поздравить</button><a class="birthdays-list__description-link" href="#">Напомнить коллеге</a><a class="birthdays-list__description-link" href="#">Напомнить мне</a>
+                              </td>
+                            </tr>
+                          </table></a></li>
+                      <li class="birthdays-list__elem"><a class="birthdays-list__link" href="#">
+                          <table class="birthdays-list__description">
+                            <tr>
+                              <td class="birthdays-list__description-photo">
+                                <div class="birthdays-list__photo">
+                                  <div class="birthdays-list__img"><img src="img/birsday/photo1.jpg"></div>
+                                </div>
+                              </td>
+                              <td class="birthdays-list__description-name">
+                                <div class="birthdays-list__name">Иванов Иван Иванович</div>
+                              </td>
+                              <td class="birthdays-list__description-position"> 
+                                <div class="birthdays-list__description-title">Руководитель</div>
+                                <div class="birthdays-list__description-text">Москва</div>
+                              </td>
+                              <td class="birthdays-list__description-date">
+                                <div class="birthdays-list__description-title">1 февраля</div>
+                                <div class="birthdays-list__description-text">Понедельник</div>
+                              </td>
+                              <td class="birthdays-list__description-contacts">
+                                <button class="btn btn__blue btn__small" type="button">Поздравить</button><a class="birthdays-list__description-link" href="#">Напомнить коллеге</a><a class="birthdays-list__description-link" href="#">Напомнить мне</a>
+                              </td>
+                            </tr>
+                          </table></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3 col-width-26">
+              <div class="aside">
+                <nav class="aside__menu">
+                  <ul class="aside__list">
+                    <li class="aside__elem"><a class="aside__link" href="#">Новости</a></li>
+                    <li class="aside__elem active"><a class="aside__link" href="#">Фоторепортажи</a></li>
+                    <li class="aside__elem"><a class="aside__link" href="#">Обзор СМИ</a></li>
+                    <li class="aside__elem"><a class="aside__link aside__link-last-child" href="#">Газеты и журналы</a></li>
+                  </ul>
+                </nav>
+                <div class="aside__tile"><a class="aside__tile-link" href="#">
+                    <div class="aside__tile-img"><img src="img/tiles/1.jpg" alt=""></div>
+                    <h3 class="aside__tile-title">Моя идея</h3></a></div>
+                <div class="aside__tile"><a class="aside__tile-link" href="#">
+                    <div class="aside__tile-img"><img src="img/tiles/2.jpg" alt=""></div>
+                    <h3 class="aside__tile-title">Нормативно-справочная информация</h3></a></div>
+                <div class="aside__tile"><a class="aside__tile-link" href="#">
+                    <div class="aside__tile-img"><img src="img/tiles/3.jpg" alt=""></div>
+                    <h3 class="aside__tile-title">База знаний для ТП</h3></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer__wrap">
+          <div class="container"><a class="footer__link footer__link-map" href="#">Карта портала</a><a class="footer__link footer__link-map" href="#">Карта филиалов</a></div>
+        </div>
+        <div class="footer__wrap">
+          <div class="container">
+            <div class="footer__bottom">
+              <div class="footer__copy">© 2016  ВТБ24 (ПАО). Корпоративный портал</div><a class="footer__support" href="#">Написать в поддержку </a>
+              <div class="footer__tell"><span>Техподдержка:</span>
+                <div class="footer__tell-tell">8-800-100-24-24</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+.section
+	.container
+		.row
+			.col-xs-12
+				.breadcrumb
+					nav.breadcrumb__wrap
+						a(href="#").breadcrumb__item Главная
+						a(href="#").breadcrumb__item Новости и публикации
+						a(href="#").breadcrumb__item.breadcrumb__item-last-child Фоторепортажи
+		.row
+			.col-xs-12
+				h1.title Дни рождения
+		.row
+			.col-xs-9.col-width-74
+				.row
+					.col-xs-12
+						.birthdays-form
+							.birthdays-form__wrap
+
+								.birthdays-form__group
+									.row
+										.col-xs-3
+											.birthdays-form__input-wrap.birthdays-form__input-wrap-name
+												input.form-control(type='text', placeholder="ФИО").birthdays-form__input
+										.col-xs-3
+											.birthdays-form__input-wrap
+												input.form-control(type='text', placeholder="Должность").birthdays-form__input
+										.col-xs-3
+											.birthdays-form__input-wrap
+												input.form-control(type='text', placeholder="Комната").birthdays-form__input
+										.col-xs-3
+											.birthdays-form__input-wrap
+												input.form-control(type='text', placeholder="Руководитель").birthdays-form__input
+									.row
+										.col-xs-12
+											.birthdays-form__btn-group
+												button.active(type='button') За год
+												button(type='button') Январь
+												button(type='button') Февраль
+												button(type='button') Март
+												button(type='button') Апрель
+												button(type='button') Май
+												button(type='button') Июнь
+												button(type='button') Июль
+												button(type='button') Август
+												button(type='button') Октябрь
+												button(type='button') Ноябрь
+												button(type='button') Ноябрь
+												button(type='button') Декабрь	
+									.row
+										.col-xs-12
+											.birthdays-slider
+												.birthdays-slider__values
+													.birthdays-slider__value.birthdays-slider__value-min от 
+														span 10
+													.birthdays-slider__value.birthdays-slider__value-max до 
+														span 20
+												input#birthdays-slider(type='text', value='', data-slider-min='0', data-slider-max='28', data-slider-step='1', data-slider-value='[10,20]')
+								.birthdays-form__buttons
+									button.btn.btn__blue.btn__small(type="button") Отправить
+									button.btn.btn__transparent.btn__small(type="button") Очистить
+
+				//- список дней рождений
+				.row
+					.col-xs-12
+						.birthdays-list__wrap
+							ul.birthdays-list
+								li.birthdays-list__elem
+									a(href="#").birthdays-list__link
+										table.birthdays-list__description
+											tr
+												td.birthdays-list__description-photo
+													.birthdays-list__photo
+														.birthdays-list__img
+															img(src="img/birsday/photo1.jpg")
+												td.birthdays-list__description-name
+														.birthdays-list__name Иванов Иван Иванович
+												td.birthdays-list__description-position 
+													.birthdays-list__description-title Руководитель
+													.birthdays-list__description-text Москва
+												td.birthdays-list__description-date
+													.birthdays-list__description-title 1 февраля
+													.birthdays-list__description-text Понедельник
+												td.birthdays-list__description-contacts
+													button.btn.btn__blue.btn__small(type="button") Поздравить
+													a(href="#").birthdays-list__description-link Напомнить коллеге
+													a(href="#").birthdays-list__description-link Напомнить мне
+								li.birthdays-list__elem
+									a(href="#").birthdays-list__link
+										table.birthdays-list__description
+											tr
+												td.birthdays-list__description-photo
+													.birthdays-list__photo
+														.birthdays-list__img
+															img(src="img/birsday/photo1.jpg")
+												td.birthdays-list__description-name
+														.birthdays-list__name Иванов Иван Иванович
+												td.birthdays-list__description-position 
+													.birthdays-list__description-title Руководитель
+													.birthdays-list__description-text Москва
+												td.birthdays-list__description-date
+													.birthdays-list__description-title 1 февраля
+													.birthdays-list__description-text Понедельник
+												td.birthdays-list__description-contacts
+													button.btn.btn__blue.btn__small(type="button") Поздравить
+													a(href="#").birthdays-list__description-link Напомнить коллеге
+													a(href="#").birthdays-list__description-link Напомнить мне
+								li.birthdays-list__elem
+									a(href="#").birthdays-list__link
+										table.birthdays-list__description
+											tr
+												td.birthdays-list__description-photo
+													.birthdays-list__photo
+														.birthdays-list__img
+															img(src="img/birsday/photo1.jpg")
+												td.birthdays-list__description-name
+														.birthdays-list__name Иванов Иван Иванович
+												td.birthdays-list__description-position 
+													.birthdays-list__description-title Руководитель
+													.birthdays-list__description-text Москва
+												td.birthdays-list__description-date
+													.birthdays-list__description-title 1 февраля
+													.birthdays-list__description-text Понедельник
+												td.birthdays-list__description-contacts
+													button.btn.btn__blue.btn__small(type="button") Поздравить
+													a(href="#").birthdays-list__description-link Напомнить коллеге
+													a(href="#").birthdays-list__description-link Напомнить мне
+
+
+
+			.col-xs-3.col-width-26
+				.aside
+					nav.aside__menu
+						ul.aside__list
+							li.aside__elem
+								a(href="#").aside__link Новости
+							li.aside__elem.active
+								a(href="#").aside__link Фоторепортажи
+							li.aside__elem
+								a(href="#").aside__link Обзор СМИ
+							li.aside__elem
+								a(href="#").aside__link.aside__link-last-child Газеты и журналы
+
+
+					.aside__tile
+						a(href="#").aside__tile-link
+							.aside__tile-img
+								img(src='img/tiles/1.jpg', alt='')
+							h3.aside__tile-title Моя идея
+					.aside__tile
+						a(href="#").aside__tile-link
+							.aside__tile-img
+								img(src='img/tiles/2.jpg', alt='')
+							h3.aside__tile-title Нормативно-справочная информация
+					.aside__tile
+						a(href="#").aside__tile-link
+							.aside__tile-img
+								img(src='img/tiles/3.jpg', alt='')
+							h3.aside__tile-title База знаний для ТП

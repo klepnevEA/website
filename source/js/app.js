@@ -7,6 +7,10 @@ $(document).ready(function() {
 		searchOpen();
 		sliderGo();
   	sliderNewsGo();
-
+		$("#birthdays-slider").slider({
+			formatter: function(value) {
+				return value;
+			}
+		});
 });
 

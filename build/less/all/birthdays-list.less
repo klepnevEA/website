@@ -6,7 +6,7 @@
 	}
 
 	&__elem {
-		padding:25px;
+		padding:19px 25px 13px;
 		border-bottom:@gray-bord; 
 		border-bottom: 1px solid  @gray-bord;
 	}
@@ -34,7 +34,7 @@
 		color: @blue;
 		font-size: 14px;
 		margin-bottom: @sp;
-		margin-right: @sp*4;
+		margin-top: 10px;
 	}
 
 	&__position {
@@ -51,7 +51,7 @@
 		}
 
 		&-photo {
-			padding: 0 @sp @sp 0;
+			padding: @sp/5 @sp @sp 0;
 		}
 		
 		&-name {
@@ -63,13 +63,29 @@
 
 
 		&-title {
+			font-size:12.4px;
+			margin-top: 10px;	
+		}
+
+		&-text {
 			color: @gray;
-			font-size:12px;
+			font-size:12.4px;
+		}
+
+		&-month {
+			margin-top: 10px;	
+			font-family: 'Open Sans Bold';
+			font-size:15px;
+		}
+
+		&-day {
+			color: @gray;
+			font-size:13px;
 		}
 
 		&-date {
-			max-width: 165px;
-			width: 165px;
+			max-width: 155px;
+			width: 155px;
 			padding: 0 @sp*2 @sp !important;					
 		}
 
@@ -77,7 +93,8 @@
 			border-right: 1px solid @gray-bord;
 			max-width: 215px;
 			width: 215px;
-			padding: 0 @sp*2 @sp !important;			
+			padding: 0 @sp*2 @sp !important;
+
 		}
 
 		&-contacts {
@@ -88,7 +105,8 @@
 			display: block;
 			color: @blue;
 			font-size: 14px;
-			margin-top: @sp;
+	    margin-top: 13px;
+	    line-height: 1;
 
 			&:hover {
 					color: @link_hover;

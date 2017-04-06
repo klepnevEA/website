@@ -3,11 +3,14 @@
 	background-color: transparent;
 	border-collapse: collapse;
 	z-index:100;
+	margin-bottom: @sp*4;
 	td {
+		position: relative;
 		border:1px solid @gray-bord;
 		padding: @sp;
 		vertical-align:top;
 		font-size:13px;
+		z-index:100;
 	}
 
 	&-hight-column {
@@ -51,6 +54,26 @@
 			text-transform: uppercase;
 			border-bottom: 1px dashed @blue;
 			line-height: 1.2;
+
+			&-active {
+				&:after {
+					content: '\203A';
+					font-size:20px;
+					position: absolute;
+					top: 50%;
+					right: 10px;
+					transform: translateY(-50%) rotate(90deg);				
+				}
+			}
+
+			// &:after {
+			// 	content: '\203A';
+			// 	font-size:20px;
+			// 	position: absolute;
+			// 	top: 50%;
+			// 	right: 10px;
+			// 	transform: translateY(-50%) rotate(90deg);
+			// }
 
 			&:hover {
 				color: @link_hover;

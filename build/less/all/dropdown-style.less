@@ -1,13 +1,21 @@
 .dropdown {
 	float: left;
 
-	  i {
-    	position: absolute;
-    	top: 20px;
-    	right: @sp*2;
-    	color: @gray;
-    	font-size: 25px;
-    }
+	i {
+  	position: absolute;
+  	top: 20px;
+  	right: @sp*2;
+  	color: @gray;
+  	font-size: 25px;
+  }
+
+	&-autor {
+    margin-right: 10px;
+
+		&:before {
+ 			content: 'Автор';
+		}
+	}
 
 	&.open {
 		i {
@@ -25,12 +33,6 @@
  			color:@gray;
 	}
 
-	&.autor {
-			&:before {
- 				content: 'Автор';
-			}
-	}
-
 	&.news {
 			&:before {
  				content: 'Новости персонала';
@@ -45,6 +47,7 @@
 
 .dropdown-menu {
 	border:0;
+	width: 100%;
 	box-shadow: 0px 10px 62px 0px rgba(19, 77, 127, 0.17);
 	border-radius: 5px;
   padding-bottom: 5px;

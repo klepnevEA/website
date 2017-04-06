@@ -13,13 +13,13 @@
 		.row
 			.col-xs-9.col-width-74
 
-				.row.form-group
+				.row.jobs-form
 					.col-xs-12
 						.row
 							.col-xs-7
 								.row
-									.col-xs-12
-										input(type="text", placeholder="Все").jobs-form__search
+									.col-xs-12.jobs-form__search-vacancy-wrap
+										input(type="text", placeholder="Все").jobs-form__search.jobs-form__search-vacancy
 								.row
 									.col-xs-6
 										input(type="text", placeholder="Город").jobs-form__search
@@ -44,7 +44,7 @@
 				.row
 					.col-xs-12
 						.jobs-form__buttons
-							button.btn.btn__blue.btn__small(type="button") Отправить
+							button.btn.btn__blue.btn__small(type="button") Поиск
 							button.btn.btn__transparent.btn__small(type="button") Очистить
 				.row
 					.col-xs-12
@@ -72,6 +72,7 @@
 								td.jobs-table__city Москва
 								td.jobs-table__position Супер-Директор
 								td.jobs-table__date 25.10.1917
+
 							tr.jobs-table__elem 
 								td.jobs-table__info
 									.jobs-table__photo

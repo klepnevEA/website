@@ -720,7 +720,7 @@
 			if (yorient === 'top')
 				top -= calendarHeight + parseInt(this.picker.css('padding-top'));
 			else
-				top += height;
+				top += height + 70;
 
 			if (this.o.rtl) {
 				var right = windowWidth - (left + width);

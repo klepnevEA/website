@@ -7,7 +7,7 @@ var highlightTable = function() {
 	    tds = $(this).parent().find("td"),
 	    index = $.inArray( this, tds ),
 	    sel_tds = $("#jobs-table td:nth-child("+( index + 1 )+")");
-			
+
 			$(".jobs-table-hight-column").remove();
 			
 			var heightColumn = 0,
@@ -18,14 +18,16 @@ var highlightTable = function() {
 	    widthColumn = $(sel_tds[0]).width();
 	    leftColumn = $(sel_tds[0]).position().left;
 
-
-			$("#jobs-table").append('<div class="jobs-table-hight-column"></div>');
+			$('<div class="jobs-table-hight-column"></div>').appendTo("#jobs-table");
+			//$().append();
 
 			$(".jobs-table-hight-column").height(heightColumn);
 			$(".jobs-table-hight-column").width(widthColumn + 32);
 			$(".jobs-table-hight-column").css({'left': leftColumn + 'px'});			
 
 	});
+
+
 };
 
 

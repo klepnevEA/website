@@ -19,16 +19,16 @@
 
 								.birthdays-form__group
 									.row
-										.col-xs-3
+										.col-xs-3.birthdays-form__col-width-23
 											.birthdays-form__input-wrap.birthdays-form__input-wrap-name
-												input.form-control(type='text', placeholder="ФИО").birthdays-form__input
+												input.form-control(type='text', placeholder="Тишаев").birthdays-form__input
 										.col-xs-3
 											.birthdays-form__input-wrap
 												input.form-control(type='text', placeholder="Должность").birthdays-form__input
 										.col-xs-3
 											.birthdays-form__input-wrap
 												input.form-control(type='text', placeholder="Комната").birthdays-form__input
-										.col-xs-3
+										.col-xs-3.birthdays-form__col-width-26
 											.birthdays-form__input-wrap
 												input.form-control(type='text', placeholder="Руководитель").birthdays-form__input
 									.row
@@ -57,7 +57,7 @@
 														span 20
 												input#birthdays-slider(type='text', value='', data-slider-min='0', data-slider-max='28', data-slider-step='1', data-slider-value='[10,20]')
 								.birthdays-form__buttons
-									button.btn.btn__blue.btn__small(type="button") Отправить
+									button.btn.btn__blue.btn__small(type="button") Поиск
 									button.btn.btn__transparent.btn__small(type="button") Очистить
 
 				//- список дней рождений
@@ -74,13 +74,13 @@
 														.birthdays-list__img
 															img(src="img/birsday/photo1.jpg")
 												td.birthdays-list__description-name
-														.birthdays-list__name Иванов Иван Иванович
+														.birthdays-list__name Тишаев Владимир Дмитриевич
 												td.birthdays-list__description-position 
-													.birthdays-list__description-title Руководитель
-													.birthdays-list__description-text Москва
+													.birthdays-list__description-title Главный менеджер
+													.birthdays-list__description-text г. Москва
 												td.birthdays-list__description-date
-													.birthdays-list__description-title 1 февраля
-													.birthdays-list__description-text Понедельник
+													.birthdays-list__description-month 1 февраля
+													.birthdays-list__description-day среда
 												td.birthdays-list__description-contacts
 													button.btn.btn__blue.btn__small(type="button") Поздравить
 													a(href="#").birthdays-list__description-link Напомнить коллеге

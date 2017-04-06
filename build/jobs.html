@@ -91,51 +91,95 @@
           </div>
           <div class="row">
             <div class="col-xs-9 col-width-74">
-              <table class="jobs-table" id="jobs-table">
-                <tr class="jobs-table__title">
-                  <td class="jobs-table__title-name"> <a class="jobs-table__title-link" href="#">ФИО</a></td>
-                  <td class="jobs-table__title-division"><a class="jobs-table__title-link" href="#">Подразделение</a></td>
-                  <td class="jobs-table__title-city"><a class="jobs-table__title-link" href="#">Город</a></td>
-                  <td class="jobs-table__title-position"><a class="jobs-table__title-link" href="#">Должность</a></td>
-                  <td class="jobs-table__title-date"><a class="jobs-table__title-link" href="#">Дата назначения</a></td>
-                </tr>
-                <tr class="jobs-table__elem"> 
-                  <td class="jobs-table__info">
-                    <div class="jobs-table__photo">
-                      <div class="jobs-table__img"><img src="img/birsday/photo1.jpg"></div>
+              <div class="row form-group">
+                <div class="col-xs-12">
+                  <div class="row">
+                    <div class="col-xs-7">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <input class="jobs-form__search" type="text" placeholder="Все">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <input class="jobs-form__search" type="text" placeholder="Город">
+                        </div>
+                        <div class="col-xs-6">
+                          <input class="jobs-form__search" type="text" placeholder="ФИО">
+                        </div>
+                      </div>
                     </div>
-                    <div class="jobs-table__name">Иванов Сергей Николаевич</div>
-                  </td>
-                  <td class="jobs-table__division"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ex dolor! Facere, quis provident dolores impedit minus voluptas autem tempore libero, fuga. Sunt voluptatem magnam, culpa incidunt architecto, sint fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ex dolor! Facere, quis provident dolores impedit minus voluptas autem tempore libero, fuga. Sunt voluptatem magnam, culpa incidunt architecto, sint fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ex dolor! Facere, quis provident dolores impedit minus voluptas autem tempore libero, fuga. Sunt voluptatem magnam, culpa incidunt architecto, sint fugiat!</td>
-                  <td class="jobs-table__city">Москва</td>
-                  <td class="jobs-table__position">Супер-Директор</td>
-                  <td class="jobs-table__date">25.10.1917</td>
-                </tr>
-                <tr class="jobs-table__elem"> 
-                  <td class="jobs-table__info">
-                    <div class="jobs-table__photo">
-                      <div class="jobs-table__img"><img src="img/birsday/photo1.jpg"></div>
+                    <div class="col-xs-5">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <input class="jobs-form__search" type="text" placeholder="Подразделение">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <div class="input-group date jobs-form__datapicker-wrap jobs-form__datapicker-wrap-start" id="datetimepicker3">
+                            <input class="form-control jobs-form__datapicker" type="text"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                          </div>
+                        </div>
+                        <div class="col-xs-6">
+                          <div class="input-group date jobs-form__datapicker-wrap jobs-form__datapicker-wrap-end" id="datetimepicker4">
+                            <input class="form-control jobs-form__datapicker" type="text"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="jobs-table__name">Иванов Сергей Николаевич</div>
-                  </td>
-                  <td class="jobs-table__division"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ex dolor! Facere, quis provident dolores impedit minus voluptas autem tempore libero, fuga. Sunt voluptatem magnam, culpa incidunt architecto, sint fugiat!</td>
-                  <td class="jobs-table__city">Москва</td>
-                  <td class="jobs-table__position">Директор</td>
-                  <td class="jobs-table__date">25.10.1917</td>
-                </tr>
-                <tr class="jobs-table__elem"> 
-                  <td class="jobs-table__info">
-                    <div class="jobs-table__photo">
-                      <div class="jobs-table__img"><img src="img/birsday/photo1.jpg"></div>
-                    </div>
-                    <div class="jobs-table__name">Иванов Сергей Николаевич</div>
-                  </td>
-                  <td class="jobs-table__division"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ex dolor! Facere, quis provident dolores impedit minus voluptas autem tempore libero, fuga. Sunt voluptatem magnam, culpa incidunt architecto, sint fugiat!</td>
-                  <td class="jobs-table__city">Москва</td>
-                  <td class="jobs-table__position">Директор</td>
-                  <td class="jobs-table__date">25.10.1917</td>
-                </tr>
-              </table>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <table class="jobs-table" id="jobs-table">
+                    <tr class="jobs-table__title">
+                      <td class="jobs-table__title-name"> <a class="jobs-table__title-link" href="#">ФИО</a></td>
+                      <td class="jobs-table__title-division"><a class="jobs-table__title-link" href="#">Подразделение</a></td>
+                      <td class="jobs-table__title-city"><a class="jobs-table__title-link" href="#">Город</a></td>
+                      <td class="jobs-table__title-position"><a class="jobs-table__title-link jobs-table__title-link-active" href="#">Должность</a></td>
+                      <td class="jobs-table__title-date"><a class="jobs-table__title-link" href="#">Дата назначения</a></td>
+                    </tr>
+                    <tr class="jobs-table__elem"> 
+                      <td class="jobs-table__info">
+                        <div class="jobs-table__photo">
+                          <div class="jobs-table__img"><img src="img/birsday/photo1.jpg"></div>
+                        </div>
+                        <div class="jobs-table__name">Иванов Сергей Николаевич</div>
+                      </td>
+                      <td class="jobs-table__division"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ex dolor! Facere, quis provident dolores impedit minus voluptas autem tempore libero, fuga. Sunt voluptatem magnam, culpa incidunt architecto, sint fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ex dolor! Facere, quis provident dolores impedit minus voluptas autem tempore libero, fuga. Sunt voluptatem magnam, culpa incidunt architecto, sint fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ex dolor! Facere, quis provident dolores impedit minus voluptas autem tempore libero, fuga. Sunt voluptatem magnam, culpa incidunt architecto, sint fugiat!</td>
+                      <td class="jobs-table__city">Москва</td>
+                      <td class="jobs-table__position">Супер-Директор</td>
+                      <td class="jobs-table__date">25.10.1917</td>
+                    </tr>
+                    <tr class="jobs-table__elem"> 
+                      <td class="jobs-table__info">
+                        <div class="jobs-table__photo">
+                          <div class="jobs-table__img"><img src="img/birsday/photo1.jpg"></div>
+                        </div>
+                        <div class="jobs-table__name">Иванов Сергей Николаевич</div>
+                      </td>
+                      <td class="jobs-table__division"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ex dolor! Facere, quis provident dolores impedit minus voluptas autem tempore libero, fuga. Sunt voluptatem magnam, culpa incidunt architecto, sint fugiat!</td>
+                      <td class="jobs-table__city">Москва</td>
+                      <td class="jobs-table__position">Директор</td>
+                      <td class="jobs-table__date">25.10.1917</td>
+                    </tr>
+                    <tr class="jobs-table__elem"> 
+                      <td class="jobs-table__info">
+                        <div class="jobs-table__photo">
+                          <div class="jobs-table__img"><img src="img/birsday/photo1.jpg"></div>
+                        </div>
+                        <div class="jobs-table__name">Иванов Сергей Николаевич</div>
+                      </td>
+                      <td class="jobs-table__division"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ex dolor! Facere, quis provident dolores impedit minus voluptas autem tempore libero, fuga. Sunt voluptatem magnam, culpa incidunt architecto, sint fugiat!</td>
+                      <td class="jobs-table__city">Москва</td>
+                      <td class="jobs-table__position">Директор</td>
+                      <td class="jobs-table__date">25.10.1917</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
             </div>
             <div class="col-xs-3 col-width-26">
               <div class="aside">

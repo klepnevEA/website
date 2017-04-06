@@ -12,50 +12,86 @@
 				h1.title Назначения
 		.row
 			.col-xs-9.col-width-74
-				table.jobs-table#jobs-table
-					tr.jobs-table__title
-						td.jobs-table__title-name 
-							a.jobs-table__title-link(href="#") ФИО
-						td.jobs-table__title-division
-							a.jobs-table__title-link(href="#") Подразделение
-						td.jobs-table__title-city
-							a.jobs-table__title-link(href="#") Город
-						td.jobs-table__title-position
-							a.jobs-table__title-link(href="#") Должность
-						td.jobs-table__title-date
-							a.jobs-table__title-link(href="#") Дата назначения
-					tr.jobs-table__elem 
-						td.jobs-table__info
-							.jobs-table__photo
-								.jobs-table__img
-									img(src="img/birsday/photo1.jpg")
-							.jobs-table__name Иванов Сергей Николаевич
-						td.jobs-table__division  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ex dolor! Facere, quis provident dolores impedit minus voluptas autem tempore libero, fuga. Sunt voluptatem magnam, culpa incidunt architecto, sint fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ex dolor! Facere, quis provident dolores impedit minus voluptas autem tempore libero, fuga. Sunt voluptatem magnam, culpa incidunt architecto, sint fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ex dolor! Facere, quis provident dolores impedit minus voluptas autem tempore libero, fuga. Sunt voluptatem magnam, culpa incidunt architecto, sint fugiat!
+
+				.row.form-group
+					.col-xs-12
+						.row
+							.col-xs-7
+								.row
+									.col-xs-12
+										input(type="text", placeholder="Все").jobs-form__search
+								.row
+									.col-xs-6
+										input(type="text", placeholder="Город").jobs-form__search
+									.col-xs-6
+										input(type="text", placeholder="ФИО").jobs-form__search
+
+							.col-xs-5
+								.row
+									.col-xs-12
+										input(type="text", placeholder="Подразделение").jobs-form__search
+								.row
+									.col-xs-6
+										#datetimepicker3.input-group.date.jobs-form__datapicker-wrap.jobs-form__datapicker-wrap-start
+											input.form-control(type='text').jobs-form__datapicker
+											span.input-group-addon
+												span.glyphicon.glyphicon-calendar
+									.col-xs-6
+										#datetimepicker4.input-group.date.jobs-form__datapicker-wrap.jobs-form__datapicker-wrap-end
+											input.form-control(type='text').jobs-form__datapicker
+											span.input-group-addon
+												span.glyphicon.glyphicon-calendar
+
+				.row
+					.col-xs-12
+						table.jobs-table#jobs-table
+							tr.jobs-table__title
+								td.jobs-table__title-name 
+									a.jobs-table__title-link(href="#") ФИО
+								td.jobs-table__title-division
+									a.jobs-table__title-link(href="#") Подразделение
+								td.jobs-table__title-city
+									a.jobs-table__title-link(href="#") Город
+								td.jobs-table__title-position
+									a.jobs-table__title-link.jobs-table__title-link-active(href="#") Должность
+								td.jobs-table__title-date
+									a.jobs-table__title-link(href="#") Дата назначения
+							tr.jobs-table__elem 
+								td.jobs-table__info
+									.jobs-table__photo
+										.jobs-table__img
+											img(src="img/birsday/photo1.jpg")
+									.jobs-table__name Иванов Сергей Николаевич
+								td.jobs-table__division  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ex dolor! Facere, quis provident dolores impedit minus voluptas autem tempore libero, fuga. Sunt voluptatem magnam, culpa incidunt architecto, sint fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ex dolor! Facere, quis provident dolores impedit minus voluptas autem tempore libero, fuga. Sunt voluptatem magnam, culpa incidunt architecto, sint fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ex dolor! Facere, quis provident dolores impedit minus voluptas autem tempore libero, fuga. Sunt voluptatem magnam, culpa incidunt architecto, sint fugiat!
 
 
-						td.jobs-table__city Москва
-						td.jobs-table__position Супер-Директор
-						td.jobs-table__date 25.10.1917
-					tr.jobs-table__elem 
-						td.jobs-table__info
-							.jobs-table__photo
-								.jobs-table__img
-									img(src="img/birsday/photo1.jpg")
-							.jobs-table__name Иванов Сергей Николаевич
-						td.jobs-table__division  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ex dolor! Facere, quis provident dolores impedit minus voluptas autem tempore libero, fuga. Sunt voluptatem magnam, culpa incidunt architecto, sint fugiat!
-						td.jobs-table__city Москва
-						td.jobs-table__position Директор
-						td.jobs-table__date 25.10.1917
-					tr.jobs-table__elem 
-						td.jobs-table__info
-							.jobs-table__photo
-								.jobs-table__img
-									img(src="img/birsday/photo1.jpg")
-							.jobs-table__name Иванов Сергей Николаевич
-						td.jobs-table__division  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ex dolor! Facere, quis provident dolores impedit minus voluptas autem tempore libero, fuga. Sunt voluptatem magnam, culpa incidunt architecto, sint fugiat!
-						td.jobs-table__city Москва
-						td.jobs-table__position Директор
-						td.jobs-table__date 25.10.1917
+								td.jobs-table__city Москва
+								td.jobs-table__position Супер-Директор
+								td.jobs-table__date 25.10.1917
+							tr.jobs-table__elem 
+								td.jobs-table__info
+									.jobs-table__photo
+										.jobs-table__img
+											img(src="img/birsday/photo1.jpg")
+									.jobs-table__name Иванов Сергей Николаевич
+								td.jobs-table__division  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ex dolor! Facere, quis provident dolores impedit minus voluptas autem tempore libero, fuga. Sunt voluptatem magnam, culpa incidunt architecto, sint fugiat!
+								td.jobs-table__city Москва
+								td.jobs-table__position Директор
+								td.jobs-table__date 25.10.1917
+							tr.jobs-table__elem 
+								td.jobs-table__info
+									.jobs-table__photo
+										.jobs-table__img
+											img(src="img/birsday/photo1.jpg")
+									.jobs-table__name Иванов Сергей Николаевич
+								td.jobs-table__division  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ex dolor! Facere, quis provident dolores impedit minus voluptas autem tempore libero, fuga. Sunt voluptatem magnam, culpa incidunt architecto, sint fugiat!
+								td.jobs-table__city Москва
+								td.jobs-table__position Директор
+								td.jobs-table__date 25.10.1917
+			
+
+
+
 			.col-xs-3.col-width-26
 				.aside
 					nav.aside__menu

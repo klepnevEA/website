@@ -1,0 +1,84 @@
+.jobs-form {
+
+	margin-bottom: @sp*5;
+	.clearfix;
+	&__search {
+		width: 100%;
+		border: 2px solid @gray-bord;
+		border-radius:3px;
+		font-size: 14px;
+		padding: 20px;
+		margin-bottom: 10px;
+	}
+
+	&__group {
+		.clearfix;
+		margin-bottom: 10px;		
+	}
+
+	&__buttons {
+		.clearfix;	
+		button {
+			float:right;
+		}
+	}
+
+	&__datapicker-wrap {
+		.clearfix;
+
+		&:before {
+ 			content: 'Дата начала';
+ 			position: absolute;
+ 			top: 10px;
+ 			left: 22px;	
+ 			z-index:100;
+ 			font-size:12px;
+		}
+
+		&-end {
+			&:before {
+ 				content: 'Дата окончания';
+ 			}
+
+ 			.news-form__datapicker {
+ 				margin-right:5px;
+ 			}
+
+
+		}
+		
+		&-start {
+			&:after {
+				content: '\2014';
+				position: absolute;
+		    top: 20px;
+		    right: 6px;
+		    font-size:20px;
+			} 
+		}
+
+	}
+
+	&__datapicker {
+		position: relative;
+		float: left;
+		width: 153px;
+		border: 2px solid @gray-bord;
+		border-radius:3px;
+		font-size: 14px;
+		padding: 30px 20px 10px;
+		margin-right:@sp*2;
+		font-family: 'Open Sans';
+		background-color: #fff;
+		background-image: url(../img/icons/calendar.png);
+		background-repeat: no-repeat;
+    background-position: 120px 25px;
+
+
+	}
+}
+
+.input-group {
+	float: left;
+	position: relative;
+}

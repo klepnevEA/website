@@ -1,0 +1,99 @@
+.birthdays-list {
+
+	&__wrap {
+		background-color: #fff;
+		box-shadow: 0px 10px 62px 0px rgba(19, 77, 127, 0.17);
+	}
+
+	&__elem {
+		padding:25px;
+		border-bottom:@gray-bord; 
+		border-bottom: 1px solid  @gray-bord;
+	}
+
+	&__photo {
+		float: left;
+		width: 55px;
+		height: 55px;
+	}
+
+	&__img {
+		border-radius: 50%;
+		overflow: hidden;
+	}
+
+	&__info {
+		float: left;
+		margin-right:@sp/3;
+		width: 150px;
+
+
+	}
+
+	&__name {
+		color: @blue;
+		font-size: 14px;
+		margin-bottom: @sp;
+		margin-right: @sp*4;
+	}
+
+	&__position {
+		color: #000;
+		font-size:14px;
+	}
+
+	&__description {
+		color: #000;
+
+		& td {
+			vertical-align: top;
+			// padding: 0 @sp;
+		}
+
+		&-photo {
+			padding: 0 @sp @sp 0;
+		}
+		
+		&-name {
+			max-width: 175px;
+			width: 175px;
+			border-right: 1px solid @gray-bord;
+			padding: 0 @sp @sp 0;
+		}
+
+
+		&-title {
+			color: @gray;
+			font-size:12px;
+		}
+
+		&-date {
+			max-width: 165px;
+			width: 165px;
+			padding: 0 @sp*2 @sp !important;					
+		}
+
+		&-position {
+			border-right: 1px solid @gray-bord;
+			max-width: 215px;
+			width: 215px;
+			padding: 0 @sp*2 @sp !important;			
+		}
+
+		&-contacts {
+
+		}
+
+		&-link {
+			display: block;
+			color: @blue;
+			font-size: 14px;
+			margin-top: @sp;
+
+			&:hover {
+					color: @link_hover;
+			}
+		}
+	}
+
+}

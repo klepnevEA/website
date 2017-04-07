@@ -18,8 +18,3 @@ var inputClean = function() {
   });
 
 };
-
-
-
-
-

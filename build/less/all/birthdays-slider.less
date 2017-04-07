@@ -1,10 +1,25 @@
 .birthdays-slider {
+	position: relative;
 	border:  2px solid @gray-bord;
 	border-top: 0px;
 	border-bottom: 0px;
 	border-radius: 2px 2px 0 0;
 	margin-bottom: 55px;
 	height:@sp*4;
+
+	&__submit-min,
+	&__submit-max {
+		position: absolute;
+		top: 85px;
+		left: 0;
+		font-family: 'Open Sans';
+		font-size: 14px;
+	}
+
+	&__submit-max {
+		left: auto;
+		right:0;		
+	}
 
 	&__values {
 		width: 100%;
@@ -68,7 +83,14 @@
 		width: 35px;
     height: 35px;
 		border: 8px solid #fff;
-		box-shadow:         0px 0px 1px 0px rgba(50, 50, 50, 1);
-		background-image: linear-gradient(to bottom, @link_hover 0%, @link_hover 100%);
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(44, 77, 138, 0.3), 0px 7px 8.55px 0.45px rgba(22, 44, 84, 0.15);
+    box-shadow: 0px 0px 1px 0px rgba(44, 77, 138, 0.3), 0px 7px 8.55px 0.45px rgba(22, 44, 84, 0.15);			
+
 	}
+}
+
+.slider-handle {
+		background-color: @link_hover;
+    background-image: -webkit-linear-gradient(top, @link_hover 0%, @link_hover 100%);
+    background-image: linear-gradient(to bottom, @link_hover 0%, @link_hover 100%);
 }

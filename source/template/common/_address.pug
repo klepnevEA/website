@@ -14,39 +14,30 @@
 			.col-xs-9.col-width-74
 				.row
 					.col-xs-12
-						.addres-form
-							.addres-form__wrap
+						.input__group
+							.input__wrap.input__wrap-width-21
+								.input__caption ФИО
+								input.input.input__type-2(type="text",value="ФИО", data-value-text="ФИО")
+							.input__wrap.input__wrap-width-25
+								input.input(type="text",value="Должность", data-value-text="Должность")
+							.input__wrap.input__wrap-width-25
+								input.input(type="text",value="Подр. верхн. уровня", data-value-text="Подр. верхн. уровня")
+							.input__wrap.input__wrap-width-25
+								input.input(type="text",value="Подразделение", data-value-text="Подразделение")
+						
+						.input__group
+							.input__wrap.input__wrap-width-21
+								input.input(type="text",value="Вн. телефон", data-value-text="Вн. телефон")
+							.input__wrap.input__wrap-width-25
+								input.input(type="text",value="Город", data-value-text="Город")
+							.input__wrap.input__wrap-width-25
+								input.input(type="text",value="Комната", data-value-text="Комната")
+							.input__wrap.input__wrap-width-25
+								input.input(type="text",value="Руководитель", data-value-text="Руководитель")
 
-								.addres-form__group
-									.row
-										.col-xs-3.addres-form__width-22
-											.addres-form__input-wrap.addres-form__input-wrap-name
-												input.form-control(type='text', placeholder="ФИО").addres-form__input
-										.col-xs-3
-											.addres-form__input-wrap
-												input.form-control(type='text', placeholder="Должность").addres-form__input
-										.col-xs-3
-											.addres-form__input-wrap
-												input.form-control(type='text', placeholder="Подр. верхн. уровня").addres-form__input
-										.col-xs-3
-											.addres-form__input-wrap
-												input.form-control(type='text', placeholder="Подразделение").addres-form__input
-										.col-xs-3.addres-form__width-22
-											.addres-form__input-wrap
-												input.form-control(type='text', placeholder="Вн. телефон").addres-form__input
-										.col-xs-3
-											.addres-form__input-wrap
-												input.form-control(type='text', placeholder="Город").addres-form__input
-										.col-xs-3
-											.addres-form__input-wrap
-												input.form-control(type='text', placeholder="Комната").addres-form__input
-										.col-xs-3
-											.addres-form__input-wrap
-												input.form-control(type='text', placeholder="Руководитель").addres-form__input
-
-								.addres-form__buttons
-									button.btn.btn__blue.btn__small(type="button") Отправить
-									button.btn.btn__transparent.btn__small(type="button") Очистить
+						.btn__group-form
+							button.btn.btn__blue.btn__small(type="button") Поиск
+							button.btn.btn__transparent.btn__small(type="button") Очистить
 
 				//- список адресов
 				.row
@@ -141,81 +132,6 @@
 													.addres-list__description-title
 													.addres-list__description-info
 				
-
-				//- //- список новостей
-				//- .row
-				//- 	.col-xs-12
-				//- 		.news-list__wrap
-				//- 			ul.news-list
-				//- 				li.news-list__elem
-				//- 					a(href="#").news-list__link
-				//- 						.news-list__photo
-				//- 							.news-list__img
-				//- 								img(src="img/news3.jpg")
-				//- 						.news-list__info
-				//- 							.news-list__title  Lorem ipsum dolor sit amet
-				//- 							.news-list__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero incidunt atque, sed, deserunt ipsum nostrum possimus vel eum. Ipsa assumenda eum deleniti fuga, doloribus praesentium sequi animi tempora provident voluptatum.
-				//- 							.news-list__additional-info
-				//- 								.news-list__date 
-				//- 									span 17 февраля 1917
-				//- 									| / 
-				//- 								.news-list__name 
-				//- 									span Иванов Сергшей Викторович
-				//- 							.news-list__buttons
-				//- 								button.btn.btn__news-list Новости персонала
-				//- 				li.news-list__elem
-				//- 					a(href="#").news-list__link
-				//- 						.news-list__photo
-				//- 							.news-list__img
-				//- 								img(src="img/news3.jpg")
-				//- 						.news-list__info
-				//- 							.news-list__title  Lorem ipsum dolor sit amet
-				//- 							.news-list__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero incidunt atque, sed, deserunt ipsum nostrum possimus vel eum. Ipsa assumenda eum deleniti fuga, doloribus praesentium sequi animi tempora provident voluptatum.
-				//- 							.news-list__additional-info
-				//- 								.news-list__date 
-				//- 									span 17 февраля 1917
-				//- 									| / 
-				//- 								.news-list__name 
-				//- 									span Иванов Сергшей Викторович
-				//- 							.news-list__buttons
-				//- 								button.btn.btn__news-list Новости персонала
-				//- 				li.news-list__elem
-				//- 					a(href="#").news-list__link
-				//- 						.news-list__photo
-				//- 							.news-list__img
-				//- 								img(src="img/news3.jpg")
-				//- 						.news-list__info
-				//- 							.news-list__title  Lorem ipsum dolor sit amet
-				//- 							.news-list__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero incidunt atque, sed, deserunt ipsum nostrum possimus vel eum. Ipsa assumenda eum deleniti fuga, doloribus praesentium sequi animi tempora provident voluptatum.
-				//- 							.news-list__additional-info
-				//- 								.news-list__date 
-				//- 									span 17 февраля 1917
-				//- 									| / 
-				//- 								.news-list__name 
-				//- 									span Иванов Сергшей Викторович
-				//- 							.news-list__buttons
-				//- 								button.btn.btn__news-list Новости персонала
-
-
-						.pager
-							.pager__wrap
-								ul.pager__list
-									li.pager__elem.pager__elem-first-child.pager__elem-active
-										a(href="#") 1
-									li.pager__elem
-										a(href="#") 2
-									li.pager__elem 
-										a(href="#") 3
-									li.pager__elem 
-										a(href="#") ...
-									li.pager__elem.pager__elem-last-child 
-										a(href="#") 15
-								.pager__hext
-									a(href="#")
-										i.fa.fa-chevron-right(aria-hidden="true")
-								.pager__prev
-									a(href="#")
-										i.fa.fa-chevron-left(aria-hidden="true")
 
 
 

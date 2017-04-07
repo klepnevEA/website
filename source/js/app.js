@@ -10,6 +10,8 @@ $(document).ready(function() {
 		sliderGo();
   	sliderNewsGo();
 		highlightTable();
+		inputClean();
+
 		$("#birthdays-slider").slider({
 			formatter: function(value) {
 				return value;

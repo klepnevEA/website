@@ -1,71 +1,5 @@
 .birthdays-form {
 
-	margin-bottom: 75px;
-	.clearfix;
-	&__search {
-		width: 100%;
-		border: 2px solid @gray-bord;
-		border-radius:2px;
-		font-size: 14px;
-		padding: 20px;
-		margin-bottom: 10px;
-	}
-
-	&__group {
-		.clearfix;
-		margin-bottom: 10px;		
-	}
-
-	&__buttons {
-		.clearfix;	
-		button {
-			float:right;
-		}
-	}
-
-	&__input-wrap {
-		.clearfix;
-		float: left;
-		width: 100%;
-
-		&-name {
-			&:before {
-	 			content: 'Ф.И.О.';
-	 			position: absolute;
-	 			top: 10px;
-	 			left: 35px;	
-	 			z-index:100;
-	 			font-size:10px;
-			}
-		}
-
-
-
-	}
-
-	&__input {
-		position: relative;
-		float: left;
-		width: 100%;
-		border: 2px solid @gray-bord;
-		border-radius:3px;
-		font-size: 15px;
-		padding: 20px 17px;
-		font-family: 'Open Sans';
-		background-color: #fff;
-		background-repeat: no-repeat;
-    background-position: 130px 20px;
-    margin-bottom: 10px;
-
-		&-wrap-name {
-
-			.birthdays-form__input {
-				padding: 28px 19px 12px;
-			}			
-		}
-
-	}
-
 	&__btn-group {
 		width: 100%;
 		overflow: hidden;	
@@ -75,8 +9,13 @@
 		& button {
 			float: left;
 			color: @link_hover;
-			border:2px solid @gray-bord;
-			border-right:0px;
+			border-top: 2px;
+			border-left: 1px;
+			border-right: 1px;
+			border-bottom: 2px;		
+			border-color:@gray-bord;
+			border-style: solid;
+			// border-right:0px;
 			width: 7.68%;
 			background-color: #fff;
 			cursor: pointer;
@@ -95,10 +34,14 @@
 			&:hover {
 				color: #fff;
 				background-color: @link_hover;
+				border-color:@link_hover;
+
 			}
 			&.active {
 				color: #fff;
 				background-color: @link_hover;
+				border-color:@link_hover;
+
 			}
 
 		}

@@ -14,4 +14,31 @@
 	&.dropdown-menu {
 		    padding: @sp;
 	}
+
+	&:hover {
+
+		th,
+		td,
+		span {
+			color: #000;
+		}
+	}
+}
+
+.datepicker-days {
+	& .day {
+		&.active {
+			background-color: @blue !important;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@blue), to(@blue));
+    background-image: -webkit-linear-gradient(to bottom, @blue, @blue);
+    background-image: -webkit-linear-gradient(top, @blue, @blue);
+    background-image: linear-gradient(to bottom, @blue, @blue);
+
+			&:hover {
+				background-color: @link_hover !important;			
+			}
+		}
+
+
+	}
 }

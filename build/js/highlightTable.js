@@ -18,7 +18,7 @@ var highlightTable = function() {
 	    widthColumn = $(sel_tds[0]).width();
 	    leftColumn = $(sel_tds[0]).position().left;
 
-			$('<div class="jobs-table-hight-column"></div>').appendTo("#jobs-table");
+			$('<div class="jobs-table-hight-column">.</div>').appendTo("#jobs-table");
 			//$().append();
 
 			$(".jobs-table-hight-column").height(heightColumn);

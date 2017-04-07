@@ -19,6 +19,7 @@
     <script src="js/slider.js" defer></script>
     <script src="js/sliderNews.js" defer></script>
     <script src="js/highlightTable.js" defer></script>
+    <script src="js/inputClean.js" defer></script>
     <script src="js/app.js" defer></script>
   </head>
   <body>
@@ -91,53 +92,38 @@
           </div>
           <div class="row">
             <div class="col-xs-9 col-width-74">
-              <div class="row jobs-form">
-                <div class="col-xs-12">
-                  <div class="row">
-                    <div class="col-xs-7 jobs-form__col-width-55">
-                      <div class="row">
-                        <div class="col-xs-12 jobs-form__search-vacancy-wrap">
-                          <input class="jobs-form__search jobs-form__search-vacancy" type="text" placeholder="Все">
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-xs-6">
-                          <input class="jobs-form__search" type="text" placeholder="Город">
-                        </div>
-                        <div class="col-xs-6">
-                          <input class="jobs-form__search" type="text" placeholder="ФИО">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-5 jobs-form__col-width-45"> 
-                      <div class="row">
-                        <div class="col-xs-12 jobs-form__col-width-99">
-                          <input class="jobs-form__search" type="text" placeholder="Подразделение">
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-xs-6 jobs-form__col-width-49"> 
-                          <div class="input-group date jobs-form__datapicker-wrap jobs-form__datapicker-wrap-start" id="datetimepicker3">
-                            <input class="form-control jobs-form__datapicker" type="text" placeholder="25/10/1917"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-                          </div>
-                        </div>
-                        <div class="col-xs-6 jobs-form__col-width-45">
-                          <div class="input-group date jobs-form__datapicker-wrap jobs-form__datapicker-wrap-end" id="datetimepicker4">
-                            <input class="form-control jobs-form__datapicker" type="text" placeholder="25/10/1917"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+              <div class="input__group">
+                <div class="input__wrap input__wrap-width-55">
+                  <div class="input__caption">Название вакансии</div>
+                  <input class="input input__type-2" type="text" value="Все" data-value-text="Все">
+                </div>
+                <div class="input__wrap input__wrap-width-43">
+                  <input class="input" type="text" value="Подразделение" data-value-text="Подразделение">
+                </div>
+              </div>
+              <div class="input__group">
+                <div class="input__wrap input__wrap-width-26">
+                  <input class="input" type="text" value="Город" data-value-text="Город">
+                </div>
+                <div class="input__wrap input__wrap-width-28">
+                  <input class="input" type="text" value="ФИО" data-value-text="ФИО">
+                </div>
+                <div class="input__wrap input__wrap-width-19 input__dash">
+                  <div class="input__caption">Дата начала</div><img class="input__icon" src="img/icons/calendar.png">
+                  <div class="date" id="datetimepicker3">
+                    <input class="form-control input__datapicker" type="text" value="26/05/2017" data-value-text="26/05/2017"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                  </div>
+                </div>
+                <div class="input__wrap input__wrap-width-20">
+                  <div class="input__caption">Дата окончания</div><img class="input__icon" src="img/icons/calendar.png">
+                  <div class="date" id="datetimepicker4">
+                    <input class="form-control input__datapicker" type="text" value="26/05/2017" data-value-text="26/05/2017"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-xs-12">
-                  <div class="jobs-form__buttons">
-                    <button class="btn btn__blue btn__small" type="button">Поиск</button>
-                    <button class="btn btn__transparent btn__small" type="button">Очистить</button>
-                  </div>
-                </div>
+              <div class="btn__group-form">
+                <button class="btn btn__blue btn__small" type="button">Поиск</button>
+                <button class="btn btn__transparent btn__small" type="button">Очистить</button>
               </div>
               <div class="row">
                 <div class="col-xs-12">

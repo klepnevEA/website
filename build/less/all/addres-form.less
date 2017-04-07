@@ -26,15 +26,17 @@
 	&__input-wrap {
 		.clearfix;
 		float: left;
+		width: 100%;
 
 		&-name {
 			&:before {
 	 			content: 'Ф.И.О.';
 	 			position: absolute;
 	 			top: 10px;
-	 			left: 35px;	
+	 			left: 26px;	
 	 			z-index:100;
 	 			font-size:12px;
+	 			color: @gray;
 			}
 		}
 
@@ -48,7 +50,7 @@
 		width: 100%;
 		border: 2px solid @gray-bord;
 		border-radius:3px;
-		font-size: 14px;
+		font-size: 16px;
 		padding: 20px;
 		font-family: 'Open Sans';
 		background-color: #fff;
@@ -63,6 +65,24 @@
 			}			
 		}
 
+	}
+
+
+	& .col-xs-3 {
+		padding-left: 5px;
+    padding-right: 5px;
+    width: 24.7%;
+
+   //  &:first-child {
+			// padding-left: @sp;    	
+   //  }
+   //  &:last-child {
+			// padding-right: @sp;    	
+   //  }
+	}	
+
+	&__width-22 {
+		width: 22%;
 	}
 }
 

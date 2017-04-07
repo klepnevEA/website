@@ -713,7 +713,7 @@
 				top_overflow;
 			if (yorient === 'auto'){
 				top_overflow = -scrollTop + top - calendarHeight;
-				yorient = top_overflow < 0 ? 'bottom' : 'top';
+				yorient = 'bottom';
 			}
 
 			this.picker.addClass('datepicker-orient-' + yorient);

@@ -13,39 +13,43 @@
 		.row
 			.col-xs-9.col-width-74
 
-				.row.jobs-form
-					.col-xs-12
-						.row
-							.col-xs-7.jobs-form__col-width-55
-								.row
-									.col-xs-12.jobs-form__search-vacancy-wrap
-										input(type="text", placeholder="Все").jobs-form__search.jobs-form__search-vacancy
-								.row
-									.col-xs-6
-										input(type="text", placeholder="Город").jobs-form__search
-									.col-xs-6
-										input(type="text", placeholder="ФИО").jobs-form__search
+				.input__group
+					
+					.input__wrap.input__wrap-width-55
+						.input__caption Название вакансии
+						input.input.input__type-2(type="text",value="Все", data-value-text="Все")
 
-							.col-xs-5.jobs-form__col-width-45 
-								.row
-									.col-xs-12.jobs-form__col-width-99
-										input(type="text", placeholder="Подразделение").jobs-form__search
-								.row
-									.col-xs-6.jobs-form__col-width-49 
-										#datetimepicker3.input-group.date.jobs-form__datapicker-wrap.jobs-form__datapicker-wrap-start
-											input.form-control(type='text', placeholder="25/10/1917").jobs-form__datapicker
-											span.input-group-addon
-												span.glyphicon.glyphicon-calendar
-									.col-xs-6.jobs-form__col-width-45
-										#datetimepicker4.input-group.date.jobs-form__datapicker-wrap.jobs-form__datapicker-wrap-end
-											input.form-control(type='text', placeholder="25/10/1917").jobs-form__datapicker
-											span.input-group-addon
-												span.glyphicon.glyphicon-calendar
-				.row
-					.col-xs-12
-						.jobs-form__buttons
-							button.btn.btn__blue.btn__small(type="button") Поиск
-							button.btn.btn__transparent.btn__small(type="button") Очистить
+					.input__wrap.input__wrap-width-43
+						input.input(type="text",value="Подразделение", data-value-text="Подразделение")
+
+				.input__group
+
+					.input__wrap.input__wrap-width-26
+						input.input(type="text",value="Город", data-value-text="Город")
+
+					.input__wrap.input__wrap-width-28
+						input.input(type="text",value="ФИО", data-value-text="ФИО")
+
+					.input__wrap.input__wrap-width-19.input__dash
+						.input__caption Дата начала
+						img(src="img/icons/calendar.png").input__icon
+						#datetimepicker3.date
+							input.form-control.input__datapicker(type='text',value="26/05/2017", data-value-text="26/05/2017")
+							span.input-group-addon
+								span.glyphicon.glyphicon-calendar
+					
+					.input__wrap.input__wrap-width-20
+						.input__caption Дата окончания
+						img(src="img/icons/calendar.png").input__icon
+						#datetimepicker4.date
+							input.form-control.input__datapicker(type='text',value="26/05/2017", data-value-text="26/05/2017")
+							span.input-group-addon
+								span.glyphicon.glyphicon-calendar
+
+				.btn__group-form
+					button.btn.btn__blue.btn__small(type="button") Поиск
+					button.btn.btn__transparent.btn__small(type="button") Очистить
+				
 				.row
 					.col-xs-12
 						table.jobs-table#jobs-table

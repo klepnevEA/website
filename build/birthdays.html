@@ -19,6 +19,7 @@
     <script src="js/slider.js" defer></script>
     <script src="js/sliderNews.js" defer></script>
     <script src="js/highlightTable.js" defer></script>
+    <script src="js/inputClean.js" defer></script>
     <script src="js/app.js" defer></script>
   </head>
   <body>
@@ -93,67 +94,56 @@
             <div class="col-xs-9 col-width-74">
               <div class="row">
                 <div class="col-xs-12">
-                  <div class="birthdays-form">
-                    <div class="birthdays-form__wrap">
-                      <div class="birthdays-form__group">
-                        <div class="row">
-                          <div class="col-xs-3 birthdays-form__col-width-23">
-                            <div class="birthdays-form__input-wrap birthdays-form__input-wrap-name">
-                              <input class="form-control birthdays-form__input" type="text" placeholder="Тишаев">
-                            </div>
-                          </div>
-                          <div class="col-xs-3">
-                            <div class="birthdays-form__input-wrap">
-                              <input class="form-control birthdays-form__input" type="text" placeholder="Должность">
-                            </div>
-                          </div>
-                          <div class="col-xs-3">
-                            <div class="birthdays-form__input-wrap">
-                              <input class="form-control birthdays-form__input" type="text" placeholder="Комната">
-                            </div>
-                          </div>
-                          <div class="col-xs-3 birthdays-form__col-width-26">
-                            <div class="birthdays-form__input-wrap">
-                              <input class="form-control birthdays-form__input" type="text" placeholder="Руководитель">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-xs-12">
-                            <div class="birthdays-form__btn-group">
-                              <button class="active" type="button">За год</button>
-                              <button type="button">Январь</button>
-                              <button type="button">Февраль</button>
-                              <button type="button">Март</button>
-                              <button type="button">Апрель</button>
-                              <button type="button">Май</button>
-                              <button type="button">Июнь</button>
-                              <button type="button">Июль</button>
-                              <button type="button">Август</button>
-                              <button type="button">Октябрь</button>
-                              <button type="button">Ноябрь</button>
-                              <button type="button">Ноябрь</button>
-                              <button type="button">Декабрь	</button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-xs-12">
-                            <div class="birthdays-slider">
-                              <div class="birthdays-slider__values">
-                                <div class="birthdays-slider__value birthdays-slider__value-min">от <span>10</span></div>
-                                <div class="birthdays-slider__value birthdays-slider__value-max">до <span>20</span></div>
-                              </div>
-                              <input id="birthdays-slider" type="text" value="" data-slider-min="0" data-slider-max="28" data-slider-step="1" data-slider-value="[10,20]">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="birthdays-form__buttons">
-                        <button class="btn btn__blue btn__small" type="button">Поиск</button>
-                        <button class="btn btn__transparent btn__small" type="button">Очистить</button>
+                  <div class="input__group">
+                    <div class="input__wrap input__wrap-width-21">
+                      <div class="input__caption">ФИО</div>
+                      <input class="input input__type-2" type="text" value="Тишаев" data-value-text="Тишаев">
+                    </div>
+                    <div class="input__wrap input__wrap-width-25">
+                      <input class="input" type="text" value="Должность" data-value-text="Должность">
+                    </div>
+                    <div class="input__wrap input__wrap-width-25">
+                      <input class="input" type="text" value="Комната" data-value-text="Комната">
+                    </div>
+                    <div class="input__wrap input__wrap-width-25">
+                      <input class="input" type="text" value="Руководитель" data-value-text="Руководитель">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="birthdays-form__btn-group">
+                        <button class="active" type="button">За год</button>
+                        <button type="button">Январь</button>
+                        <button type="button">Февраль</button>
+                        <button type="button">Март</button>
+                        <button type="button">Апрель</button>
+                        <button type="button">Май</button>
+                        <button type="button">Июнь</button>
+                        <button type="button">Июль</button>
+                        <button type="button">Август</button>
+                        <button type="button">Октябрь</button>
+                        <button type="button">Ноябрь</button>
+                        <button type="button">Ноябрь</button>
+                        <button type="button">Декабрь	</button>
                       </div>
                     </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="birthdays-slider">
+                        <div class="birthdays-slider__values">
+                          <div class="birthdays-slider__value birthdays-slider__value-min">от <span>10</span></div>
+                          <div class="birthdays-slider__value birthdays-slider__value-max">до <span>20</span></div>
+                          <div class="birthdays-slider__submit-min">0</div>
+                          <div class="birthdays-slider__submit-max">28</div>
+                        </div>
+                        <input id="birthdays-slider" type="text" value="" data-slider-min="0" data-slider-max="28" data-slider-step="1" data-slider-value="[10,20]">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn__group-form">
+                    <button class="btn btn__blue btn__small" type="button">Поиск</button>
+                    <button class="btn btn__transparent btn__small" type="button">Очистить</button>
                   </div>
                 </div>
               </div>

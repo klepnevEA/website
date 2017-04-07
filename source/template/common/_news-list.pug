@@ -14,47 +14,62 @@
 			.col-xs-9.col-width-74
 				.row
 					.col-xs-12
-						.news-form
-							.news-form__wrap
-								input(type="text", placeholder="Поиск").news-form__search
+						.input__group
+							
+							.input__wrap
+								input.input(type="text",value="Поиск", data-value-text="Поиск")
+						
+						.input__group
+							
+							.input__wrap.input__wrap-width-19.input__dash
+								.input__caption Дата начала
+								img(src="img/icons/calendar.png").input__icon
+								#datetimepicker1.date
+									input.form-control.input__datapicker(type='text',value="01/01/2000", data-value-text="01/01/2000")
+									span.input-group-addon
+										span.glyphicon.glyphicon-calendar
 
-								.news-form__group
-									#datetimepicker1.input-group.date.news-form__datapicker-wrap.news-form__datapicker-wrap-start
-										input.form-control(type='text', placeholder="25/10/1917").news-form__datapicker
-										span.input-group-addon
-											span.glyphicon.glyphicon-calendar
-									#datetimepicker2.input-group.date.news-form__datapicker-wrap.news-form__datapicker-wrap-end
-										input.form-control(type='text', placeholder="25/10/1917").news-form__datapicker
-										span.input-group-addon
-											span.glyphicon.glyphicon-calendar
+							.input__wrap.input__wrap-width-19
+								.input__caption Дата окончания
+								img(src="img/icons/calendar.png").input__icon
+								#datetimepicker1.date
+									input.form-control.input__datapicker(type='text',value="01/01/2000", data-value-text="01/01/2000")
+									span.input-group-addon
+										span.glyphicon.glyphicon-calendar
 
-									.dropdown.dropdown-autor
-										i.fa.fa-angle-down(aria-hidden="true")
-										button#dropdownMenu1.btn.btn__dropdown.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
-											| Все авторы
-										ul.dropdown-menu(aria-labelledby='dropdownMenu1')
-											li
-												a(href='#') Автор 1
-											li
-												a(href='#') Автор 2
-											li
-												a(href='#') Автор 3
+							.input__wrap.input__wrap-width-26
+								.dropdown.input__dropdown
+									.input__caption Автор							
+									i.fa.fa-angle-down(aria-hidden="true")
+									button#dropdownMenu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+										| Все авторы
+									ul.dropdown-menu(aria-labelledby='dropdownMenu1')
+										li
+											a(href='#') Автор 1
+										li
+											a(href='#') Автор 2
+										li
+											a(href='#') Автор 3
 
-									.dropdown.dropdown-news
-										i.fa.fa-angle-down(aria-hidden="true")
-										button#dropdownMenu1.btn.btn__dropdown.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
-											| Новости персонала
-										ul.dropdown-menu(aria-labelledby='dropdownMenu1')
-											li
-												a(href='#') Новости персонала 1
-											li
-												a(href='#') Новости персонала 2
-											li
-												a(href='#') Новости персонала 3
-								.news-form__buttons
-									button.btn.btn__blue.btn__small(type="button") Отправить
-									button.btn.btn__transparent.btn__small(type="button") Очистить
-				
+							.input__wrap.input__wrap-width-29
+								.dropdown.input__dropdown
+									.input__caption Рубрики							
+									i.fa.fa-angle-down(aria-hidden="true")
+									button#dropdownMenu2.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+										| Новости персонала
+									ul.dropdown-menu(aria-labelledby='dropdownMenu1')
+										li
+											a(href='#') Новости персонала 1
+										li
+											a(href='#') Новости персонала 2
+										li
+											a(href='#') Новости персонала 3
+
+						.btn__group-form
+							button.btn.btn__blue.btn__small(type="button") Поиск
+							button.btn.btn__transparent.btn__small(type="button") Очистить
+
+			
 
 				//- список новостей
 				.row

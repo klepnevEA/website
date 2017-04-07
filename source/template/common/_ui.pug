@@ -73,6 +73,75 @@
 							.card-block.accordion-style__text
 								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias recusandae optio eos ad maxime veniam nam. Ut laudantium optio, quam odio illum doloribus dolores quod expedita officiis eum porro, maxime.
 
+				p(style="color: red;") простые инпуты
+
+				.input__group
+					.input__wrap
+						input.input(type="text",value="Пример инпута", data-value-text="Пример инпута")
+				.input__group
+					.input__wrap.input__wrap-width-30
+						input.input(type="text",value="Пример инпута", data-value-text="Пример инпута")
+					.input__wrap.input__wrap-width-30
+						input.input(type="text",value="Пример инпута", data-value-text="Пример инпута")
+					.input__wrap.input__wrap-width-30
+						input.input(type="text",value="Пример инпута", data-value-text="Пример инпута")
+
+				p(style="color: red;") инпуты с подписью
+
+				.input__group
+					.input__wrap
+						.input__caption инпуты с подписью
+						img(src="img/icons/calendar.png").input__icon
+						input.input.input__type-2(type="text",value="Пример инпута", data-value-text="Пример инпута")
+					.input__wrap.input__wrap-width-30
+						.input__caption инпуты с подписью
+						img(src="img/icons/calendar.png").input__icon
+						input.input.input__type-2(type="text",value="Пример инпута", data-value-text="Пример инпута")
+					.input__wrap.input__wrap-width-30
+						.input__caption инпуты с подписью
+						img(src="img/icons/calendar.png").input__icon
+						input.input.input__type-2(type="text", placehol,value="Пример инпута", data-value-text="Пример инпута")
+					.input__wrap.input__wrap-width-30
+						.input__caption инпуты с подписью
+						img(src="img/icons/calendar.png").input__icon
+						input.input.input__type-2(type="text",value="Пример инпута", data-value-text="Пример инпута")
+
+
+				p(style="color: red;") инпуты с выпадающим списком
+				.input__group
+					.input__wrap.input__wrap-width-30
+						.dropdown.input__dropdown
+							.input__caption инпуты с подписью							
+							i.fa.fa-angle-down(aria-hidden="true")
+							button#dropdownMenu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+								| Все авторы
+							ul.dropdown-menu(aria-labelledby='dropdownMenu1')
+								li
+									a(href='#') Автор 1
+								li
+									a(href='#') Автор 2
+								li
+									a(href='#') Автор 3
+
+
+				p(style="color: red;") датапикер
+				.input__group
+					.input__wrap.input__wrap-width-30.input__dash
+						.input__caption инпуты с подписью
+						img(src="img/icons/calendar.png").input__icon
+						#datetimepicker1.date
+							input.form-control.input__datapicker(type='text',value="Пример инпута", data-value-text="Пример инпута")
+							span.input-group-addon
+								span.glyphicon.glyphicon-calendar
+					.input__wrap.input__wrap-width-30.input__dash
+						.input__caption инпуты с подписью
+						img(src="img/icons/calendar.png").input__icon
+						#datetimepicker1.date
+							input.form-control.input__datapicker(type='text',value="Пример инпута", data-value-text="Пример инпута")
+							span.input-group-addon
+								span.glyphicon.glyphicon-calendar
+
+
 				p(style="color: red;") пагинатор
 
 				.pager
@@ -186,3 +255,6 @@
 							.aside__tile-img
 								img(src='img/tiles/3.jpg', alt='')
 							h3.aside__tile-title База знаний для ТП
+
+
+

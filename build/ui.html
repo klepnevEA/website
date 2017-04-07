@@ -19,6 +19,7 @@
     <script src="js/slider.js" defer></script>
     <script src="js/sliderNews.js" defer></script>
     <script src="js/highlightTable.js" defer></script>
+    <script src="js/inputClean.js" defer></script>
     <script src="js/app.js" defer></script>
   </head>
   <body>
@@ -138,6 +139,71 @@
                   </div>
                   <div class="collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
                     <div class="card-block accordion-style__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias recusandae optio eos ad maxime veniam nam. Ut laudantium optio, quam odio illum doloribus dolores quod expedita officiis eum porro, maxime.</div>
+                  </div>
+                </div>
+              </div>
+              <p style="color: red;">простые инпуты</p>
+              <div class="input__group">
+                <div class="input__wrap">
+                  <input class="input" type="text" value="Пример инпута" data-value-text="Пример инпута">
+                </div>
+              </div>
+              <div class="input__group">
+                <div class="input__wrap input__wrap-width-30">
+                  <input class="input" type="text" value="Пример инпута" data-value-text="Пример инпута">
+                </div>
+                <div class="input__wrap input__wrap-width-30">
+                  <input class="input" type="text" value="Пример инпута" data-value-text="Пример инпута">
+                </div>
+                <div class="input__wrap input__wrap-width-30">
+                  <input class="input" type="text" value="Пример инпута" data-value-text="Пример инпута">
+                </div>
+              </div>
+              <p style="color: red;">инпуты с подписью</p>
+              <div class="input__group">
+                <div class="input__wrap">
+                  <div class="input__caption">инпуты с подписью</div><img class="input__icon" src="img/icons/calendar.png">
+                  <input class="input input__type-2" type="text" value="Пример инпута" data-value-text="Пример инпута">
+                </div>
+                <div class="input__wrap input__wrap-width-30">
+                  <div class="input__caption">инпуты с подписью</div><img class="input__icon" src="img/icons/calendar.png">
+                  <input class="input input__type-2" type="text" value="Пример инпута" data-value-text="Пример инпута">
+                </div>
+                <div class="input__wrap input__wrap-width-30">
+                  <div class="input__caption">инпуты с подписью</div><img class="input__icon" src="img/icons/calendar.png">
+                  <input class="input input__type-2" type="text" placehol value="Пример инпута" data-value-text="Пример инпута">
+                </div>
+                <div class="input__wrap input__wrap-width-30">
+                  <div class="input__caption">инпуты с подписью</div><img class="input__icon" src="img/icons/calendar.png">
+                  <input class="input input__type-2" type="text" value="Пример инпута" data-value-text="Пример инпута">
+                </div>
+              </div>
+              <p style="color: red;">инпуты с выпадающим списком</p>
+              <div class="input__group">
+                <div class="input__wrap input__wrap-width-30">
+                  <div class="dropdown input__dropdown">
+                    <div class="input__caption">инпуты с подписью							</div><i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <button class="btn btn-default dropdown-toggle" id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Все авторы</button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">Автор 1</a></li>
+                      <li><a href="#">Автор 2</a></li>
+                      <li><a href="#">Автор 3</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <p style="color: red;">датапикер</p>
+              <div class="input__group">
+                <div class="input__wrap input__wrap-width-30 input__dash">
+                  <div class="input__caption">инпуты с подписью</div><img class="input__icon" src="img/icons/calendar.png">
+                  <div class="date" id="datetimepicker1">
+                    <input class="form-control input__datapicker" type="text" value="Пример инпута" data-value-text="Пример инпута"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                  </div>
+                </div>
+                <div class="input__wrap input__wrap-width-30 input__dash">
+                  <div class="input__caption">инпуты с подписью</div><img class="input__icon" src="img/icons/calendar.png">
+                  <div class="date" id="datetimepicker1">
+                    <input class="form-control input__datapicker" type="text" value="Пример инпута" data-value-text="Пример инпута"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                   </div>
                 </div>
               </div>

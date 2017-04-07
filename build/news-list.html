@@ -19,6 +19,7 @@
     <script src="js/slider.js" defer></script>
     <script src="js/sliderNews.js" defer></script>
     <script src="js/highlightTable.js" defer></script>
+    <script src="js/inputClean.js" defer></script>
     <script src="js/app.js" defer></script>
   </head>
   <body>
@@ -93,38 +94,50 @@
             <div class="col-xs-9 col-width-74">
               <div class="row">
                 <div class="col-xs-12">
-                  <div class="news-form">
-                    <div class="news-form__wrap">
-                      <input class="news-form__search" type="text" placeholder="Поиск">
-                      <div class="news-form__group">
-                        <div class="input-group date news-form__datapicker-wrap news-form__datapicker-wrap-start" id="datetimepicker1">
-                          <input class="form-control news-form__datapicker" type="text" placeholder="25/10/1917"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-                        </div>
-                        <div class="input-group date news-form__datapicker-wrap news-form__datapicker-wrap-end" id="datetimepicker2">
-                          <input class="form-control news-form__datapicker" type="text" placeholder="25/10/1917"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-                        </div>
-                        <div class="dropdown dropdown-autor"><i class="fa fa-angle-down" aria-hidden="true"></i>
-                          <button class="btn btn__dropdown btn-default dropdown-toggle" id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Все авторы</button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#">Автор 1</a></li>
-                            <li><a href="#">Автор 2</a></li>
-                            <li><a href="#">Автор 3</a></li>
-                          </ul>
-                        </div>
-                        <div class="dropdown dropdown-news"><i class="fa fa-angle-down" aria-hidden="true"></i>
-                          <button class="btn btn__dropdown btn-default dropdown-toggle" id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Новости персонала</button>
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#">Новости персонала 1</a></li>
-                            <li><a href="#">Новости персонала 2</a></li>
-                            <li><a href="#">Новости персонала 3</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="news-form__buttons">
-                        <button class="btn btn__blue btn__small" type="button">Отправить</button>
-                        <button class="btn btn__transparent btn__small" type="button">Очистить</button>
+                  <div class="input__group">
+                    <div class="input__wrap">
+                      <input class="input" type="text" value="Поиск" data-value-text="Поиск">
+                    </div>
+                  </div>
+                  <div class="input__group">
+                    <div class="input__wrap input__wrap-width-19 input__dash">
+                      <div class="input__caption">Дата начала</div><img class="input__icon" src="img/icons/calendar.png">
+                      <div class="date" id="datetimepicker1">
+                        <input class="form-control input__datapicker" type="text" value="01/01/2000" data-value-text="01/01/2000"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                       </div>
                     </div>
+                    <div class="input__wrap input__wrap-width-19">
+                      <div class="input__caption">Дата окончания</div><img class="input__icon" src="img/icons/calendar.png">
+                      <div class="date" id="datetimepicker1">
+                        <input class="form-control input__datapicker" type="text" value="01/01/2000" data-value-text="01/01/2000"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                      </div>
+                    </div>
+                    <div class="input__wrap input__wrap-width-26">
+                      <div class="dropdown input__dropdown">
+                        <div class="input__caption">Автор							</div><i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <button class="btn btn-default dropdown-toggle" id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Все авторы</button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                          <li><a href="#">Автор 1</a></li>
+                          <li><a href="#">Автор 2</a></li>
+                          <li><a href="#">Автор 3</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="input__wrap input__wrap-width-29">
+                      <div class="dropdown input__dropdown">
+                        <div class="input__caption">Рубрики							</div><i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <button class="btn btn-default dropdown-toggle" id="dropdownMenu2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Новости персонала</button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                          <li><a href="#">Новости персонала 1</a></li>
+                          <li><a href="#">Новости персонала 2</a></li>
+                          <li><a href="#">Новости персонала 3</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn__group-form">
+                    <button class="btn btn__blue btn__small" type="button">Поиск</button>
+                    <button class="btn btn__transparent btn__small" type="button">Очистить</button>
                   </div>
                 </div>
               </div>

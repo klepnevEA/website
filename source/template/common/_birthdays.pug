@@ -14,51 +14,47 @@
 			.col-xs-9.col-width-74
 				.row
 					.col-xs-12
-						.birthdays-form
-							.birthdays-form__wrap
+						.input__group
+							.input__wrap.input__wrap-width-21
+								.input__caption ФИО
+								input.input.input__type-2(type="text",value="Тишаев", data-value-text="Тишаев")
+							.input__wrap.input__wrap-width-25
+								input.input(type="text",value="Должность", data-value-text="Должность")
+							.input__wrap.input__wrap-width-25
+								input.input(type="text",value="Комната", data-value-text="Комната")
+							.input__wrap.input__wrap-width-25
+								input.input(type="text",value="Руководитель", data-value-text="Руководитель")
 
-								.birthdays-form__group
-									.row
-										.col-xs-3.birthdays-form__col-width-23
-											.birthdays-form__input-wrap.birthdays-form__input-wrap-name
-												input.form-control(type='text', placeholder="Тишаев").birthdays-form__input
-										.col-xs-3
-											.birthdays-form__input-wrap
-												input.form-control(type='text', placeholder="Должность").birthdays-form__input
-										.col-xs-3
-											.birthdays-form__input-wrap
-												input.form-control(type='text', placeholder="Комната").birthdays-form__input
-										.col-xs-3.birthdays-form__col-width-26
-											.birthdays-form__input-wrap
-												input.form-control(type='text', placeholder="Руководитель").birthdays-form__input
-									.row
-										.col-xs-12
-											.birthdays-form__btn-group
-												button.active(type='button') За год
-												button(type='button') Январь
-												button(type='button') Февраль
-												button(type='button') Март
-												button(type='button') Апрель
-												button(type='button') Май
-												button(type='button') Июнь
-												button(type='button') Июль
-												button(type='button') Август
-												button(type='button') Октябрь
-												button(type='button') Ноябрь
-												button(type='button') Ноябрь
-												button(type='button') Декабрь	
-									.row
-										.col-xs-12
-											.birthdays-slider
-												.birthdays-slider__values
-													.birthdays-slider__value.birthdays-slider__value-min от 
-														span 10
-													.birthdays-slider__value.birthdays-slider__value-max до 
-														span 20
-												input#birthdays-slider(type='text', value='', data-slider-min='0', data-slider-max='28', data-slider-step='1', data-slider-value='[10,20]')
-								.birthdays-form__buttons
-									button.btn.btn__blue.btn__small(type="button") Поиск
-									button.btn.btn__transparent.btn__small(type="button") Очистить
+						.row
+							.col-xs-12
+								.birthdays-form__btn-group
+									button.active(type='button') За год
+									button(type='button') Январь
+									button(type='button') Февраль
+									button(type='button') Март
+									button(type='button') Апрель
+									button(type='button') Май
+									button(type='button') Июнь
+									button(type='button') Июль
+									button(type='button') Август
+									button(type='button') Октябрь
+									button(type='button') Ноябрь
+									button(type='button') Ноябрь
+									button(type='button') Декабрь	
+						.row
+							.col-xs-12
+								.birthdays-slider
+									.birthdays-slider__values
+										.birthdays-slider__value.birthdays-slider__value-min от 
+											span 10
+										.birthdays-slider__value.birthdays-slider__value-max до 
+											span 20
+										.birthdays-slider__submit-min 0
+										.birthdays-slider__submit-max 28
+									input#birthdays-slider(type='text', value='', data-slider-min='0', data-slider-max='28', data-slider-step='1', data-slider-value='[10,20]')
+						.btn__group-form
+							button.btn.btn__blue.btn__small(type="button") Поиск
+							button.btn.btn__transparent.btn__small(type="button") Очистить
 
 				//- список дней рождений
 				.row

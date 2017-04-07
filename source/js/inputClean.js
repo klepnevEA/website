@@ -26,8 +26,9 @@ var inputClean = function() {
     $(this).css('color', '#000')       
   });
 
-  $('.dropdown-toggle').on('click', function() {
-    $(this).css('color', '#000')       
+  $('.dropdown-menu a').on('click', function() {
+    $(this).parent().parent().siblings('button').css('color', '#000'); 
+    $(this).parent().parent().siblings('button').text($(this).text());   
   });
 
 

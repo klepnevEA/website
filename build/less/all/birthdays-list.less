@@ -6,9 +6,12 @@
 	}
 
 	&__elem {
-		padding:19px 25px 13px;
+		padding:20px 25px 15px;
 		border-bottom:@gray-bord; 
 		border-bottom: 1px solid  @gray-bord;
+		&:last-child {
+			border-bottom: none;
+		}
 	}
 
 	&__photo {
@@ -59,12 +62,14 @@
 			width: 175px;
 			border-right: 1px solid @gray-bord;
 			padding: 0 @sp @sp 0;
+			font-family: 'Open Sans Semibold';
 		}
 
 
 		&-title {
 			font-size:13px;
-			margin-top: 10px;	
+			margin-top: 10px;
+			margin-bottom: 3px;
 		}
 
 		&-text {
@@ -73,9 +78,10 @@
 		}
 
 		&-month {
-			margin-top: 10px;	
+			margin-top: 10px;
 			font-family: 'Open Sans Bold';
 			font-size:16px;
+			margin-bottom: 3px;
 		}
 
 		&-day {

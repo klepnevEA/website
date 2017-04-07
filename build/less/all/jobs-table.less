@@ -11,13 +11,19 @@
 		vertical-align:top;
 		font-size:13px;
 		z-index:100;
+		background: none;
 	}
 
 	&-hight-column {
 		position: absolute;
 		z-index:50;
-		box-shadow:0px 10px 62px 0px rgba(19, 77, 127, 0.17);
+			-webkit-box-shadow: 0px 10px 62px 0px rgba(19, 77, 127, 0.17) !important;
+			-moz-box-shadow: 0px 10px 62px 0px rgba(19, 77, 127, 0.17) !important;
+			box-shadow:0px 10px 62px 0px rgba(19, 77, 127, 0.17) !important;
+		background: white !important;
 		top: 0px;
+		border: 1px solid @gray-bord;
+		color: white;
 	}
 
 	&__photo {

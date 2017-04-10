@@ -22,8 +22,8 @@ var highlightTable = function() {
 
 			$("body").append('<div class="jobs-table-hight-column">!!</div>');
 
-			$(".jobs-table-hight-column").height(heightColumn);
-			$(".jobs-table-hight-column").width(widthColumn + 32);
+			$(".jobs-table-hight-column").height(heightColumn-2);
+			$(".jobs-table-hight-column").width(widthColumn + 31);
 			$(".jobs-table-hight-column").css({'left': leftColumn + 'px'});			
 			$(".jobs-table-hight-column").css({'top': topColumn + 'px'});			
 	});

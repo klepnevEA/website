@@ -91,6 +91,7 @@
               <h1 class="title">большой заголовок</h1>
               <p style="color: red;">маленький заголовок</p>
               <h2 class="title-small">маленький заголовок</h2>
+              <h2 class="title-small title-small-left">маленький заголовок слева</h2>
             </div>
           </div>
           <div class="row">
@@ -98,9 +99,40 @@
               <p style="color: red;">дата</p>
               <div class="date">17 февраля 2017</div>
               <p style="color: red;">отдельная ссылка</p><a class="link-simple" href="#">отдельная ссылка</a>
+              <p style="color: red;">отдельная большая ссылка посередине</p><a class="link-simple link-simple-big link-simple-center" href="#">отдельная большая ссылка посередине</a>
               <p style="color: red;">горизонтальная полоса</p>
               <hr class="horizontal-stripe">
-              <p style="color: red;">большая a(href="#")</p><img class="big-img" src="img/text.jpg" alt="">
+              <p style="color: red;">большая картинка</p><img class="big-img" src="img/text.jpg" alt="">
+              <p style="color: red;">табличка контактов</p>
+              <table class="contacts-table">
+                <tr>
+                  <td>Телефон</td>
+                  <td> <span>(495) 960-24-24</span></td>
+                  <td>Факс</td>
+                  <td> <span>(495) 960-24-24</span></td>
+                </tr>
+                <tr>
+                  <td>Моб. телефон</td>
+                  <td> <span>(495) 960-24-24</span></td>
+                  <td>Дом. тетефон</td>
+                  <td> <span>(495) 960-24-24</span></td>
+                </tr>
+              </table>
+              <p style="color: red;">список работ</p>
+              <ul class="jobs-list">
+                <li class="jobs-list__elem">
+                  <div class="jobs-list__year">1917-1918</div>
+                  <div class="jobs-list__position">Должность</div>
+                </li>
+                <li class="jobs-list__elem">
+                  <div class="jobs-list__year">1919-1941</div>
+                  <div class="jobs-list__position">Должность</div>
+                </li>
+                <li class="jobs-list__elem">
+                  <div class="jobs-list__year">1942-1945</div>
+                  <div class="jobs-list__position">Должность</div>
+                </li>
+              </ul>
               <p style="color: red;">просто текст</p>
               <div class="text">
                 <p> просто текст</p>
@@ -127,8 +159,16 @@
               <div class="roster">
                 <div class="roster__title">Простой список:</div>
                 <ul class="roster__list">
-                  <li class="roster__elem"><a class="roster__text" href="#">Пункт 1</a></li>
-                  <li class="roster__elem"><a class="roster__text" href="#">Пункт 2</a></li>
+                  <li class="roster__elem"><a class="roster__link" href="#">Пункт 1</a></li>
+                  <li class="roster__elem"><a class="roster__link" href="#">Пункт 2</a></li>
+                </ul>
+              </div>
+              <p style="color: red;">простой список без ссылок</p>
+              <div class="roster">
+                <div class="roster__title">Простой список без ссылок:</div>
+                <ul class="roster__list">
+                  <li class="roster__elem"><span class="roster__text">Пункт 1 без ссылок</span></li>
+                  <li class="roster__elem"><span class="roster__text">Пункт 2 без ссылок	</span></li>
                 </ul>
               </div>
               <p style="color: red;">аккордион</p>

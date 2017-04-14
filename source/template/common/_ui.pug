@@ -13,36 +13,79 @@
 				h1.title большой заголовок
 				p(style="color: red;") маленький заголовок
 				h2.title-small маленький заголовок
-
+				h2.title-small.title-small-left маленький заголовок слева
 		.row
 			.col-xs-9.col-width-74
-
+				
+				//--------------------------------------
 				p(style="color: red;") дата
 				.date 17 февраля 2017
-
+				
+				//--------------------------------------
 				p(style="color: red;") отдельная ссылка
-
+				
 				a(href="#").link-simple отдельная ссылка
 
-				p(style="color: red;") горизонтальная полоса
+				//--------------------------------------
+				p(style="color: red;") отдельная большая ссылка посередине
+				
+				a(href="#").link-simple.link-simple-big.link-simple-center отдельная большая ссылка посередине
 
+				//--------------------------------------
+				
+				p(style="color: red;") горизонтальная полоса
+				//--------------------------------------
 				hr.horizontal-stripe
 				
-				p(style="color: red;") большая a(href="#")
+				//--------------------------------------				
+				p(style="color: red;") большая картинка
 				img.big-img(src='img/text.jpg', alt='')
+				
+				//--------------------------------------
+				p(style="color: red;") табличка контактов
+				table.contacts-table
+					tr
+						td Телефон
+						td 
+							span (495) 960-24-24
+						td Факс
+						td 
+							span (495) 960-24-24
+					tr
+						td Моб. телефон
+						td 
+							span (495) 960-24-24
+						td Дом. тетефон
+						td 
+							span (495) 960-24-24
 
+				//--------------------------------------
+				p(style="color: red;") список работ
+				ul.jobs-list
+					li.jobs-list__elem
+						.jobs-list__year 1917-1918
+						.jobs-list__position Должность
+					li.jobs-list__elem
+						.jobs-list__year 1919-1941
+						.jobs-list__position Должность
+					li.jobs-list__elem
+						.jobs-list__year 1942-1945
+						.jobs-list__position Должность
+
+				//--------------------------------------
 				p(style="color: red;") просто текст
 				.text
 					p  просто текст
 					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi maxime aliquid iure velit ducimus at deleniti, sunt voluptatum! Vel ullam rem quia velit odit sunt unde dignissimos similique dolorem veniam!
 					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic provident laborum voluptates quo sunt, maiores pariatur, ex asperiores iusto perspiciatis officiis veritatis saepe eligendi qui assumenda voluptate blanditiis sit ad!
 
-
+				//--------------------------------------
 				p(style="color: red;") жирный текст
 				.text.text-bold
 					p  жирный текст
 					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi maxime aliquid iure velit ducimus at deleniti, sunt voluptatum! Vel ullam rem quia velit odit sunt unde dignissimos similique dolorem veniam!					
 				
+				//--------------------------------------				
 				p(style="color: red;") выдделенный текст с кавычками (не нужная штука)
 				.utterance
 					.utterance__quotes “
@@ -52,15 +95,27 @@
 				.text
 					p ВТБ 24 (ПАО) — один из крупнейших участников российского рынка банковских услуг. Мы входим в международную финансовую группу ВТБ и специализируемся на обслуживании физических лиц, индивидуальных предпринимателей и предприятий малого бизнеса.
 				
+				//--------------------------------------				
 				p(style="color: red;") простой список
 				.roster
 					.roster__title Простой список:
 					ul.roster__list
 						li.roster__elem
-							a(href="#").roster__text Пункт 1
+							a(href="#").roster__link Пункт 1
 						li.roster__elem
-							a(href="#").roster__text Пункт 2
-
+							a(href="#").roster__link Пункт 2
+				
+				//--------------------------------------
+				p(style="color: red;") простой список без ссылок
+				.roster
+					.roster__title Простой список без ссылок:
+					ul.roster__list
+						li.roster__elem
+							span.roster__text Пункт 1 без ссылок
+						li.roster__elem
+							span.roster__text Пункт 2 без ссылок	
+				
+				//--------------------------------------
 				p(style="color: red;") аккордион
 				#accordion.accordion-style(role='tablist', aria-multiselectable='true')
 					.card
@@ -72,7 +127,8 @@
 						#collapseTwo.collapse(role='tabpanel', aria-labelledby='headingTwo')
 							.card-block.accordion-style__text
 								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias recusandae optio eos ad maxime veniam nam. Ut laudantium optio, quam odio illum doloribus dolores quod expedita officiis eum porro, maxime.
-
+				
+				//--------------------------------------
 				p(style="color: red;") простые инпуты
 
 				.input__group
@@ -85,7 +141,8 @@
 						input.input(type="text",value="Пример инпута", data-value-text="Пример инпута")
 					.input__wrap.input__wrap-width-30
 						input.input(type="text",value="Пример инпута", data-value-text="Пример инпута")
-
+				
+				//--------------------------------------
 				p(style="color: red;") инпуты с подписью
 
 				.input__group
@@ -106,7 +163,7 @@
 						img(src="img/icons/calendar.png").input__icon
 						input.input.input__type-2(type="text",value="Пример инпута", data-value-text="Пример инпута")
 
-
+				//--------------------------------------
 				p(style="color: red;") инпуты с выпадающим списком
 				.input__group
 					.input__wrap.input__wrap-width-30
@@ -123,7 +180,7 @@
 								li
 									a(href='#') Автор 3
 
-
+				//--------------------------------------
 				p(style="color: red;") датапикер
 				.input__group
 					.input__wrap.input__wrap-width-30.input__dash
@@ -141,7 +198,7 @@
 							span.input-group-addon
 								span.glyphicon.glyphicon-calendar
 
-
+				//--------------------------------------
 				p(style="color: red;") пагинатор
 
 				.pager
@@ -163,7 +220,8 @@
 						.pager__prev
 							a(href="#")
 								i.fa.fa-chevron-left(aria-hidden="true")
-
+				
+				//--------------------------------------
 				p(style="color: red;") добавить комментрарий
 
 				.commentary 
@@ -171,7 +229,8 @@
 					.commentary__right
 						textarea.commentary__textarea(rows="10", cols="45", name="text")
 						button.btn__blue.btn__right Отправить комментарий
-
+				
+				//--------------------------------------
 				p(style="color: red;") комментарии
 					.comments
 							.comments__title Комментарии <span>6</span>

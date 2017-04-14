@@ -1,0 +1,83 @@
+.user-action-list {
+	border-top: 1px solid @gray-bord;
+	margin-bottom: @sp*2;
+
+
+	&__elem {
+		padding: @sp*2 0;
+		border-bottom: 1px solid @gray-bord;
+		.clearfix;
+
+		&-event {
+			.user-action-list__buttons {
+				margin-top: @sp;
+			}
+
+			.user-action-list__info {
+    		width: 100%;
+			}
+		}
+	}
+
+	&__photo {
+		float: left;
+		width: @sp*4;
+		margin-right: 20px;
+	}
+
+	&__info {
+		float: left;
+		width: 80%;		
+	}
+
+	&__name {
+			font-family: 'Open Sans Bold';
+			font-size: 14px;
+			line-height: 1;
+			margin-bottom: @sp/5;
+	}
+
+	&__text {
+			font-family: 'Open Sans';
+			font-size: 14px;
+			margin-bottom: @sp/3;
+			& span {
+				font-family: 'Open Sans Bold';				
+			}		
+	}
+
+	&__like {
+		margin-bottom: 20px;
+
+		&-icon {
+			float: left;
+			width: 18px;
+			height: 18px;
+			margin-right: @sp/3;
+		}
+
+		&-text {
+			font-family: 'Open Sans';
+			font-size: 13px;
+			color: @gray;
+			line-height:1.4;			
+		}
+	}
+
+	&__buttons {
+		font-size:13px;
+
+
+		& a {
+			color: @gray;
+			margin-right:35px;
+
+			&:last-child {
+				position: relative;
+				top: -3px;
+				font-size: 25px;
+				line-height:0;
+			}
+		}
+	}
+}

@@ -52,8 +52,8 @@ div.fotorama__dot {
 	
 }
 div.fotorama__nav-wrap {
-	margin: 0 300px;
-	overflov: hidden;
+	
+	
 }
 
 div.fotorama__nav__frame.fotorama__active .fotorama__dot {
@@ -108,4 +108,24 @@ div.fotorama__arr {
 
 div.fotorama__stage {
 	overflow: visible;
+}
+.fotorama__shadows--right {
+	&:before {
+		display: none;
+		opacity: 0;
+	}
+	&:after {
+		display: none;
+		opacity: 0;
+	}
+}
+.fotorama__shadows--left {
+	&:before {
+		display: none;
+		opacity: 0;
+	}
+	&:after {
+		display: none;
+		opacity: 0;
+	}
 }

@@ -8,7 +8,7 @@ $(document).ready(function() {
 		$('#datetimepicker4').datepicker({});
 		searchOpen();
 		sliderGo();
-  	sliderNewsGo();
+		sliderNewsGo();
 		highlightTable();
 		inputClean();
 
